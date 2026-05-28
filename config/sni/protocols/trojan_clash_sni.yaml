@@ -122,8 +122,8 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "208.103.161.110"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.creationlong.org"
     skip-cert-verify: true
@@ -135,8 +135,8 @@ proxies:
         Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "www.multiplydose.com"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
@@ -148,8 +148,8 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "v1.dabache.top"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
@@ -161,8 +161,8 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "45.130.125.76"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -174,16 +174,16 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "64.94.95.118"
-    port: 57142
+    server: "127.0.0.1"
+    port: 40443
     password: "kkzh2prsyr2ik47as615"
-    sni: "64.94.95.118"
+    sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.139.67"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.creationlong.org"
     skip-cert-verify: true
@@ -195,8 +195,8 @@ proxies:
         Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "162.159.17.189"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
@@ -208,10 +208,10 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "www.ignitelimit.com"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
-    sni: "www.ignitelimit.com"
+    sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
     network: ws
@@ -219,16 +219,16 @@ proxies:
       path: "/assignment"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "78.159.131.12"
-    port: 28259
+    server: "127.0.0.1"
+    port: 40443
     password: "MeaDiUmPlkWbZJ2BON8tz"
     sni: "🔒"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.13.149"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -241,8 +241,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.16.147.104"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.creationlong.org"
     skip-cert-verify: true
@@ -254,8 +254,8 @@ proxies:
         Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "8.6.112.6"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -268,8 +268,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "188.114.96.4"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -282,8 +282,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.67.180.92"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
@@ -295,8 +295,8 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "188.114.96.3"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
@@ -308,8 +308,8 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "45.130.125.69"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -322,8 +322,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.155.209"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
@@ -335,8 +335,8 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.21.40.34"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
@@ -348,8 +348,8 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "sourceforge.net"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -361,8 +361,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "8.6.112.0"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -374,16 +374,16 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "140.235.140.105"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "BxceQaOe"
     sni: "t.me/ripaojiedian"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.17.150.76"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -395,8 +395,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.20.6.134"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -408,8 +408,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "188.114.97.3"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.calmloud.com"
     skip-cert-verify: true
@@ -422,8 +422,8 @@ proxies:
         Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "141.101.90.101"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.ignitelimit.com"
     skip-cert-verify: true
@@ -436,8 +436,8 @@ proxies:
         Host: "www.ignitelimit.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "208.103.161.101"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.creationlong.org"
     skip-cert-verify: true
@@ -450,8 +450,8 @@ proxies:
         Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "cloudflare-ip.mofashi.ltd"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "2399fe0a-b359-40a9-a3f0-b70c3c177a01"
     sni: "aa.beijng.dpdns.org"
     skip-cert-verify: true
@@ -463,8 +463,8 @@ proxies:
         Host: "aa.beijng.dpdns.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.147.24"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
@@ -476,10 +476,10 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "www.gossipglove.com"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
-    sni: "www.gossipglove.com"
+    sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
     network: ws
@@ -487,8 +487,8 @@ proxies:
       path: "/assignment"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "chatgpt.com"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
@@ -500,8 +500,8 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.12.149"
-    port: 443
+    server: "127.0.0.1"
+    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
