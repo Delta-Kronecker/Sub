@@ -12,11 +12,24 @@
     "base_port": 10000,
     "batch_rest_ms": 1500,
     "process_kill_wait_ms": 1000,
-    "fetch_retry_count": 2,
+    "fetch_retry_count": 9,
     "fetch_retry_delay_ms": 1500,
     "test_urls": [
       "http://1.1.1.1/",
-      "http://8.8.8.8"
+      "http://cp.cloudflare.com",
+      "http://kernel.org",
+      "http://detectportal.firefox.com",
+      "http://captive.apple.com/hotspot-detect.html",
+      "http://connectivitycheck.gstatic.com/generate_204",
+      "http://www.gstatic.com/generate_204",
+      "https://1.1.1.1/",
+      "https://www.gstatic.com/generate_204",
+
+      
+      
+      
+      
+      
     ]
   },
   "protocols": ["vmess","vless","trojan","ss","ssr","hy2","hy","tuic"],
