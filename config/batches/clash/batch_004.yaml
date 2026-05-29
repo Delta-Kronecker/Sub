@@ -1,0 +1,5146 @@
+name: "Standard"
+mixed-port: 7890
+socks-port: 7891
+port: 7892
+allow-lan: true
+bind-address: '*'
+mode: global
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+secret: ""
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+keep-alive-interval: 15
+
+profile:
+  store-selected: true
+  store-fake-ip: false
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:5353
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.local'
+    - '*.lan'
+    - '*.localhost'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - 'time.*'
+    - 'time.*.com'
+    - 'connectivitycheck.gstatic.com'
+    - 'detectportal.firefox.com'
+    - 'captive.apple.com'
+    - 'www.msftncsi.com'
+    - 'cp.cloudflare.com'
+  default-nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
+    - 8.8.8.8
+    - 8.8.4.4
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 208.67.220.220
+    - 94.140.14.14
+    - 94.140.15.15
+    - 64.6.64.6
+    - 64.6.65.6
+    - 84.200.69.80
+    - 84.200.70.40
+    - 76.76.19.19
+    - 76.223.122.150
+    - 8.26.56.26
+    - 8.20.247.20
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://dns.google/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.4.4/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://9.9.9.9/dns-query
+    - https://149.112.112.112/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://94.140.14.14/dns-query
+    - https://94.140.15.15/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://208.67.222.222/dns-query
+    - https://208.67.220.220/dns-query
+    - https://doh.comodo.com/dns-query
+    - https://8.26.56.26/dns-query
+    - https://8.20.247.20/dns-query
+    - https://doh.mullvad.net/dns-query
+    - https://doh.dns.mullvad.net/dns-query
+    - https://freedns.controld.com/p0
+    - https://freedns.controld.com/family
+    - tls://1.1.1.1:853
+    - tls://1.0.0.1:853
+    - tls://8.8.8.8:853
+    - tls://8.8.4.4:853
+    - tls://9.9.9.9:853
+    - tls://149.112.112.112:853
+    - tls://94.140.14.14:853
+    - tls://94.140.15.15:853
+    - tls://208.67.222.222:853
+    - tls://208.67.220.220:853
+    - tls://family-filter-dns.cleanbrowsing.org:853
+    - tls://adult-filter-dns.cleanbrowsing.org:853
+    - tls://security-filter-dns.cleanbrowsing.org:853
+    - 1.1.1.1
+    - 1.0.0.1
+    - 8.8.8.8
+    - 8.8.4.4
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 208.67.220.220
+    - 94.140.14.14
+    - 94.140.15.15
+    - 64.6.64.6
+    - 64.6.65.6
+    - 84.200.69.80
+    - 84.200.70.40
+    - 8.26.56.26
+    - 8.20.247.20
+    - 76.76.19.19
+    - 76.223.122.150
+    - 208.67.222.123
+    - 208.67.220.123
+    - 195.46.39.39
+    - 195.46.39.40
+    - 38.132.106.139
+    - 194.187.251.67
+
+proxies:
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 26223
+    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "c50f9480-2e1d-40db-9458-630e79636663"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 35298
+    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.164"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "4a2rfixophdjffa8KVA4Aa"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "serv35.strettenvpn.com"
+    port: 443
+    uuid: "d430e22c-99f6-4256-b5fa-061ebf28f42d"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "sun6-21.userapi.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28"
+      short-id: "8248954896"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "130.94.107.171"
+    port: 443
+    password: "s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV"
+    sni: "www.logger-guard.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "45.15.152.167"
+    port: 443
+    uuid: "180a65ce-f309-47ec-b8ee-2f7a9a8a0fe2"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "2lReHLDD5UCpT8FyBLPyrrIbi6MNKDBTArtCwI3NUQA"
+      short-id: "4b1b"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "2.56.179.55"
+    port: 1443
+    uuid: "8cddd533-9611-4fc4-adda-7d629743b4b2"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "botapi.max.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Ej_PPr2iomuIl23svqB6FgWf2Sw6FMC6ipavO5w5OXY"
+      short-id: "099755ac7b731e9e"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "95.182.80.130"
+    port: 16146
+    uuid: "c1e32c6c-9a14-4edf-95c7-b1236a55aa07"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.samsung.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lCkGLh6mypATTCMgrwjjqOxWBISCIB9fmdt_5Fff3Ug"
+      short-id: "e7eac240"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "149.88.23.202"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "77.110.121.202"
+    port: 23164
+    uuid: "e42eb55f-289f-419f-86c7-b47e49d10c98"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "teamdocs.su"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "XoIxfrtYaItQL-X_zvZqTcCHBF3_LhIiptW9ph3Rgjs"
+      short-id: "62"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "downlod.musicribvar.com"
+    port: 45029
+    uuid: "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "NRKiRKbFdENKGAB1Dtk3asvtimbQnmDS4qVG8YQeeggj92VKDxejBu98VEcWn2DG6afNaYMBmQ36WruT9RUgqxWXx5VkwW3X"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "cJQRquFR3rVkkycBpwbbyHEgyc7SKjwKrBCbKPFJXZ6fuhyevAAWb9TASA7H82xvC22vbAB5Q6rNU9JUHq7HDxQkPE1SuQB7"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "up2-df6.pages.dev"
+    port: 443
+    uuid: "ce69190e-935a-4394-9e5e-2ab2872ba242"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "up2-df6.pages.dev"
+    network: ws
+    ws-opts:
+      path: "/uTZSXPBI2IfoxF86"
+      headers:
+        Host: "up2-df6.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "37.19.198.243"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 10470
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "uk.connfull.org"
+    port: 2053
+    uuid: "d64d52b1-144f-4bce-a6d7-1324de187b1b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "uk.connfull.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 30030
+    uuid: "4f3cfda3-a255-40eb-8801-71f9fffb19d6"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2DvuGfaUJ7oM9E6mHWkZN9dAjPxtpndv4ckpPpyuexJxKLn6SpDQdBBJDFE6Gqj9MXpRHPDwYfNAqKgpBWTCWPrG4eDmnGTZ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "46.249.109.128"
+    port: 56594
+    cipher: "chacha20-ietf-poly1305"
+    password: "jR5Wg32XzEgCXk4MPCgvd1G1Ts8WHBLsXMUaqMa5DUXMuqMmdZgCbMipXDhoAmj73qA9oY85zXK35L5m631Tn7in2p3KLbWF"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "pq-bosniaandherzegovina1.09vpn.com"
+    port: 8443
+    uuid: "fc1118f0-bdd6-46e7-9a97-259a5b2aabc3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pq-bosniaandherzegovina1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2A1BYU7JRBQmYUssD4ihsuS9hehEZGec5NghiRbWaMPemeAQqMWfUjfVPRZGQ4eZh5UMiVJDc7QzkdjmHHqhFWxF7UACad57"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "4.168.201.246"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "XEnZedp2mkTbT1qC"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "cf.9999669.xyz"
+    port: 2087
+    uuid: "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fgnix832fx.fx6hsv0.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fgnix832fx.fx6hsv0.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "204.12.170.168"
+    port: 443
+    password: "de72b066a61a39af"
+    sni: "claude.ai"
+    skip-cert-verify: true
+    udp: true
+    obfs: "salamander"
+    obfs-password: "726c9c641a068d74"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "1.lapis-lazuli.tech"
+    port: 443
+    uuid: "0dd339d3-0b51-4582-94ec-ffd2397be1ab"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.samsung.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "04mVXhKLy-N0tzEghrxuMJTQaVdvBxVCtGaJq8qNcCk"
+      short-id: "4f0a"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.94.95.114"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "static.rutube.ru"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "108.181.0.177"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "G5p6ww4o67HB"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "tRVH6ZVjtjWCvREPvSgTx6jwmensa6of9w26NwnZ5n1V3bWeNBsq2A86K3RWGRyjA89Tqibnri4HuDtvE24KU2Sb65RUeVJz"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "Uh11bg1NKvjFdgD3gvhqjqrdL2jEm2GUCVMMTKFyubyoDV3wVSQLcYVrhiC7ASHqzA4RivbdXbNKLWQsziRkbm8ndfqLYnmb"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "vWgVt4dL6bwFutKm1D8WrjaAs2AWT535GfVMttHBg7rg6ZBFUAxGpvHc6hXjoBRKsyeyTESc1uU6y3BP3oenkTv9aefi27VN"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "XJLSHUkevoRHmidSp5xeGd8gwuBBBTTp1yVYCg6kYBA2FgJbMwGjnLuTnqcmNKWKdgPDH8d7m9ag7VfsBBhW1rMc47cgX5up"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "10.vles.space"
+    port: 510
+    uuid: "f3d08978-e457-43a3-b062-d74e4328833d"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "cdn.vkvideo.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "gTLxGPaumAT1gY3dEXIbZcr0Ocspb1hdrEG5oBkPOA8"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2A3oczEsnmTyzsGGCPgpd1DhstsdRqNvGWGoM3ELaCy8M49MkCTzxmYG31uHECvN3uMnmYkzy1DZotU5HEULShUGrw17ESzT"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.130.125.237"
+    port: 8443
+    password: "Mitivpn"
+    sni: "dash.hitgram.ir"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "dash.hitgram.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.179"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "cvII85TrW6n0OGyfpHVS1u"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "fi2.vitok.cc"
+    port: 443
+    uuid: "1b9e301d-cecd-4eb1-8b36-eef811c2696d"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yastatic.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "3LUIM_6cYceTgNt6LWnR8YSVrenpLsh-FIGDrmfjjwc"
+      short-id: "5e841fab"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 46483
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 20939
+    uuid: "4f3cfda3-a255-40eb-8801-71f9fffb19d6"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 64366
+    uuid: "9631096d-3032-4942-9446-bdf12665682b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "62.3.12.140"
+    port: 2087
+    uuid: "90a7a201-de71-4696-be44-f2c04aa36348"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: h2
+    h2-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.199"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "1RWwXhwfAB5gAEozU4G2Pg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "47.81.36.248"
+    port: 443
+    uuid: "3e7f67de-648e-4871-b51a-a225214d41ee"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "api.digital-help-prd.autodesk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "195.93.253.240"
+    port: 14130
+    cipher: "chacha20-ietf-poly1305"
+    password: "5DJXRpmi3iyqxQ79PfKv3B"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.17.121.71"
+    port: 2096
+    uuid: "fad00171-5df8-442e-a208-54dea7f474f2"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "Humble-FigUREFnHk81kxjx.CarboNblaCkBmw.iR"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "donya-e-eqtesad.com.tasnimnews.com.alef.ir.en.mehrnews.com.entekhab.ir.tasnimnews.com.tehrantimes.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.64.147.79"
+    port: 80
+    uuid: "478cc26d-16b3-4fdd-be64-60d5a58c1622"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tt.andishehparenting.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "cJQRquFR3rVkkycBpwbbyHEgyc7SKjwKrBCbKPFJXZ6fuhyevAAWb9TASA7H82xvC22vbAB5Q6rNU9JUHq7HDxQkPE1SuQB7"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "9631096d-3032-4942-9446-bdf12665682b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "13.218.172.80"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "36.224.139.206"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "bAkPJgGM9dWdJDwpbq8dRcYarMqa5YnzFMco7LALzcUYUeQiYBNeLCoaXgZUQCUASzG9Q2F3ZgHwgTg4mPu6GBnwggXdZAgx"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.130.125.76"
+    port: 443
+    password: "Mitivpn"
+    sni: "www.hitgram.ir"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "www.hitgram.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "us2.unlockregion.top"
+    port: 443
+    uuid: "3c81c716-4fd5-11f1-8a2c-525400a7149e"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "cloudcdn-m9-15.cdn.yandex.net"
+    client-fingerprint: "randomized"
+    reality-opts:
+      public-key: "_rpOMKjM0nkFCJay0V5SuvhWVHQkr51YJbSyY2Q0gA4"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "51.140.138.1"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "1kVr0KATIJI7mwOF"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "149.22.87.240"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "38.180.197.41"
+    port: 8080
+    cipher: "aes-256-gcm"
+    password: "KixLvKzwjekG00rm"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "144.31.50.134"
+    port: 443
+    uuid: "dc540911-cd1d-41e9-9301-ecb5a507b788"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.icloud.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "JbxZQuL2t4eews1QuA8O4jpsU_NXPMpmzKwlxSQj5Sk"
+      short-id: "f690c1046814dc9d"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 58527
+    uuid: "d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "54.253.37.164"
+    port: 23951
+    uuid: "3e62a6f1-f8cb-40eb-9c33-fc4ed39a080e"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "FGnWfD70nPQhiMZUQETB_mKaR-J_2DonpOpy9eqQ_F0"
+      short-id: "8c4907b7884b31"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 60473
+    uuid: "e3cb685e-7840-45cb-9d64-b2028d9b635e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.116"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.154.211"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "173.244.56.9"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "194.58.41.65"
+    port: 443
+    uuid: "afc941a0-b6b4-42d1-b284-d59a42f083fd"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "cjCwI7alv-GUgef0TW7i-S7jNgnIoZ6aooGYH7Nopxs"
+      short-id: "deadbeef"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "GrpcFuckRKN"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "email.swiftraci.org"
+    port: 443
+    uuid: "7eb4a87d-e22f-4eb3-a793-ee3d6200fdc6"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Cs45TZ-4YKa8fWZ72YJcIcQCKipWsoYNZHEqFvs-PTE"
+      short-id: "a6aef5143d94"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "91.233.8.25"
+    port: 443
+    password: "I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz"
+    sni: "fra34.tracker-ws.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.18.32.47"
+    port: 443
+    uuid: "2f3aadae-66c6-4dca-a670-03c183f8024e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sctest1.dr-ping.ir"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/kos-nanat-decoder"
+      headers:
+        Host: "sctest1.dr-ping.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "204.11.2.30"
+    port: 7443
+    uuid: "4350fd8e-9f5d-47e7-a5f6-6161e0f7db9b"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "stackoverflow.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+      short-id: "be0ce047"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.157"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "1RWwXhwfAB5gAEozU4G2Pg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "91.233.8.142"
+    port: 443
+    password: "d-VoBikwImgO9HMG7YWANlh=QNlHzjK32P"
+    sni: "fra142.plasmaapp.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 38664
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "91.225.217.27"
+    port: 443
+    uuid: "e60f8ade-411b-4ceb-b3bd-2439676b4695"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "66I_EZijZ-HoERv8Xzmv5KydHjz4dp81Grb8CJpIy38"
+      short-id: "cb89"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.16.248.48"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "99d38f43-0a5d-462a-8459-d6ab36dd7a64"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ImportAnt-CUPi24nv9Tm3Y.WInDLeR.CO.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "khabaronline.ir.isna.ir.en.mehrnews.com.khabaronline.ir.en.mehrnews.com.asriran.com.jamejamonline.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "37.19.198.160"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 27492
+    uuid: "e3cb685e-7840-45cb-9d64-b2028d9b635e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 54473
+    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "156.146.38.168"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "178.250.243.230"
+    port: 9823
+    uuid: "a88ea8bf-7001-4e29-a9bb-379f6778195c"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "max.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM"
+      short-id: "0123456789abcdef"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "108.181.0.177"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "G5p6ww4o67HB"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "AmxHJ6RVjmwKnuVo513Wt4Lmwh3i8cdTLXmqF35NnBGL1Ko6AYF7dvNAZNWCcBifbtLJHQxNVcc3PwgtLbxKPLrMhkDRTFab"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "de-fal.colorbox.space"
+    port: 8080
+    uuid: "freedom-runet-42"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "k7xW6N5SAVpgeqi1wd7s7yxD7S8PxaehUM5W8apHrQi3pSoDRXScoAPk8SVa4mKbvRjrgENU3dUgzTgp9T3rrXinaDe4CXYk"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "193.163.203.76"
+    port: 50556
+    uuid: "44fcf3b7-7baf-4b73-9f50-9f47967f7b29"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "api-maps.yandex.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo"
+      short-id: "23a3dee422d0cd1c"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.250.45.234"
+    port: 8613
+    uuid: "80039b4d-bac0-4f89-82c7-54fad3b0a1ea"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
+      headers:
+        Host: "47.250.45.234"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "nbmrcg0034686rw.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "192.142.18.127"
+    port: 443
+    cipher: "aes-256-gcm"
+    password: "d2890c8f-8d15-42b7-80e3-687fab8b2c7a"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "204.216.216.23"
+    port: 10086
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.16.158.249"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "107.181.147.22"
+    port: 443
+    uuid: "fdc622b6-985c-40a0-8bcb-b6497804769a"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Cs45TZ-4YKa8fWZ72YJcIcQCKipWsoYNZHEqFvs-PTE"
+      short-id: "4c4d5ed45c74"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "136.244.93.228"
+    port: 443
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.booking.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c"
+      short-id: "a1b2c3d4e5f67890"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 37446
+    uuid: "e1cc26b3-df0b-477b-afb0-53659a25e978"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.34.124"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "bg9rGNza4dcmnDAXMiBaa4pUf9q8fc2EDePQ96UDfJrmohfvK7L27bLsJW2jikJPw97LYW76ypYK347TtUKZ6ebkw5Zf6C4s"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "146.56.112.110"
+    port: 8888
+    uuid: "e7c302f3-90d6-42dd-9d7d-94a3683a3707"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "download.riferoser.icu"
+    port: 443
+    uuid: "6ec6da0f-008b-43fa-899d-d5cf147fe13a"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc"
+      short-id: "1b8d2fb1eec1"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "87.120.93.69"
+    port: 443
+    uuid: "2001daf3-5c56-4bef-8ea6-8dd0493c5a4c"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.deepl.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "xin.usfox.qzz.io"
+    port: 443
+    uuid: "ae0dd58e-e222-40bf-84ae-365a97532737"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "pagescm.freen3.de5.net"
+    network: ws
+    ws-opts:
+      path: "/zh/player/shop"
+      headers:
+        Host: "pagescm.freen3.de5.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "hdUkyS4wGoL5n3yaBhm5JUAeXcwrCek2hQ7G6nh6GyYpwvU7JqRpJWLkVUQYzYXQ9MMb4YvSPvrCidN9VVgmTUvfkZBghCqr"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "162.19.204.71"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 33680
+    uuid: "d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "82.38.31.205"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "144.31.30.69"
+    port: 2443
+    uuid: "f90cc83a-97ce-446d-8f80-30d3eef3351c"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "178.159.10.78"
+    port: 443
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.vodafone.co.uk"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc"
+      short-id: "d27683580fc15f1e"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "45.149.234.236"
+    port: 443
+    uuid: "9f7a44b8-617c-46de-bbe0-152e52570d69"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "linksys.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "BagDycRtQvlxTnortyehYkwB6e-SJwboi2STJLKKAX8"
+      short-id: "99a9b78d171c04cb"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "www.ignitelimit.com"
+    port: 443
+    password: "humanity"
+    sni: "www.ignitelimit.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "158.160.122.237"
+    port: 1443
+    uuid: "cd5bb6c7-7736-4122-a1f9-a3e4f3dd8b18"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "ads.x5.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "h8BDQnylBOkY67mfYEWv47OtXIo8FOjL5Y1tlozo8D0"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "nld.pink-service.ru"
+    port: 443
+    uuid: "f998c699-43b5-4af2-921e-03b879eb7912"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.google.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0"
+      short-id: "86b80f1e713a33ad"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 63666
+    uuid: "b01d1e26-2f84-48da-88a1-1d06a77857f3"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "4f3cfda3-a255-40eb-8801-71f9fffb19d6"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "148.253.211.47"
+    port: 443
+    uuid: "980231fb-4372-5c81-b696-20aa34d33af0"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8"
+      short-id: "bdac121c7debdaba"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "102.129.229.85"
+    port: 31700
+    cipher: "chacha20-ietf-poly1305"
+    password: "d7zh2lMrXNH5+8+8pKzlxiCU9NN022ih+uAyxj5d4qo="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 39173
+    uuid: "fa8f8911-2e9b-494e-9a8d-f80239ee2214"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 34549
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.175"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "77.91.68.70"
+    port: 55983
+    uuid: "f667a096-5231-4cfb-8759-92bb32473139"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
+      short-id: "0e"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "90081bb25c.node.tro.cac.cab"
+    port: 48697
+    password: "4f4d1167-ef14-4304-9bce-0740472503ef"
+    sni: "gh.01.naiun.bilibili.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 29274
+    uuid: "27104fae-f047-4993-902a-9368d8a3e9bc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "144.31.218.74"
+    port: 443
+    password: "hy2_lositfbu:39yW9L3JqHpmUU2OZm6nIr4mvs4OBNHD"
+    sni: "144.31.218.74"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 16495
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.28"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "fr.denditop.site"
+    port: 443
+    uuid: "256c5f48-4908-4255-83d1-c86cb58f22b4"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fr.denditop.site"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4"
+      short-id: "9c2378562188c3cb"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.131.88"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "cnamefuckxxs.yuchen.icu"
+    port: 443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "173.245.59.233"
+    port: 2096
+    uuid: "a5240468-dffe-4581-8ce7-6e6604d299d6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "verus-1uy.pages.dev"
+    network: ws
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "verus-1uy.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.224"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "47.79.144.115"
+    port: 40003
+    cipher: "aes-256-gcm"
+    password: "GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.94.95.118"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "64.94.95.118"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.235"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.104.80.66"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.16.250.22"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.151"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "3.71.109.196"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 22749
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "254551f6-ec28-4938-ad0e-0aa4aa1965ec"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "141.101.90.101"
+    port: 443
+    password: "humanity"
+    sni: "www.ignitelimit.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "162.217.249.74"
+    port: 45705
+    uuid: "5678b00f-9ed6-4982-9f8a-1a7306e25126"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.206"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "QCXDxuDlTTMD7jtgHUjIoj"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.237.90.117"
+    port: 14573
+    uuid: "a6dd0cc9-eeb0-4226-9623-b3fc6e1b0b98"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/FREE By Tharuwa (0767597317)"
+      headers:
+        Host: "m.zoom.us"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 55870
+    uuid: "c50f9480-2e1d-40db-9458-630e79636663"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "108.181.57.93"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "RSo52SbxW40r"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.149.54"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2M8fNk7mewkYhRFJzEu4osJBXiJcZotQSvaH6cfmxs7bP12QANijEZvKTxRd4Hbae37Xn7xEXfBcxz4tWhmbWQ36REbnZoPQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 51645
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "a4eaf02b-740c-4cb3-a455-ef18850dff2b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "HurT-cHEeSerb03zuk53f.WiNDleR.Co.UK"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "alalamtv.net.irdiplomacy.ir.tehrantimes.com.en.mehrnews.com.parstoday.com.entekhab.ir.tasnimnews.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "it5.taskflowhub.org"
+    port: 2083
+    cipher: "aes-256-gcm"
+    password: "34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "31.59.39.29"
+    port: 443
+    uuid: "76713d07-5a6b-49c2-abd8-bc450a2fa7fc"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "download.spectrum.vu"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8"
+      short-id: "d1e9faa1b2c3"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "217.30.10.70"
+    port: 9011
+    cipher: "aes-256-cfb"
+    password: "M3t2ZEQcMGRWBjRa"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "15.223.186.62"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 64464
+    uuid: "254551f6-ec28-4938-ad0e-0aa4aa1965ec"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "3ZR2BwKryGCdvPUL35h1YbSzAp3fgwunRLH5YAiAsMHQY8WXmfsTB2kTsV2L73vFJn8KMhGU27z6RAwabfkncrdgc1yxPFoC"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "shop.harddahir.cyou"
+    port: 443
+    uuid: "5bd36fef-18ac-4d69-8080-25df6c9b369e"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.hollywoodreporter.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SqNAL7L50tQTHhkvN4dT3O-DqdI1qan5iwg6ai4U_hY"
+      short-id: "a3a5df265540"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "x6EKaChK1zEYVfctyXeTfyCSPRFFHcDQ1nah5TEknRPe7BNddwijrGDX7xaYR4NRNRfCK9LtQLEgahMfAGCTqZTxCdzVKGg9"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "193.180.209.21"
+    port: 443
+    password: "rYuChHcwQZskq9E0zdoR"
+    sni: "vpn5.rnmcnm.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws-79dffb8106db"
+      headers:
+        Host: "vpn5.rnmcnm.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "193.202.11.143"
+    port: 7443
+    uuid: "5da05cf7-9913-45a9-a7c6-71a41b1cd713"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "colorlib.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA"
+      short-id: "6ba85179e30d4fc3"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2Wc6z8aR2kTL5hi2mALeHVNzbbMVfhSRvPJXu8yoYjYTsdooV7AZrLKL7Hxybr9qhFD3AB9K439WYprQNovYK3W7eYT2L5DF"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "15.222.60.36"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "218.237.185.230"
+    port: 4652
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "sgxi.959555.xyz"
+    port: 10000
+    uuid: "af6904c1-4349-4448-8e99-0024824a0c33"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "gateway.icloud.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "xELgry1aUBwZLDAAvyiBkLTXsIi1M-mKhuqvwiP6FxU"
+      short-id: "3b0b73e5"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "138.124.186.202"
+    port: 443
+    uuid: "e346f220-4ca4-4f69-a66b-52e992b3b625"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.fh-aachen.de"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "v546965.hosted-by-vdsina.com"
+    port: 8443
+    uuid: "1cb91b20-49cc-59ff-8393-91808a4deede"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.ozon.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM"
+      short-id: "ffffffffff"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "91.225.217.27"
+    port: 443
+    uuid: "8b0f3ccd-5f6a-4c08-b7da-042d00965d7d"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "66I_EZijZ-HoERv8Xzmv5KydHjz4dp81Grb8CJpIy38"
+      short-id: "cb89"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "SfFrddo5ryBf.hosted-in.iranray.online"
+    port: 2052
+    uuid: "49882640-5877-4f73-a49e-86e209d080a9"
+    udp: true
+    network: httpupgrade
+    httpupgrade-opts:
+      path: "/phpMyAdmin?q=一位處女在孫先生的農場工作。"
+      host: "6lSgiOjDyzd2Rxz15FFDMW.ch3.node.tnw.of.to"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "37.19.198.244"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "23UnyN3hyY4EvREP8kmpoZB3Ecnysu6RTjw9jJcWoKRrE61J7PewesEErRWJoTAx8rLfsgKxzH1dPkdYRorMiHyQzkw9nBmF"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "02fc59ec-ceb5-4c7b-80cc-8ed7d921c91e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "LonG-eNVIRoNMEnTq83zpUAmzB.winDLEr.CO.uK"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "mizanonline.com.tabnak.ir.snn.ir.alalamtv.net.irannewsdaily.com.presstv.ir.rajanews.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "ace6f892-637f-4053-b12b-7982976ecbb5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "SHiny-caShS7HN18ZGWa.WIndlEr.co.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "snn.ir.jamejamonline.ir.tasnimnews.com.eghtesadonline.com.presstv.ir.snn.ir.irna.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 22635
+    uuid: "27104fae-f047-4993-902a-9368d8a3e9bc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "6992f972-39ab-41e3-9d2e-39efc00ced3d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "aRTfuL-eXCHAnGed81Ihi4YWX.carbONblAckBMW.ir"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "alalamtv.net.jamejamonline.ir.iribnews.ir.alef.ir.eghtesadonline.com.rajanews.com.khabaronline.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "46.249.109.128"
+    port: 56594
+    cipher: "chacha20-ietf-poly1305"
+    password: "q2jToxsx4vTevqrFiLGuwRx96SXM3C96id1MWpnSECHq3MaTWnEV76aN5PYEigRfqf7rxAcuAMWUzYNxrYRG6QhMcYw5QnqL"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2Wc6z8aR2kTL5hi2mALeHVNzbbMVfhSRvPJXu8yoYjYTsdooV7AZrLKL7Hxybr9qhFD3AB9K439WYprQNovYK3W7eYT2L5DF"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "5.180.40.32"
+    port: 443
+    uuid: "062761f1-cc57-48b6-8f69-f993c47c78de"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.intel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "rXt4uIa-kkDwXAJvpaIlsnrbYWY-gHR4n_VTuHeLNlY"
+      short-id: "7aed20"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.18.32.47"
+    port: 443
+    uuid: "2f3aadae-66c6-4dca-a670-03c183f8024e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sctest1.dr-ping.ir"
+    network: ws
+    ws-opts:
+      path: "/kos-nanat-decoder"
+      headers:
+        Host: "sctest1.dr-ping.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.32.47"
+    port: 2096
+    uuid: "4e93e8e6-8cc1-4a5b-b577-3d5bcae6ada0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "FAiNT-beliEFst4dReAkTi.WINdler.Co.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "irdiplomacy.ir.rajanews.com.parstoday.com.donya-e-eqtesad.com.alalamtv.net.yjc.ir.tehrantimes.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "212.100.171.194"
+    port: 48862
+    uuid: "da9f6ce2-aaba-47dd-be50-5afd17331fd9"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "45.89.106.4"
+    port: 443
+    uuid: "5e1083b9-4d4f-50ef-93e7-6e966dfce1f9"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "EHtfJCv8UREtbQCPBc0BYX-BOFgKPFaG2yvR2w7rHBw"
+      short-id: "972e3378"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "2.27.23.139"
+    port: 9443
+    uuid: "2001daf3-5c56-4bef-8ea6-8dd0493c5a4c"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "rutube.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 61034
+    uuid: "fa8f8911-2e9b-494e-9a8d-f80239ee2214"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.199"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "35.183.96.211"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "cdn1.cloud-vk.com"
+    port: 443
+    uuid: "16bb0986-9660-470a-a8a7-ae428dea8580"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "id.vk.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "blt86EDqS_cqja46UZeRHIJPyB4WrlDWNEQJ3gRfFHQ"
+      short-id: "b3e7c5c4476aa975"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "221.139.79.57"
+    port: 13979
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "ul-mexico1.09vpn.com"
+    port: 8443
+    uuid: "a6d20e79-d326-42c1-bc20-f4cecc6dc42d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ul-mexico1.09vpn.com"
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 63546
+    uuid: "c09f13ce-2cca-49b6-ad1e-597566cc89c6"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "51.255.71.16"
+    port: 443
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.booking.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZnlCl_Jc2dV5-KK_ymmMcEDoe5lPyZ-5z_LGMRoiNTU"
+      short-id: "b87063a35aaa942e"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "169.197.142.22"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 20166
+    uuid: "3786e67a-41eb-4b92-b31e-417e89493b93"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "16.52.154.170"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "83.243.86.119"
+    port: 10443
+    uuid: "f6431ff1-dec0-4a6c-be4a-ce917913b589"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.67.185.178"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "134.33.73.249"
+    port: 54254
+    uuid: "acba684c-4098-4eca-f519-828b09f96464"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4"
+      short-id: "db35ffdc"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "45.91.171.108"
+    port: 158
+    cipher: "chacha20-ietf-poly1305"
+    password: "-jd43ayn1mxzQ4t6dEI7OQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "54.252.231.115"
+    port: 55292
+    uuid: "aca32055-db88-4634-b623-6429ddbb6c93"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "kPx16abMZD2x6dv7NW_hn1HSc2P8RsPptytcCT-neQs"
+      short-id: "bd711c02c8dc9955"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.143"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "1RWwXhwfAB5gAEozU4G2Pg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "de-fal.colorbox.space"
+    port: 8080
+    uuid: "freedom-runet-15"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "cz.krevetkavpn.ru"
+    port: 443
+    uuid: "729d3d1e-ee1a-4c42-84bc-2ff331518221"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.nvidia.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw"
+      short-id: "6ba8f65dee6e"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "185.226.95.155"
+    port: 80
+    uuid: "a4b4dbc4-c9c5-4360-9e9c-d6019118e318"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "SqgmUzd7ZxGyPLjXBXrzwTU4jkz7EvbY2XcBgcp77LhKTXYvUaNRZNZi9Z1Ee9JBzYy5dnK1LZNYvtdUJe97SDHULz939xua"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.26.6.159"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 21645
+    uuid: "fa8f8911-2e9b-494e-9a8d-f80239ee2214"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "54.37.131.95"
+    port: 11776
+    uuid: "4df71627-23e2-415f-9c29-631ee391c9dc"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "varzesh3.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "o6tx9h.usvless.yydzx.xyz"
+    port: 443
+    uuid: "2219a1b1-9290-4ac5-94fd-6cfc1fb25280"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "mirrors.rockylinux.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "b6O5rrLyFCAJG9-SEX1ycKc2O-jmBJwhKHPW6zw2V3Y"
+      short-id: "f469064c96510d33"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "27104fae-f047-4993-902a-9368d8a3e9bc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "91.107.247.25"
+    port: 8083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "NWRbLv+NIz5+zssu7nxk+fCw7wDHYLFbWy4m3Ey7Oo0=:MIedpwLQ84+CGETW0tfC0TR8HVAsw5A1sI+Lj+0iEyk="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 47382
+    uuid: "6d600864-32da-49fd-baf4-7df051762454"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 49861
+    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "4f3cfda3-a255-40eb-8801-71f9fffb19d6"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.25.242.61"
+    port: 443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "Lt8kpKewHp2rBaDcJPdDQeJX7QQuHpNkNF2g6zRkAdueq1LyNXLRgcGZTjqXpwuYJHenfMjqA4BprvbyJKm66Yv5W71z8RmC"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "staging.lastilhame.monster"
+    port: 443
+    uuid: "2ba7f500-017b-4891-87a0-e4e62a4ad52d"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg"
+      short-id: "9409f73c2fd7"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 49477
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "144.31.96.48"
+    port: 443
+    uuid: "96e429ef-7e1d-4239-a4c8-c5a4861bbded"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "ya.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw"
+      short-id: "6ba85179e30d4fc2"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "194.87.39.215"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.17.22.240"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "64.176.166.143"
+    port: 443
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "store.steampowered.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "tboI265nKvT77HoZPyA6bgZNuLap_Jy-XvAx2-4Rcwk"
+      short-id: "0c1553316a645758"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.1"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.64.147.165"
+    port: 80
+    uuid: "478cc26d-16b3-4fdd-be64-60d5a58c1622"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tt.andishehparenting.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.60.29"
+    port: 35547
+    uuid: "254551f6-ec28-4938-ad0e-0aa4aa1965ec"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "nXHVYX6L5EofVoJi7ZdCAxJfVMXHdj12dQREkRCFQMPcsrFXXWqHx3WRUazYZVC8vZ47XtH5sDkGo1rNZri6SWxhnrx5CfVz"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "91.107.247.25"
+    port: 8083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "NWRbLv+NIz5+zssu7nxk+fCw7wDHYLFbWy4m3Ey7Oo0=:MIedpwLQ84+CGETW0tfC0TR8HVAsw5A1sI+Lj+0iEyk="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "zzus5.ainivp.com"
+    port: 13405
+    uuid: "9204afcd-026e-781f-1abc-c03efabd1344"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "epgveXEcUs0sbs4jV_1KldTkZGnWUHfMKcs0XNyP41Y"
+      short-id: "a1b2c3d4"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "147.90.234.133"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "hbGrpfvNrJsUmKmPbR3iY2"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "107.172.219.230"
+    port: 2096
+    cipher: "chacha20-ietf-poly1305"
+    password: "4dc8eeda-fdfb-4660-8ceb-3e872956cb94"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "92.118.112.203"
+    port: 41348
+    cipher: "chacha20-ietf-poly1305"
+    password: "66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "194.76.155.12"
+    port: 8443
+    uuid: "69a2af58-d74a-44ca-864a-e09b493f4274"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.vk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "mgIiNnujl3pahea0WW3bCFqmdwofldk85e9XD3rQcQc"
+      short-id: "d8d900"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "89.169.39.55"
+    port: 443
+    uuid: "c61ec320-29f1-4e00-9272-8b676e6957b4"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "max.ru"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU"
+      short-id: "08000000"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "202.91.33.175"
+    port: 8443
+    password: "8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c"
+    sni: "202.91.33.175"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2CYTbbAxJMWdzMxePpCMDjkub13CDxU2BqaJzb1Zt3HBYGWsfKwNgQKhzEa7uAJut74Bj4fhiwJ6CKFBu4MiQ43QEe9xD2u7"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "snappfood.ir"
+    port: 80
+    uuid: "d4d57b7d-c442-4919-9eb1-81b398cf06b4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/m"
+      headers:
+        Host: "mz.goodphilips.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 10470
+    uuid: "b2da9920-b0a7-4354-9e26-3833ab8d00d0"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 64329
+    uuid: "3b475934-cb2a-4d96-b260-5e50cca5d430"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 16495
+    uuid: "254551f6-ec28-4938-ad0e-0aa4aa1965ec"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "4.168.201.153"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "NV6wwXTK2tSr7kvI"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "NRKiRKbFdENKGAB1Dtk3asvtimbQnmDS4qVG8YQeeggj92VKDxejBu98VEcWn2DG6afNaYMBmQ36WruT9RUgqxWXx5VkwW3X"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "p141.panda001.net"
+    port: 4652
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "38.207.163.135"
+    port: 443
+    uuid: "cbc05e45-ca53-4cd5-e880-af3a1a850e0e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "probabblynot.fazelextremeisreal.com"
+    port: 29870
+    uuid: "a3eb4c35-c1df-4448-968c-f6229cba9de0"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "www.refersion.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "cWrLzTqWRYMQq8vsgN7rHtUxrDdqxDLNEWAuo_eXlRU"
+      short-id: "821863f0"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "nW19Aeg1XwqiX9AWWpBQFVUrtXkVqUfxTQupGcPmXtBtaP2ta72SXLJsUJ2tSm1qhbLBExUS1e3RaPA8JT7K4GHRnwwFbGNn"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "c6e0562f-7ad1-40fb-a255-26194b2de84a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "pq-Albania1.09vpn.com"
+    port: 80
+    uuid: "b4819c49-6c7e-4b57-9b9b-c73031e1de11"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vless/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nelly.homes"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "nelly.homes"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 11841
+    uuid: "3786e67a-41eb-4b92-b31e-417e89493b93"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "103.182.97.25"
+    port: 30804
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "octopusss4.com"
+    network: ws
+    ws-opts:
+      path: "/tsghdws"
+      headers:
+        Host: "octopusss4.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "185.242.247.206"
+    port: 8443
+    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "cdnjs.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
+      short-id: "88ce6b586fcaf681"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "vpnicp.xyc.hk.cn"
+    port: 20001
+    uuid: "7f5f0705-3dfb-4f56-9657-c95cade2ba83"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "13.239.112.139"
+    port: 42376
+    uuid: "c42b435d-e1d2-45ba-85bc-2f3c080ce826"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5x6nErZvJp6uFYQ4VkOZSrnz4FWNRvYJqTfimjuBOCw"
+      short-id: "be125600cea6"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "6654c734ccab8f440ff0825eb443dc7f.qos.onl"
+    port: 10054
+    uuid: "52f9cbfb-5bb3-3dd3-b947-725e365c59f3"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.85"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "102.37.156.224"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "aduB9HGxQHjA2SBMRjkHX6"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.165"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "5.255.110.147"
+    port: 443
+    uuid: "e2e1ddaa-1acf-4c4c-a211-92284f6440ed"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "nll.scroogethebest.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc"
+      short-id: "4fa44664f6a566d3"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "95.85.228.146"
+    port: 8443
+    uuid: "a67e3045-626c-42c9-8cc0-a5afa6b18b05"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "io.ozone.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM"
+      short-id: "92d0c4089b6c1da3"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "series-a1.samanehha.co"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "130.94.97.11"
+    port: 443
+    password: "Z3_=ewk_+l1U4OT4usQ5=o2vFfk95yfy1V"
+    sni: "www.selectnet.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "148.253.211.237"
+    port: 443
+    uuid: "980231fb-4372-5c81-b696-20aa34d33af0"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8"
+      short-id: "bdac121c7debdaba"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "217.30.10.70"
+    port: 9060
+    cipher: "aes-256-cfb"
+    password: "ueLXVkvh4hckhErQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 25123
+    uuid: "e3cb685e-7840-45cb-9d64-b2028d9b635e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2UArZiZkWsgHGMxo6aDSbXbGvFCq5z1o3H2eMoUAn2TFBbaeHDTa4zTyoLPk3o6TA1hTQV9DibygB17ctGeQtvCa5ayGZdTv"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "194.238.57.104"
+    port: 443
+    uuid: "8046e3a1-83a7-4155-86e4-374153fe66f3"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.icloud.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA"
+      short-id: "5d"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "141.98.101.179"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 54754
+    uuid: "b01d1e26-2f84-48da-88a1-1d06a77857f3"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.16.1.108"
+    port: 2053
+    password: "Thucs1'%il&x"
+    sni: "fBHZ3c8PbhY8J58CA4tkddAIJw0Bu6g7.ACCOUnT12.wOrKERS.DeV"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiUkhLU1NQVEM3dCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSJdfQ=="
+      headers:
+        Host: "fbhz3c8pbhy8j58ca4tkddaijw0bu6g7.account12.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "45.90.12.239"
+    port: 443
+    uuid: "360045e9-30d9-4f13-b9d6-9c57f6baab1d"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "fviTlCtkzpbYhTpHObiVtlgCaAT8LytP9eWUoa6Jfy4"
+      short-id: "66f80bb224a5065a"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "dns.dressforida.monster"
+    port: 443
+    uuid: "dbde7caa-2d09-4cf9-9a4f-9b17a8d11f5b"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.mozilla.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8"
+      short-id: "514c64ffed35"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "37.19.198.243"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "37.19.198.160"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 40804
+    uuid: "4ec66d81-9565-4d8e-ae58-2bacfde95f48"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "195.93.253.245"
+    port: 49137
+    cipher: "chacha20-ietf-poly1305"
+    password: "FDeCHSu4lt8qflCS5zDOy8"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.67.190.160"
+    port: 443
+    password: "freedom"
+    sni: "042.eLEctrocElLCo-cf-042-Fe0.wOrkERs.deV"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiZ3JCVzl1T1ciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers:
+        Host: "042.electrocellco-cf-042-fe0.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 31723
+    uuid: "e3cb685e-7840-45cb-9d64-b2028d9b635e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "109.201.152.181"
+    port: 443
+    cipher: "aes-128-cfb"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "r3mrcg001287h3p.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "51.44.25.250"
+    port: 44520
+    uuid: "acd726d3-0128-44d8-a575-21013ff7740a"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "MrLRcU_2S2CpUc7VT3ajIavX5NYUiQdP6J5QTDFNGFU"
+      short-id: "8897c56a495b26cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 20939
+    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "47.91.94.112"
+    port: 10040
+    uuid: "e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 20939
+    uuid: "9631096d-3032-4942-9446-bdf12665682b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "129.146.77.248"
+    port: 39495
+    uuid: "f836c736-87fc-4fde-aabc-00857ecdff3e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "82.38.31.35"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "2.26.3.239"
+    port: 443
+    uuid: "2001daf3-5c56-4bef-8ea6-8dd0493c5a4c"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.deepl.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU"
+      short-id: "c4fb372c78b32874"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "appvless.tnjxaon.cn"
+    port: 35593
+    uuid: "1f81303d-bdb7-4cf9-8bef-f4f8cd9562ff"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tue.nl"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "AavBPGGJUpyGWiriV_Fbx-SrAvR5t-9mHeQY8uIltyo"
+      short-id: "41b9cb10b696"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "51.158.206.98"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "18.140.170.243"
+    port: 27307
+    uuid: "b2fe41d5-a1b4-44e8-908a-84c59a70a3d8"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tesla.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dIAHCrK3tbiMaFFKoPh89_eSpe8ws-rhT0rXV-RHxQQ"
+      short-id: "64a35319e5db75"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "211.178.105.134"
+    port: 6123
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 55688
+    uuid: "9631096d-3032-4942-9446-bdf12665682b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "zzjp1.ainivp.com"
+    port: 13403
+    uuid: "9204afcd-026e-781f-1abc-c03efabd1344"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "epgveXEcUs0sbs4jV_1KldTkZGnWUHfMKcs0XNyP41Y"
+      short-id: "a1b2c3d4"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "9Bpt48HiTfWMzQDb86igS8UxrYXZ59zN3mzTTG9EvEcw3eqYtX5Q3zaenJPyyA5p2q5Nmp24Trv2bBKVBcZ1bhLKT3dn18Kk"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "2.27.13.15"
+    port: 443
+    uuid: "f00984ef-f57e-41db-9182-b25f7bc3a1e2"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "newfn.stardevs.top"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dZr14WsJ6yNqfoalMrTWBsOU74mckVoQO84Ty68TtW4"
+      short-id: "b03a4d1767157467"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "82.38.31.155"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.32.47"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.64.147.137"
+    port: 443
+    uuid: "fc965ad9-bdd7-4815-ad71-b39ec5972dc1"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "octopusss4.com"
+    network: ws
+    ws-opts:
+      path: "/tsghdws"
+      headers:
+        Host: "octopusss4.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "91.218.143.194"
+    port: 43798
+    uuid: "b7725d23-840a-4f8e-993c-69b40424cfc0"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU"
+      short-id: "f71c22"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.64.146.27"
+    port: 80
+    uuid: "478cc26d-16b3-4fdd-be64-60d5a58c1622"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tt.andishehparenting.com"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "149.22.95.183"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "172.64.147.15"
+    port: 80
+    uuid: "478cc26d-16b3-4fdd-be64-60d5a58c1622"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tt.andishehparenting.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "61.111.247.233"
+    port: 34045
+    uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA"
+      short-id: "e8ab71d0"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 57299
+    uuid: "c50f9480-2e1d-40db-9458-630e79636663"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "vgHT4AF253YLbcGh8WG1jMRX4SFsgYxszwpocdbeaCUoaBDwNoC8SxtaiSHh1Mm51cFhhrMpfrgyyFj71kbE44VnRPcgxPAg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "156.146.38.167"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "109.104.155.45"
+    port: 41348
+    cipher: "chacha20-ietf-poly1305"
+    password: "NVcw9OTGwmThWmhs1uh7rrIJcVz7ln96ifYZiv4zsWvToTjg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "100.27.193.207"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "mx2.drawnrisha.one"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "2Lj2ME3aanFMRBZXYFF3EVUWXUymZvKLMA2UkjjSk4aGTPhRQrwjVqa1PePDoF2kkPsTqmsXevgvuhR6qMgsmDc77pUJxRYn"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "193.29.139.206"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "1RWwXhwfAB5gAEozU4G2Pg"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "www.shopify.com"
+    port: 2096
+    uuid: "2769bf4b-a544-48e1-aa54-79009b7d7c84"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www-xbsg.cccccdns.icu"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/xiaobai-ws-path"
+      headers:
+        Host: "www-xbsg.cccccdns.icu"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "103.143.238.196"
+    port: 28384
+    uuid: "1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "103.143.238.196"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "download.riferoser.icu"
+    port: 56594
+    cipher: "chacha20-ietf-poly1305"
+    password: "2zQoJHz22Zbvh37yxZWJ6JzFtLhttZCLop8WFfpcJ4166JAenuKTvDuUnebBnz8PGPoXLWsEm1nkzbTnJaiTsSx9wXZkyL3i"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "217.30.10.70"
+    port: 9011
+    cipher: "aes-256-cfb"
+    password: "M3t2ZEQcMGRWBjRa"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "13.38.52.64"
+    port: 15469
+    uuid: "deb96819-bdaa-4f52-a536-d4751290ce47"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Mr1b8zNNR1uPtf8dgfze_kBJbaVimS0NhJL0ff_2qm4"
+      short-id: "0f8d9583dd332274"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "141.98.101.182"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "109.61.109.204"
+    port: 36587
+    uuid: "254551f6-ec28-4938-ad0e-0aa4aa1965ec"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "9Bpt48HiTfWMzQDb86igS8UxrYXZ59zN3mzTTG9EvEcw3eqYtX5Q3zaenJPyyA5p2q5Nmp24Trv2bBKVBcZ1bhLKT3dn18Kk"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "202.37.33.80"
+    port: 443
+    uuid: "cc752a3e-1537-4e86-bb50-1b897bf7b33c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cyylr.eu.cc"
+    client-fingerprint: "chrome"
+    alpn: ["http/1.1"]
+    network: ws
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "cyylr.eu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "194.87.39.215"
+    port: 443
+    uuid: "c8d1c6d3-388f-48fc-a8f0-ed90d955d096"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw"
+      short-id: "6ba85179e30d4fc2"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "57.129.121.230"
+    port: 10443
+    cipher: "chacha20-ietf-poly1305"
+    password: "uROuEqsL8IUMMVb4wDwnGU"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "de.vpnbase.net"
+    port: 80
+    uuid: "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/http"
+      headers:
+        Host: "de.vpnbase.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "38.180.197.41"
+    port: 8080
+    cipher: "aes-256-gcm"
+    password: "KixLvKzwjekG00rm"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "dx.mmhh.eu.cc"
+    port: 443
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    network: ws
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "sw1tzerl4nd.gxcore.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "sw1tzerl4nd.gxcore.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "127zCnB9vtae6HnpowaSW8eFqflCAaBV0iM1oKHBWwY"
+      short-id: "a1ab5a56bc42"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "46.149.78.27"
+    port: 17113
+    uuid: "530eaa91-28a0-46ae-bc63-57384362ba6b"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "vk.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "516wV7sLhUaSh5zqVbgyo-otX3ii13GgHJngRPhbflg"
+      short-id: "fe013b8818613e"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 28487
+    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 46677
+    uuid: "4ec66d81-9565-4d8e-ae58-2bacfde95f48"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "82.38.31.205"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "67.220.85.46"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "downlod.musicribvar.com"
+    port: 2010
+    uuid: "04ae1b04-86a0-4bbf-bfb7-2132d10a6b8e"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "149.104.87.182"
+    port: 443
+    password: "PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA"
+    sni: "www.jewelapp.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "46.249.109.128"
+    port: 443
+    uuid: "9f1b677f-aeea-43a9-9927-12188cdc1249"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc"
+      short-id: "37e6f3e4339e"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "download.riferoser.icu"
+    port: 443
+    uuid: "3994b2e1-d52c-4536-9848-0b63d74560fa"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc"
+      short-id: "071d2947bac1"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "46.249.109.128"
+    port: 443
+    uuid: "3495557c-8550-429f-83b6-a47d63a1ecfd"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.foxsports.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc"
+      short-id: "044ed87c34d6"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "185.248.33.173"
+    port: 10470
+    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "185.5.38.111"
+    port: 55988
+    cipher: "chacha20-ietf-poly1305"
+    password: "AgxyePdT6DnALxzttQRzGHJP2bitAeHnbukf6aTjC9xdYkxQQ1YK71DKEmJNc3DY8CCq1z46oCy6Dc1oZi6Q4532Nv8Swcy7"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "free.projectv.fun"
+    port: 42444
+    uuid: "ba6c85db-4878-467f-99f0-9425075337de"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Fallback"
+      - "Auto"
+      - "Load Balance"
+    
+
+  - name: "Load Balance"
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+
+  - name: "Auto"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+
+  - name: "Fallback"
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+
+rules:
+  - MATCH,PROXY
