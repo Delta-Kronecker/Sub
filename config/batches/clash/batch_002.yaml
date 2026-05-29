@@ -121,37 +121,55 @@ dns:
 
 proxies:
   - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "dx.mmhh.eu.cc"
-    port: 443
-    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hhlfy.twiladaphne.ndjp.net"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "hhlfy.twiladaphne.ndjp.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "104.24.45.247"
-    port: 80
-    uuid: "2e71d8fc-d2e8-44fc-89bd-c8a449a193aa"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "odd-bread-435d.ahmadrezasteamacc.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: ss
-    server: "103.106.228.175"
-    port: 8009
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
+    server: "4.168.201.153"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "NV6wwXTK2tSr7kvI"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "2.56.172.83"
+    port: 8443
+    uuid: "e033ef6e-ab4b-47d4-a523-ff568d2c8dbb"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.121.30"
+    port: 2053
+    password: "Mitivpn"
+    sni: "dash.hitgram.ir"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "dash.hitgram.ir"
 
 proxy-groups:
   - name: "PROXY"
@@ -173,6 +191,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Auto"
     type: url-test
@@ -184,6 +204,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -191,6 +213,8 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
