@@ -49,8 +49,8 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 265 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
-| VLESS | 265 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
+| All | 243 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
+| VLESS | 243 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
 
 ---
 
@@ -58,8 +58,8 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 265 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
-| VLESS | 265 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
+| All | 243 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
+| VLESS | 243 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
 
 ---
 
@@ -67,29 +67,20 @@
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 265 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_001.txt) |
+| 001 | 243 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_001.txt) |
 
 ## SNI Batches
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 265 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_001.txt) |
+| 001 | 243 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_001.txt) |
 
 ## Clash
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 265 | [clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/clash.yaml) |
-| VLESS | 265 | [vless_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless_clash.yaml) |
-
----
-
-## Clash Advanced
-
-| Protocol | Count | Link |
-|---|---|---|
-| All | 265 | [clash_advanced.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/clash_advanced.yaml) |
-| VLESS | 265 | [vless_clash_advanced.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless_clash_advanced.yaml) |
+| All | 243 | [clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/clash.yaml) |
+| VLESS | 243 | [vless_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless_clash.yaml) |
 
 ---
 
@@ -97,17 +88,8 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 265 | [clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/clash_sni.yaml) |
-| VLESS | 265 | [vless_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_clash_sni.yaml) |
-
----
-
-## Clash Advanced SNI
-
-| Protocol | Count | Link |
-|---|---|---|
-| All | 265 | [clash_advanced_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/clash_advanced_sni.yaml) |
-| VLESS | 265 | [vless_clash_advanced_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_clash_advanced_sni.yaml) |
+| All | 243 | [clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/clash_sni.yaml) |
+| VLESS | 243 | [vless_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_clash_sni.yaml) |
 
 ---
 
@@ -115,15 +97,7 @@
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 265 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml) |
-
----
-
-## Clash Advanced Batches
-
-| Batch | Count | Link |
-|---|---|---|
-| 001 | 265 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash_advanced/batch_001.yaml) |
+| 001 | 243 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml) |
 
 ---
 
@@ -131,15 +105,7 @@
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 265 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_001.yaml) |
-
----
-
-## Clash Advanced SNI Batches
-
-| Batch | Count | Link |
-|---|---|---|
-| 001 | 265 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash_advanced/batch_001.yaml) |
+| 001 | 243 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_001.yaml) |
 
 ---
 
@@ -147,15 +113,15 @@
 
 | Protocol | Tested | Valid | Pass% |
 |---|---|---|---|
-| VLESS | 2208 | 265 | 12.0% |
-| **Total** | **2208** | **265** | **12.0%** |
+| VLESS | 2208 | 243 | 11.0% |
+| **Total** | **2208** | **243** | **11.0%** |
 
 | Metric | Value |
 |---|---|
 | Fetched | 3139 |
 | Unique | 2208 |
-| Valid | 265 |
-| Time | 106.00s |
+| Valid | 243 |
+| Time | 111.79s |
 
 ---
 
