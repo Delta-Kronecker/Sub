@@ -60,62 +60,88 @@ dns:
 
 proxies:
   - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "Mitivpn"
+    sni: "dash.hitgram.ir"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "dash.hitgram.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "gcuCpQfaiVeDBdWG"
+    sni: "yazhou10.dynu.net"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "ac195240-6005-412b-9829-1e56e5d5c52a"
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "47777915-7325-44c1-8122-251f701f5cb0"
     udp: true
     flow: "xtls-rprx-vision"
     tls: true
     skip-cert-verify: false
-    servername: "ddfs.ummapeople.online"
+    servername: "bitter-voice.empty-dust.ru"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "NPt7NbrWjFl5Uq8xIuolxDDJFTzj5x5jwmiSTRPuuD8"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usaapp1.jisuyun.top"
-    network: ws
-    ws-opts:
-      path: "/usavm"
-      headers:
-        Host: "usaapp1.jisuyun.top"
+      public-key: "5yR0iloe8gXWX6PghzeZoxy2j1IC0gC-1Rduw4fUzG8"
+      short-id: "5c472469282af031"
   - name: "@DeltaKroneckerGithub"
     type: ss
     server: "127.0.0.1"
     port: 40443
-    cipher: "aes-256-gcm"
-    password: "XKFKl2rULjIp74"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "e258977b-e413-4718-a3af-02d75492c349"
+    uuid: "042c1f4d-1599-4816-b925-760cdabd5e9a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jp.aniua.qzz.io"
-    network: ws
-    ws-opts:
-      path: "/Channel----@UnNurmal"
-      headers:
-        Host: "jp.aniua.qzz.io"
+    servername: "magICAl-oRder668mk9ktrM.WindLEr.Co.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "snn.ir.kayhan.ir.entekhab.ir.yjc.ir.alalamtv.net.irandaily.ir.presstv.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -163,6 +189,9 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "LB-CDN"
     type: load-balance
@@ -172,6 +201,9 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -191,6 +223,9 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "FAST-CDN"
     type: url-test
@@ -199,6 +234,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -218,11 +256,17 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
