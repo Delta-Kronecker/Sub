@@ -4064,7 +4064,7 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	// ── Read existing README.md and strip any previous auto-generated block ───────
 	existingContent := ""
-	if raw, err := os.ReadFile("README.md"); err == nil {
+	if raw, err := os.ReadFile("read.md"); err == nil {
 		existing := string(raw)
 		if idx := strings.Index(existing, autoGenMarker); idx != -1 {
 			// Strip from marker onward; keep user-written content above it
