@@ -3189,10 +3189,8 @@ func writeOutputFiles(results []configResult) {
 	var allSNIClash []string
 	var allSNIClashNames []string
 
-	const v2rayBase = "@DeltaKroneckerGithub"
+	const v2rayBase = "@DeltaKroneckerGithub_V2ray"
 	const clashBase = "@DeltaKroneckerGithub_Clash"
-	const sniV2rayBase = "@DeltaKroneckerGithub_SNI"
-	const sniClashBase = "@DeltaKroneckerGithub_Clash_SNI"
 
 	for i, r := range results {
 		uniqueName := generateUniqueName(v2rayBase)
@@ -3210,12 +3208,12 @@ func writeOutputFiles(results []configResult) {
 
 		sniLine := toSNIConfig(r.line, r.proto)
 		if sniLine != "" {
-			sniUniqueName := generateUniqueName(sniV2rayBase)
+			sniUniqueName := generateUniqueName(v2rayBase)
 			sniNamed := renameTo(sniLine, r.proto, sniUniqueName)
 			allSNI = append(allSNI, sniNamed)
 			bySNIProto[r.proto] = append(bySNIProto[r.proto], sniNamed)
 
-			sniCname := generateUniqueName(sniClashBase)
+			sniCname := generateUniqueName(clashBase)
 			if sniEntry, ok := configToClashYAML(sniLine, r.proto, sniCname); ok {
 				allSNIClash = append(allSNIClash, sniEntry)
 				allSNIClashNames = append(allSNIClashNames, sniCname)
