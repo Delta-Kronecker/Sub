@@ -3973,7 +3973,60 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	gen.WriteString(autoGenMarker)
 	gen.WriteString("\n")
 
-	// Statistics
+
+
+	// V2ray files
+	gen.WriteString("## V2ray\n\n")
+	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
+	fmt.Fprintf(&gen, "| All | %d | [all_configs.txt](%s/config/all_configs.txt) |\n", len(results), repoBase)
+	for _, p := range cfg.ProtocolOrder {
+		if n := byProtoOut[p]; n > 0 {
+			fmt.Fprintf(&gen, "| %s | %d | [%s.txt](%s/config/protocols/%s.txt) |\n",
+				strings.ToUpper(p), n, p, repoBase, p)
+		}
+	}
+	gen.WriteString("\n---\n\n")
+
+
+	// SNI files
+	gen.WriteString("## SNI\n\n")
+	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
+	fmt.Fprintf(&gen, "| All | %d | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", len(results), repoBase)
+	for _, p := range cfg.ProtocolOrder {
+		if n := byProtoOut[p]; n > 0 {
+			fmt.Fprintf(&gen, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
+				strings.ToUpper(p), n, p, repoBase, p)
+		}
+	}
+	gen.WriteString("\n---\n\n")
+
+	// V2ray batch files
+	v2rayBatches := countBatchFiles("config/batches/v2ray")
+	if v2rayBatches > 0 {
+		gen.WriteString("##V2ray Batches\n\n")
+		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
+		for i := 1; i <= v2rayBatches; i++ {
+			cnt := min500(i, len(results))
+			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/v2ray/batch_%03d.txt) |\n",
+				i, cnt, i, repoBase, i)
+		}
+		gen.WriteString("\n")
+	}
+
+	// SNI batch files
+	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
+	if sniV2rayBatches > 0 {
+		gen.WriteString("## SNI Batches\n\n")
+		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
+		for i := 1; i <= sniV2rayBatches; i++ {
+			cnt := min500(i, len(results))
+			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
+				i, cnt, i, repoBase, i)
+		}
+		gen.WriteString("\n")
+	}
+
+		// Statistics
 	gen.WriteString("## Statistics\n\n")
 	totalIn, totalOut := 0, 0
 	fmt.Fprintf(&gen, "| Protocol | Tested | Valid | Pass%% |\n|---|---|---|---|\n")
@@ -3998,69 +4051,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	fmt.Fprintf(&gen, "| Valid | %d |\n", len(results))
 	fmt.Fprintf(&gen, "| Time | %.2fs |\n\n", duration)
 	gen.WriteString("---\n\n")
-
-	// V2ray files
-	gen.WriteString("## V2ray\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [all_configs.txt](%s/config/all_configs.txt) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s.txt](%s/config/protocols/%s.txt) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	// Clash files
-	gen.WriteString("## Clash\n\n")
-	fmt.Fprintf(&gen, "| File | Link |\n|---|---|\n")
-	fmt.Fprintf(&gen, "| clash.yaml | [clash.yaml](%s/config/clash.yaml) |\n", repoBase)
-	fmt.Fprintf(&gen, "| clash_advanced.yaml | [clash_advanced.yaml](%s/config/clash_advanced.yaml) |\n", repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if byProtoOut[p] > 0 {
-			fmt.Fprintf(&gen, "| %s_clash.yaml | [%s_clash.yaml](%s/config/protocols/%s_clash.yaml) |\n",
-				p, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	// SNI files
-	gen.WriteString("## SNI\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	// V2ray batch files
-	v2rayBatches := countBatchFiles("config/batches/v2ray")
-	if v2rayBatches > 0 {
-		gen.WriteString("## Batches\n\n")
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= v2rayBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/v2ray/batch_%03d.txt) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n")
-	}
-
-	// SNI batch files
-	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
-	if sniV2rayBatches > 0 {
-		gen.WriteString("## SNI Batches\n\n")
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= sniV2rayBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n")
-	}
 
 	// ── Read existing README.md and strip any previous auto-generated block ───────
 	existingContent := ""
