@@ -4422,8 +4422,5 @@ func generateUniqueName(base string) string {
 	gNameCount[base]++
 	count := gNameCount[base]
 
-	if count == 1 {
-		return base
-	}
 	return base + "_" + strconv.Itoa(count)
 }
