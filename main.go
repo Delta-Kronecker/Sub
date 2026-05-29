@@ -36,21 +36,22 @@ type Settings struct {
 }
 
 type ValidationSettings struct {
-	NumWorkers             int      `json:"num_workers"`
-	GlobalTimeoutSec       float64  `json:"global_timeout_sec"`
-	SingboxStartTimeoutMs  int      `json:"singbox_start_timeout_ms"`
-	SingboxStartIntervalMs int      `json:"singbox_start_interval_ms"`
-	HTTPRequestTimeoutMs   int      `json:"http_request_timeout_ms"`
-	HTTPDialTimeoutMs      int      `json:"http_dial_timeout_ms"`
-	HTTPResponseTimeoutMs  int      `json:"http_response_timeout_ms"`
-	PortCheckTimeoutMs     int      `json:"port_check_timeout_ms"`
-	MaxRetries             int      `json:"max_retries"`
-	BasePort               int      `json:"base_port"`
-	BatchRestMs            int      `json:"batch_rest_ms"`
-	ProcessKillWaitMs      int      `json:"process_kill_wait_ms"`
-	FetchRetryCount        int      `json:"fetch_retry_count"`
-	FetchRetryDelayMs      int      `json:"fetch_retry_delay_ms"`
-	TestURLs               []string `json:"test_urls"`
+	NumWorkers               int      `json:"num_workers"`
+	GlobalTimeoutSec         float64  `json:"global_timeout_sec"`
+	SingboxStartTimeoutMs    int      `json:"singbox_start_timeout_ms"`
+	SingboxStartIntervalMs   int      `json:"singbox_start_interval_ms"`
+	HTTPRequestTimeoutMs     int      `json:"http_request_timeout_ms"`
+	HTTPDialTimeoutMs        int      `json:"http_dial_timeout_ms"`
+	HTTPResponseTimeoutMs    int      `json:"http_response_timeout_ms"`
+	PortCheckTimeoutMs       int      `json:"port_check_timeout_ms"`
+	MaxRetries               int      `json:"max_retries"`
+	BasePort                 int      `json:"base_port"`
+	BatchRestMs              int      `json:"batch_rest_ms"`
+	ProcessKillWaitMs        int      `json:"process_kill_wait_ms"`
+	FetchRetryCount          int      `json:"fetch_retry_count"`
+	FetchRetryDelayMs        int      `json:"fetch_retry_delay_ms"`
+	VlessSpecificTimeoutMs   int      `json:"vless_specific_timeout_ms"`
+	TestURLs                 []string `json:"test_urls"`
 }
 
 type OutputSettings struct {
@@ -160,10 +161,11 @@ var fetchHTTPClient = &http.Client{
 		DisableKeepAlives:     false,
 	},
 }
-
-// SNI replacement constants
 const sniHost = "127.0.0.1"
 const sniPort = 40443
+
+var nameCountMu sync.Mutex
+var nameCount = make(map[string]int)
 
 type protoStat struct {
 	mu         sync.Mutex
@@ -507,8 +509,7 @@ func isLikelyBase64(s string) bool {
 }
 
 func hasProtoPrefix(s string) bool {
-	protos := []string{"vmess://", "vless://", "trojan://", "ss://", "ssr://",
-		"hy2://", "hysteria2://", "hy://", "hysteria://", "tuic://"}
+
 	for _, p := range protos {
 		if strings.Contains(s, p) {
 			return true
@@ -756,7 +757,7 @@ func clashVMessToURI(p ClashProxy) string {
 	if err != nil {
 		return ""
 	}
-	return "vmess://" + base64.StdEncoding.EncodeToString(data)
+
 }
 
 func clashVLessToURI(p ClashProxy) string {
@@ -795,7 +796,6 @@ func clashVLessToURI(p ClashProxy) string {
 		q.Set("flow", p.Flow)
 	}
 
-	return fmt.Sprintf("vless://%s@%s:%s?%s#%s",
 		url.PathEscape(p.UUID), p.Server, portStr, q.Encode(), url.PathEscape(p.Name))
 }
 
@@ -817,7 +817,6 @@ func clashTrojanToURI(p ClashProxy) string {
 		q.Set("alpn", strings.Join(p.ALPN, ","))
 	}
 
-	return fmt.Sprintf("trojan://%s@%s:%s?%s#%s",
 		url.PathEscape(p.Password), p.Server, portStr, q.Encode(), url.PathEscape(p.Name))
 }
 
@@ -877,7 +876,6 @@ func clashSSToURI(p ClashProxy) string {
 		}
 	}
 
-	uri := fmt.Sprintf("ss://%s@%s:%s", userInfo, p.Server, portStr)
 	if len(q) > 0 {
 		uri += "?" + q.Encode()
 	}
@@ -914,7 +912,7 @@ func clashSSRToURI(p ClashProxy) string {
 		b64obfsParam, b64protoParam, b64name)
 
 	full := body + "/?" + params
-	return "ssr://" + base64.RawURLEncoding.EncodeToString([]byte(full))
+
 }
 
 func clashHy2ToURI(p ClashProxy) string {
@@ -937,7 +935,6 @@ func clashHy2ToURI(p ClashProxy) string {
 		q.Set("obfs-password", p.ObfsPassword)
 	}
 
-	return fmt.Sprintf("hy2://%s@%s:%s?%s#%s",
 		url.PathEscape(p.Password), p.Server, portStr, q.Encode(), url.PathEscape(p.Name))
 }
 
@@ -975,7 +972,6 @@ func clashHyToURI(p ClashProxy) string {
 		q.Set("protocol", p.Protocol)
 	}
 
-	return fmt.Sprintf("hy://%s@%s:%s?%s#%s",
 		url.PathEscape(auth), p.Server, portStr, q.Encode(), url.PathEscape(p.Name))
 }
 
@@ -1000,7 +996,6 @@ func clashTUICToURI(p ClashProxy) string {
 		q.Set("congestion_control", congestion)
 	}
 
-	return fmt.Sprintf("tuic://%s:%s@%s:%s?%s#%s",
 		url.PathEscape(p.UUID), url.PathEscape(password),
 		p.Server, portStr, q.Encode(), url.PathEscape(p.Name))
 }
@@ -1294,7 +1289,6 @@ func prepareOutputDirs() error {
 		"config/batches/v2ray",
 		"config/batches/clash",
 		"config/batches/clash_advanced",
-		// SNI output directories
 		"config/sni",
 		"config/sni/protocols",
 		"config/batches/sni_v2ray",
@@ -1426,7 +1420,6 @@ func fetchRaw(rawURL string, timeout time.Duration) fetchResult {
 	return fetchResult{url: rawURL, statusCode: resp.StatusCode, content: string(body)}
 }
 
-// failDetail holds per-protocol failure reason counts.
 type failDetail struct {
 	mu      sync.Mutex
 	reasons map[string]int
@@ -1444,7 +1437,7 @@ func validateAll(lines []string) []configResult {
 			continue
 		}
 		for _, proto := range cfg.Protocols {
-			if strings.HasPrefix(line, proto+"://") {
+
 				id := coreIdentity(line, proto)
 				if !seen[id] {
 					seen[id] = true
@@ -1648,13 +1641,13 @@ func validateAll(lines []string) []configResult {
 }
 
 func classifyFailReason(reason string) string {
-	// Strip full ANSI escape sequences (e.g. \x1b[31m...\x1b[0m)
+
 	stripANSI := func(s string) string {
 		var out strings.Builder
 		i := 0
 		for i < len(s) {
 			if s[i] == 0x1b && i+1 < len(s) && s[i+1] == '[' {
-				// skip until 'm' or other terminator
+
 				j := i + 2
 				for j < len(s) && !(s[j] >= 'A' && s[j] <= 'Z') && !(s[j] >= 'a' && s[j] <= 'z') {
 					j++
@@ -2165,19 +2158,14 @@ func toSingBoxOutbound(configURL, protocol string) (string, string) {
 	return "", "unsupported protocol: " + protocol
 }
 
-// sanitizeProxyURL cleans HTML entities, control chars, and resolves
-// recursively percent-encoded sequences (e.g. %25252525...XX → actual char).
-// This handles configs from Telegram/HTML sources that have been double- or
-// triple-encoded, such as UUIDs containing %252525...F0%25...9F...
 func sanitizeProxyURL(raw string) string {
-	// ── HTML entity decode ──────────────────────────────────────────────
+
 	raw = strings.ReplaceAll(raw, "&amp;", "&")
 	raw = strings.ReplaceAll(raw, "&lt;", "<")
 	raw = strings.ReplaceAll(raw, "&gt;", ">")
 	raw = strings.ReplaceAll(raw, "&quot;", `"`)
 	raw = strings.ReplaceAll(raw, "&#39;", "'")
 
-	// Strip spaces and control characters
 	raw = strings.Map(func(r rune) rune {
 		if r == ' ' || r == '\t' || r == '\r' || r == '\n' {
 			return -1
@@ -2185,26 +2173,21 @@ func sanitizeProxyURL(raw string) string {
 		return r
 	}, raw)
 
-	// ── Recursive percent-decode ────────────────────────────────────────
-	// Split at "://" to preserve the scheme, then decode only the rest.
-	// We iterate until stable (no more %25 sequences to unwrap).
-	schemeIdx := strings.Index(raw, "://")
 	if schemeIdx == -1 {
 		return raw
 	}
 	scheme := raw[:schemeIdx+3]
 	rest := raw[schemeIdx+3:]
 
-	// Iteratively unescape until no more %25 remain or value stops changing
 	const maxIter = 20
 	for i := 0; i < maxIter; i++ {
-		// Only continue decoding if there are still percent-encoded sequences
+
 		if !strings.Contains(rest, "%") {
 			break
 		}
 		decoded, err := url.QueryUnescape(rest)
 		if err != nil {
-			// If full unescape fails try PathUnescape (more lenient)
+
 			decoded, err = url.PathUnescape(rest)
 			if err != nil || decoded == rest {
 				break
@@ -2213,15 +2196,13 @@ func sanitizeProxyURL(raw string) string {
 		if decoded == rest {
 			break
 		}
-		// Safety: if after decoding we no longer have a valid host portion, stop
-		// (prevents over-decoding that destroys the URL structure)
+
 		if strings.ContainsAny(decoded, "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x0b\x0c\x0e\x0f") {
 			break
 		}
 		rest = decoded
 	}
 
-	// Re-assemble: separate fragment/query so we don't re-encode them
 	frag := ""
 	if fragIdx := strings.LastIndex(rest, "#"); fragIdx != -1 {
 		frag = rest[fragIdx:]
@@ -2310,7 +2291,7 @@ func parseVMessURItoD(data string) (map[string]interface{}, string) {
 }
 
 func parseVMess(raw string) (string, string) {
-	data := strings.TrimPrefix(raw, "vmess://")
+
 	if idx := strings.LastIndex(data, "#"); idx != -1 {
 		data = data[:idx]
 	}
@@ -2364,8 +2345,7 @@ func parseVMess(raw string) (string, string) {
 			atIdx := strings.Index(data, "@")
 			qIdx := strings.Index(data, "?")
 			if atIdx != -1 && (qIdx == -1 || atIdx < qIdx) {
-				sanitized := sanitizeProxyURL("vmess://" + data)
-				sanitized = strings.TrimPrefix(sanitized, "vmess://")
+
 				var parseErr string
 				d, parseErr = parseVMessURItoD(sanitized)
 				if parseErr != "" {
@@ -2591,7 +2571,7 @@ var singboxSupportedSSCiphers = map[string]bool{
 }
 
 func parseShadowsocks(raw string) (string, string) {
-	trimmed := strings.TrimPrefix(raw, "ss://")
+
 	if idx := strings.LastIndex(trimmed, "#"); idx != -1 {
 		trimmed = trimmed[:idx]
 	}
@@ -2744,7 +2724,7 @@ func ssParseUserAndHost(userPart, hostPart string) (method, password, server str
 }
 
 func parseHysteria2(raw string) (string, string) {
-	trimmed := strings.TrimPrefix(raw, "hy2://")
+
 	if i := strings.LastIndex(trimmed, "#"); i != -1 {
 		trimmed = trimmed[:i]
 	}
@@ -2863,7 +2843,7 @@ func parseTUIC(raw string) (string, string) {
 }
 
 func parseSSR(raw string) (string, string) {
-	trimmed := strings.TrimPrefix(raw, "ssr://")
+
 	if trimmed == "" {
 		return "", "empty ssr url"
 	}
@@ -2904,13 +2884,12 @@ func parseSSR(raw string) (string, string) {
 func coreIdentity(line, protocol string) string {
 	switch protocol {
 	case "vmess":
-		data := strings.TrimPrefix(line, "vmess://")
+
 		if idx := strings.LastIndex(data, "#"); idx != -1 {
 			data = data[:idx]
 		}
 		data = strings.TrimSpace(data)
 
-		// Try base64-JSON format first
 		if !strings.HasPrefix(data, "{") {
 			if decoded, err := decodeBase64([]byte(data)); err == nil {
 				var d struct {
@@ -2919,12 +2898,11 @@ func coreIdentity(line, protocol string) string {
 					ID   string      `json:"id"`
 				}
 				if json.Unmarshal([]byte(decoded), &d) == nil && d.Add != "" {
-					return fmt.Sprintf("vmess://%s:%v#%s", d.Add, d.Port, d.ID)
+
 				}
 			}
 		}
 
-		// JSON inline format
 		if strings.HasPrefix(data, "{") {
 			var d struct {
 				Add  string      `json:"add"`
@@ -2932,21 +2910,20 @@ func coreIdentity(line, protocol string) string {
 				ID   string      `json:"id"`
 			}
 			if json.Unmarshal([]byte(data), &d) == nil && d.Add != "" {
-				return fmt.Sprintf("vmess://%s:%v#%s", d.Add, d.Port, d.ID)
+
 			}
 		}
 
-		// URI format: vmess://uuid@host:port?...
 		if atIdx := strings.Index(data, "@"); atIdx != -1 {
 			u, err := url.Parse("vmess://" + data)
 			if err == nil && u.Hostname() != "" {
-				return fmt.Sprintf("vmess://%s:%s#%s", u.Hostname(), u.Port(), u.User.Username())
+
 			}
 		}
 
 		return line
 	case "ssr":
-		data := strings.TrimPrefix(line, "ssr://")
+
 		if idx := strings.LastIndex(data, "#"); idx != -1 {
 			data = data[:idx]
 		}
@@ -2958,21 +2935,15 @@ func coreIdentity(line, protocol string) string {
 		if len(parts) < 2 {
 			return line
 		}
-		return fmt.Sprintf("ssr://%s:%s", parts[0], parts[1])
+
 	default:
 		u, err := url.Parse(sanitizeProxyURL(line))
 		if err != nil || u.Hostname() == "" {
 			return line
 		}
-		return fmt.Sprintf("%s://%s@%s:%s", protocol, u.User.String(), u.Hostname(), u.Port())
+
 	}
 }
-
-// ── SNI Config Conversion ────────────────────────────────────────────────────
-//
-// toSNIConfig replaces the server address and port in a proxy URI with
-// sniHost (127.0.0.1) and sniPort (40443), preserving all other parameters
-// (TLS, transport, SNI, etc.) intact.
 // The SNI field (server_name/sni/peer) is kept as-is so the client still
 // sends the correct TLS SNI during handshake.
 // Returns "" if the config cannot be transformed.
@@ -2987,10 +2958,8 @@ func toSNIConfig(line, proto string) string {
 	}
 	return ""
 }
-
-// toSNIVMess handles the base64-JSON vmess format.
 func toSNIVMess(line string) string {
-	data := strings.TrimPrefix(line, "vmess://")
+
 	fragSuffix := ""
 	if idx := strings.LastIndex(data, "#"); idx != -1 {
 		fragSuffix = data[idx:]
@@ -3009,7 +2978,7 @@ func toSNIVMess(line string) string {
 		decoded, err := decodeBase64([]byte(data))
 		if err == nil {
 			if json.Unmarshal([]byte(decoded), &d) == nil {
-				// base64 JSON path
+
 			} else {
 				d = nil
 			}
@@ -3022,14 +2991,14 @@ func toSNIVMess(line string) string {
 	}
 
 	if isURI {
-		// URI format: replace host:port
+
 		atIdx := strings.LastIndex(data, "@")
 		if atIdx == -1 {
 			return ""
 		}
 		userPart := data[:atIdx]
 		rest := data[atIdx+1:]
-		// rest = host:port[?query]
+
 		qIdx := strings.Index(rest, "?")
 		hostPort := rest
 		querySuffix := ""
@@ -3037,9 +3006,8 @@ func toSNIVMess(line string) string {
 			hostPort = rest[:qIdx]
 			querySuffix = rest[qIdx:]
 		}
-		// Extract original host for SNI (keep in query if not already there)
 		_ = hostPort
-		return fmt.Sprintf("vmess://%s@%s:%d%s%s",
+
 			userPart, sniHost, sniPort, querySuffix, fragSuffix)
 	}
 
@@ -3047,11 +3015,9 @@ func toSNIVMess(line string) string {
 		return ""
 	}
 
-	// Replace add and port
 	d["add"] = sniHost
 	d["port"] = strconv.Itoa(sniPort)
 
-	// Rebuild base64 JSON
 	keys := make([]string, 0, len(d))
 	for k := range d {
 		keys = append(keys, k)
@@ -3070,69 +3036,59 @@ func toSNIVMess(line string) string {
 		buf.Write(vj)
 	}
 	buf.WriteByte('}')
-	return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes()) + fragSuffix
+
 }
 
-// toSNIGeneric handles URI-based protocols: vless, trojan, hy2, hy, tuic, ss.
-// It replaces host:port in the authority section while keeping query/fragment.
 func toSNIGeneric(line, proto string) string {
-	// Find scheme://
-	schemeEnd := strings.Index(line, "://")
+
 	if schemeEnd == -1 {
 		return ""
 	}
 	scheme := line[:schemeEnd+3]
 	rest := line[schemeEnd+3:]
 
-	// Split off fragment
 	frag := ""
 	if idx := strings.LastIndex(rest, "#"); idx != -1 {
 		frag = rest[idx:]
 		rest = rest[:idx]
 	}
-	// Split off query
+
 	query := ""
 	if idx := strings.Index(rest, "?"); idx != -1 {
 		query = rest[idx:]
 		rest = rest[:idx]
 	}
-	// rest is now: [userinfo@]host:port[/path]
-	// Split off path
+
 	path := ""
 	if idx := strings.Index(rest, "/"); idx != -1 {
 		path = rest[idx:]
 		rest = rest[:idx]
 	}
 
-	// Find last @ to separate userinfo from host:port
 	atIdx := strings.LastIndex(rest, "@")
 	var userInfo, hostPort string
 	if atIdx != -1 {
-		userInfo = rest[:atIdx+1] // includes "@"
+
 		hostPort = rest[atIdx+1:]
 	} else {
 		hostPort = rest
 	}
 
-	// Replace host:port — handle IPv6 brackets
 	newHostPort := fmt.Sprintf("%s:%d", sniHost, sniPort)
 	if strings.HasPrefix(hostPort, "[") {
-		// IPv6: [addr]:port — replace whole thing
+
 		newHostPort = fmt.Sprintf("%s:%d", sniHost, sniPort)
 	}
-	_ = hostPort // original value not needed further
 
 	return scheme + userInfo + newHostPort + path + query + frag
 }
-
-// toSNISSR handles the base64-encoded SSR format.
 func toSNISSR(line string) string {
-	trimmed := strings.TrimPrefix(line, "ssr://")
+
 	decoded, err := decodeBase64([]byte(trimmed))
 	if err != nil {
 		return ""
 	}
-	// Format: host:port:protocol:method:obfs:b64pass[/?params]
+
 	params := ""
 	body := decoded
 	if i := strings.Index(decoded, "/?"); i != -1 {
@@ -3146,15 +3102,13 @@ func toSNISSR(line string) string {
 	if len(parts) < 6 {
 		return ""
 	}
-	// Replace host (parts[0]) and port (parts[1])
+
 	parts[0] = sniHost
 	parts[1] = strconv.Itoa(sniPort)
 	newBody := strings.Join(parts, ":")
 	newFull := newBody + params
-	return "ssr://" + base64.RawURLEncoding.EncodeToString([]byte(newFull))
-}
 
-// ────────────────────────────────────────────────────────────────────────────
+}
 
 func writeOutputFiles(results []configResult) {
 	byProto := make(map[string][]string)
@@ -3163,8 +3117,6 @@ func writeOutputFiles(results []configResult) {
 	var all []string
 	var allClash []string
 	var allClashNames []string
-
-	// SNI variants
 	bySNIProto := make(map[string][]string)
 	bySNIProtoClash := make(map[string][]string)
 	bySNIProtoClashNames := make(map[string][]string)
@@ -3186,8 +3138,6 @@ func writeOutputFiles(results []configResult) {
 			byProtoClash[r.proto] = append(byProtoClash[r.proto], entry)
 			byProtoClashNames[r.proto] = append(byProtoClashNames[r.proto], cname)
 		}
-
-		// Build SNI variant
 		sniLine := toSNIConfig(r.line, r.proto)
 		if sniLine != "" {
 			sniNamed := renameTo(sniLine, r.proto, ownerName)
@@ -3203,7 +3153,6 @@ func writeOutputFiles(results []configResult) {
 		}
 	}
 
-	// ── Write original output files ──────────────────────────────────────────
 	writeFile(cfg.Output.MainFile, all)
 	for proto, lines := range byProto {
 		writeFile(filepath.Join(cfg.Output.ProtocolsDir, proto+".txt"), lines)
@@ -3221,8 +3170,6 @@ func writeOutputFiles(results []configResult) {
 			writeClashConfigAdvanced(filepath.Join(cfg.Output.ProtocolsDir, proto+"_clash_advanced.yaml"), entries, byProtoClashNames[proto])
 		}
 	}
-
-	// ── Write SNI output files ───────────────────────────────────────────────
 	sniDir := "config/sni"
 	sniProtosDir := "config/sni/protocols"
 
@@ -3255,7 +3202,6 @@ func writeBatchFiles(
 
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
 
-	// ── Original V2ray batches ────────────────────────────────────────────────
 	shuffledV2ray := make([]string, len(allV2ray))
 	copy(shuffledV2ray, allV2ray)
 	rng.Shuffle(len(shuffledV2ray), func(i, j int) { shuffledV2ray[i], shuffledV2ray[j] = shuffledV2ray[j], shuffledV2ray[i] })
@@ -3301,8 +3247,6 @@ func writeBatchFiles(
 			}
 		}
 	}
-
-	// ── SNI V2ray batches ─────────────────────────────────────────────────────
 	shuffledSNIV2ray := make([]string, len(allSNIV2ray))
 	copy(shuffledSNIV2ray, allSNIV2ray)
 	rng.Shuffle(len(shuffledSNIV2ray), func(i, j int) { shuffledSNIV2ray[i], shuffledSNIV2ray[j] = shuffledSNIV2ray[j], shuffledSNIV2ray[i] })
@@ -3415,7 +3359,7 @@ func configToClashYAML(line, proto, name string) (string, bool) {
 }
 
 func vmessClashYAML(raw, name string) (string, bool) {
-	data := strings.TrimPrefix(raw, "vmess://")
+
 	if idx := strings.LastIndex(data, "#"); idx != -1 {
 		data = data[:idx]
 	}
@@ -3575,7 +3519,7 @@ func trojanClashYAML(raw, name string) (string, bool) {
 }
 
 func ssClashYAML(raw, name string) (string, bool) {
-	trimmed := strings.TrimPrefix(raw, "ss://")
+
 	queryStr := ""
 	if idx := strings.Index(trimmed, "?"); idx != -1 {
 		qEnd := len(trimmed)
@@ -3689,7 +3633,7 @@ func parsePluginOpts(s string) map[string]string {
 }
 
 func hy2ClashYAML(raw, name string) (string, bool) {
-	trimmed := strings.TrimPrefix(raw, "hy2://")
+
 	if i := strings.LastIndex(trimmed, "#"); i != -1 {
 		trimmed = trimmed[:i]
 	}
@@ -3881,7 +3825,7 @@ func renameTo(config, protocol, newName string) string {
 						buf.Write(vj)
 					}
 					buf.WriteByte('}')
-					return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes())
+
 				}
 			}
 			if atIdx := strings.Index(data, "@"); atIdx != -1 {
@@ -3913,10 +3857,8 @@ func renameTo(config, protocol, newName string) string {
 				buf.Write(vj)
 			}
 			buf.WriteByte('}')
-			return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes())
-		}
 
-		return "vmess://" + data + "#" + url.PathEscape(newName)
+		}
 
 	default:
 		if idx := strings.Index(config, "#"); idx != -1 {
@@ -3952,12 +3894,6 @@ func min500(batchIdx, total int) int {
 	return end - start
 }
 
-
-
-
-// autoGenMarker is appended to README.md as a separator between the
-// user-written content and the auto-generated statistics/links section.
-// Everything from this marker onward is replaced on every run.
 const autoGenMarker = "<!-- AUTO-GENERATED: DO NOT EDIT BELOW THIS LINE -->\n"
 
 func writeSummary(results []configResult, failedLinks []string, duration float64, originalTotal int) {
@@ -3965,17 +3901,10 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	for _, r := range results {
 		byProtoOut[r.proto]++
 	}
-
-	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
-
-	// ── Build the auto-generated block ───────────────────────────────────────────
 	var gen strings.Builder
 	gen.WriteString(autoGenMarker)
 	gen.WriteString("\n")
 
-
-
-	// V2ray files
 	gen.WriteString("## V2ray\n\n")
 	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
 	fmt.Fprintf(&gen, "| All | %d | [all_configs.txt](%s/config/all_configs.txt) |\n", len(results), repoBase)
@@ -3986,9 +3915,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		}
 	}
 	gen.WriteString("\n---\n\n")
-
-
-	// SNI files
 	gen.WriteString("## SNI\n\n")
 	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
 	fmt.Fprintf(&gen, "| All | %d | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", len(results), repoBase)
@@ -4000,7 +3926,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	gen.WriteString("\n---\n\n")
 
-	// V2ray batch files
 	v2rayBatches := countBatchFiles("config/batches/v2ray")
 	if v2rayBatches > 0 {
 		gen.WriteString("##V2ray Batches\n\n")
@@ -4012,8 +3937,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		}
 		gen.WriteString("\n")
 	}
-
-	// SNI batch files
 	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
 	if sniV2rayBatches > 0 {
 		gen.WriteString("## SNI Batches\n\n")
@@ -4026,7 +3949,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		gen.WriteString("\n")
 	}
 
-		// Statistics
 	gen.WriteString("## Statistics\n\n")
 	totalIn, totalOut := 0, 0
 	fmt.Fprintf(&gen, "| Protocol | Tested | Valid | Pass%% |\n|---|---|---|---|\n")
@@ -4052,19 +3974,17 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	fmt.Fprintf(&gen, "| Time | %.2fs |\n\n", duration)
 	gen.WriteString("---\n\n")
 
-	// ── Read existing README.md and strip any previous auto-generated block ───────
 	existingContent := ""
 	if raw, err := os.ReadFile("read.md"); err == nil {
 		existing := string(raw)
 		if idx := strings.Index(existing, autoGenMarker); idx != -1 {
-			// Strip from marker onward; keep user-written content above it
+
 			existingContent = strings.TrimRight(existing[:idx], "\n\r ")
 		} else {
 			existingContent = strings.TrimRight(existing, "\n\r ")
 		}
 	}
 
-	// ── Write the final README.md ─────────────────────────────────────────────────
 	f, err := os.Create("README.md")
 	if err != nil {
 		fmt.Printf("❌ Cannot write README.md: %v\n", err)
@@ -4080,10 +4000,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	w.WriteString(gen.String())
 }
-
-
-
-
 
 func decodeBase64(encoded []byte) (string, error) {
 	s := strings.Map(func(r rune) rune {
