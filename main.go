@@ -4049,21 +4049,10 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	gen.WriteString("## Clash\n\n")
 	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [clash.yaml](%s/clash.yaml) |\n", len(results), repoBase)
+	fmt.Fprintf(&gen, "| All | %d | [clash.yaml](%s/config/clash.yaml) |\n", len(results), repoBase)
 	for _, p := range cfg.ProtocolOrder {
 		if n := byProtoOut[p]; n > 0 {
 			fmt.Fprintf(&gen, "| %s | %d | [%s_clash.yaml](%s/config/protocols/%s_clash.yaml) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	gen.WriteString("## Clash Advanced\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [clash_advanced.yaml](%s/clash_advanced.yaml) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_clash_advanced.yaml](%s/config/protocols/%s_clash_advanced.yaml) |\n",
 				strings.ToUpper(p), n, p, repoBase, p)
 		}
 	}
@@ -4075,17 +4064,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	for _, p := range cfg.ProtocolOrder {
 		if n := byProtoOut[p]; n > 0 {
 			fmt.Fprintf(&gen, "| %s | %d | [%s_clash_sni.yaml](%s/config/sni/protocols/%s_clash_sni.yaml) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	gen.WriteString("## Clash Advanced SNI\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [clash_advanced_sni.yaml](%s/config/sni/clash_advanced_sni.yaml) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_clash_advanced_sni.yaml](%s/config/sni/protocols/%s_clash_advanced_sni.yaml) |\n",
 				strings.ToUpper(p), n, p, repoBase, p)
 		}
 	}
@@ -4103,18 +4081,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		gen.WriteString("\n---\n\n")
 	}
 
-	gen.WriteString("## Clash Advanced Batches\n\n")
-	clashAdvBatches := countBatchFiles("config/batches/clash_advanced")
-	if clashAdvBatches > 0 {
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= clashAdvBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.yaml](%s/config/batches/clash_advanced/batch_%03d.yaml) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
-
 	gen.WriteString("## Clash SNI Batches\n\n")
 	clashSNIBatches := countBatchFiles("config/batches/sni_clash")
 	if clashSNIBatches > 0 {
@@ -4122,18 +4088,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		for i := 1; i <= clashSNIBatches; i++ {
 			cnt := min500(i, len(results))
 			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.yaml](%s/config/batches/sni_clash/batch_%03d.yaml) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
-
-	gen.WriteString("## Clash Advanced SNI Batches\n\n")
-	clashAdvSNIBatches := countBatchFiles("config/batches/sni_clash_advanced")
-	if clashAdvSNIBatches > 0 {
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= clashAdvSNIBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.yaml](%s/config/batches/sni_clash_advanced/batch_%03d.yaml) |\n",
 				i, cnt, i, repoBase, i)
 		}
 		gen.WriteString("\n---\n\n")
