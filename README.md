@@ -49,8 +49,8 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 236 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
-| VLESS | 236 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
+| All | 253 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
+| VLESS | 253 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
 
 ---
 
@@ -58,8 +58,8 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 236 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
-| VLESS | 236 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
+| All | 253 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
+| VLESS | 253 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
 
 ---
 
@@ -67,27 +67,27 @@
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 236 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_001.txt) |
+| 001 | 253 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_001.txt) |
 
 ## SNI Batches
 
 | Batch | Count | Link |
 |---|---|---|
-| 001 | 236 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_001.txt) |
+| 001 | 253 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_001.txt) |
 
 ## Statistics
 
 | Protocol | Tested | Valid | Pass% |
 |---|---|---|---|
-| VLESS | 2208 | 236 | 10.7% |
-| **Total** | **2208** | **236** | **10.7%** |
+| VLESS | 2208 | 253 | 11.5% |
+| **Total** | **2208** | **253** | **11.5%** |
 
 | Metric | Value |
 |---|---|
 | Fetched | 3139 |
 | Unique | 2208 |
-| Valid | 236 |
-| Time | 60.46s |
+| Valid | 253 |
+| Time | 101.26s |
 
 ---
 
