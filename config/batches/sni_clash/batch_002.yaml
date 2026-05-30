@@ -1,0 +1,509 @@
+name: "Standard"
+mixed-port: 7890
+socks-port: 7891
+port: 7892
+allow-lan: true
+bind-address: '*'
+mode: global
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+secret: ""
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+keep-alive-interval: 15
+
+profile:
+  store-selected: true
+  store-fake-ip: false
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:5353
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.local'
+    - '*.lan'
+    - '*.localhost'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - 'time.*'
+    - 'time.*.com'
+    - 'connectivitycheck.gstatic.com'
+    - 'detectportal.firefox.com'
+    - 'captive.apple.com'
+    - 'www.msftncsi.com'
+    - 'cp.cloudflare.com'
+  default-nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
+    - 8.8.8.8
+    - 8.8.4.4
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 208.67.220.220
+    - 94.140.14.14
+    - 94.140.15.15
+    - 64.6.64.6
+    - 64.6.65.6
+    - 84.200.69.80
+    - 84.200.70.40
+    - 76.76.19.19
+    - 76.223.122.150
+    - 8.26.56.26
+    - 8.20.247.20
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://dns.google/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.4.4/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://9.9.9.9/dns-query
+    - https://149.112.112.112/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://94.140.14.14/dns-query
+    - https://94.140.15.15/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://208.67.222.222/dns-query
+    - https://208.67.220.220/dns-query
+    - https://doh.comodo.com/dns-query
+    - https://8.26.56.26/dns-query
+    - https://8.20.247.20/dns-query
+    - https://doh.mullvad.net/dns-query
+    - https://doh.dns.mullvad.net/dns-query
+    - https://freedns.controld.com/p0
+    - https://freedns.controld.com/family
+    - tls://1.1.1.1:853
+    - tls://1.0.0.1:853
+    - tls://8.8.8.8:853
+    - tls://8.8.4.4:853
+    - tls://9.9.9.9:853
+    - tls://149.112.112.112:853
+    - tls://94.140.14.14:853
+    - tls://94.140.15.15:853
+    - tls://208.67.222.222:853
+    - tls://208.67.220.220:853
+    - tls://family-filter-dns.cleanbrowsing.org:853
+    - tls://adult-filter-dns.cleanbrowsing.org:853
+    - tls://security-filter-dns.cleanbrowsing.org:853
+    - 1.1.1.1
+    - 1.0.0.1
+    - 8.8.8.8
+    - 8.8.4.4
+    - 9.9.9.9
+    - 149.112.112.112
+    - 208.67.222.222
+    - 208.67.220.220
+    - 94.140.14.14
+    - 94.140.15.15
+    - 64.6.64.6
+    - 64.6.65.6
+    - 84.200.69.80
+    - 84.200.70.40
+    - 8.26.56.26
+    - 8.20.247.20
+    - 76.76.19.19
+    - 76.223.122.150
+    - 208.67.222.123
+    - 208.67.220.123
+    - 195.46.39.39
+    - 195.46.39.40
+    - 38.132.106.139
+    - 194.187.251.67
+
+proxies:
+  - name: "@DeltaKroneckerGithub_Clash_916"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "31969cf4-c1bb-4a3e-b42b-574dfb271c73"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "rus.scroogethebest.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "sbvKAdRy_0h33iRxgGwHAD1HC62WGwlkWwj0S5ptJEU"
+      short-id: "9c2378562188c3cb"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_118"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_908"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "f6431ff1-dec0-4a6c-be4a-ce917913b589"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_670"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "dd9b5b35-c3bb-4e26-8b26-daedffcb3921"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho"
+      short-id: "67fb"
+  - name: "@DeltaKroneckerGithub_Clash_92"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_954"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "1ebb7caf-8704-48de-adbb-30b0b821c650"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8"
+      short-id: "9eff19e0405a"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_256"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "1b43419a-b711-40d4-a0ee-eb5c73e60c92"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZSFjVI9pyqawgPY_0shmNRdTdwfBBFWRMPcrKIzyHSw"
+      short-id: "509d"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_992"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdnjs.com"
+    reality-opts:
+      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
+      short-id: "88ce6b586fcaf681"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_950"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "cc752a3e-1537-4e86-bb50-1b897bf7b33c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cyylr.eu.cc"
+    network: ws
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "cyylr.eu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_1016"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "60631e0f-7db6-4050-94f8-bf4127592e74"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "iNvigOraTEd-engInelD4f5u35Fw.wiNDLER.co.UK"
+    client-fingerprint: "chrome"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "parstoday.com.alef.ir.iribnews.ir.hamshahrionline.ir.alalamtv.net.kayhan.ir.irannewsdaily.com"
+  - name: "@DeltaKroneckerGithub_Clash_814"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "b5bd7d6d-5ab9-4965-bccc-32acdbc4f714"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_862"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sw1tzerl4nd.gxcore.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "127zCnB9vtae6HnpowaSW8eFqflCAaBV0iM1oKHBWwY"
+      short-id: "a1ab5a56bc42"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_758"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "cc752a3e-1537-4e86-bb50-1b897bf7b33c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "support.zoom.us.cyylr.eu.cc"
+    network: ws
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "support.zoom.us.cyylr.eu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_840"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "1b43419a-b711-40d4-a0ee-eb5c73e60c92"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "github.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "K1pl5IAOi7N5MUQIvv-35fQcpxgz9uLW5Dv45a2tmRc"
+      short-id: "50"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_302"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "296bbba2-b100-4d91-b8df-3fe03cc863c4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "CnFVrSvJ1Mhl_6QqKCCvXtEdlaJjN4MXWBkSswJ_gX0"
+      short-id: "106c"
+  - name: "@DeltaKroneckerGithub_Clash_100"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "18afb896-6e4b-403b-b804-714b09b517e5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.icloud.com"
+    reality-opts:
+      public-key: "tMEkGmuOsuS_cgZYpj2UYBKnni559FZd-poGnH82ck8"
+      short-id: "bfb7cb31"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_414"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "d4ca8f1f-45b2-486c-8944-b6524887e656"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "YJBjpcuIbJ02pKPB2BMI64i_29nMBTI9jo2gdLX8zQg"
+      short-id: "16ab14"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_698"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "e033ef6e-ab4b-47d4-a523-ff568d2c8dbb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_434"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "5a20b5d0-3a98-4792-9559-95f4e24277ec"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_102"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
+      short-id: "2001"
+  - name: "@DeltaKroneckerGithub_Clash_174"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "04600c5d-97ad-49fa-8eec-6c081f4981b0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ozon.ru"
+    reality-opts:
+      public-key: "-h15uIzFS1x8R-Qv6-g1fN7vI5REzBIUc0ev5zL11lE"
+      short-id: "0a"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_738"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "3495557c-8550-429f-83b6-a47d63a1ecfd"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.foxsports.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc"
+      short-id: "044ed87c34d6"
+    flow: "xtls-rprx-vision"
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Fallback"
+      - "Auto"
+      - "Load Balance"
+    
+
+  - name: "Load Balance"
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub_Clash_916"
+      - "@DeltaKroneckerGithub_Clash_118"
+      - "@DeltaKroneckerGithub_Clash_908"
+      - "@DeltaKroneckerGithub_Clash_670"
+      - "@DeltaKroneckerGithub_Clash_92"
+      - "@DeltaKroneckerGithub_Clash_954"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_992"
+      - "@DeltaKroneckerGithub_Clash_950"
+      - "@DeltaKroneckerGithub_Clash_1016"
+      - "@DeltaKroneckerGithub_Clash_814"
+      - "@DeltaKroneckerGithub_Clash_862"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_840"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_100"
+      - "@DeltaKroneckerGithub_Clash_414"
+      - "@DeltaKroneckerGithub_Clash_698"
+      - "@DeltaKroneckerGithub_Clash_434"
+      - "@DeltaKroneckerGithub_Clash_102"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_738"
+
+  - name: "Auto"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub_Clash_916"
+      - "@DeltaKroneckerGithub_Clash_118"
+      - "@DeltaKroneckerGithub_Clash_908"
+      - "@DeltaKroneckerGithub_Clash_670"
+      - "@DeltaKroneckerGithub_Clash_92"
+      - "@DeltaKroneckerGithub_Clash_954"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_992"
+      - "@DeltaKroneckerGithub_Clash_950"
+      - "@DeltaKroneckerGithub_Clash_1016"
+      - "@DeltaKroneckerGithub_Clash_814"
+      - "@DeltaKroneckerGithub_Clash_862"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_840"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_100"
+      - "@DeltaKroneckerGithub_Clash_414"
+      - "@DeltaKroneckerGithub_Clash_698"
+      - "@DeltaKroneckerGithub_Clash_434"
+      - "@DeltaKroneckerGithub_Clash_102"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_738"
+
+  - name: "Fallback"
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - "@DeltaKroneckerGithub_Clash_916"
+      - "@DeltaKroneckerGithub_Clash_118"
+      - "@DeltaKroneckerGithub_Clash_908"
+      - "@DeltaKroneckerGithub_Clash_670"
+      - "@DeltaKroneckerGithub_Clash_92"
+      - "@DeltaKroneckerGithub_Clash_954"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_992"
+      - "@DeltaKroneckerGithub_Clash_950"
+      - "@DeltaKroneckerGithub_Clash_1016"
+      - "@DeltaKroneckerGithub_Clash_814"
+      - "@DeltaKroneckerGithub_Clash_862"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_840"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_100"
+      - "@DeltaKroneckerGithub_Clash_414"
+      - "@DeltaKroneckerGithub_Clash_698"
+      - "@DeltaKroneckerGithub_Clash_434"
+      - "@DeltaKroneckerGithub_Clash_102"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_738"
+
+rules:
+  - MATCH,PROXY
