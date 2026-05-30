@@ -120,36 +120,7 @@ dns:
     - 194.187.251.67
 
 proxies:
-  - name: "@DeltaKroneckerGithub_427"
-    type: vmess
-    server: "uk.connfull.org"
-    port: 2053
-    uuid: "d64d52b1-144f-4bce-a6d7-1324de187b1b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "uk.connfull.org"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_429"
-    type: vmess
-    server: "185.248.33.173"
-    port: 43626
-    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_431"
+  - name: "@DeltaKroneckerGithub_Clash_415"
     type: vmess
     server: "gtm-sg-cc54q7d1q01.365cloud0285.com"
     port: 6001
@@ -157,183 +128,7 @@ proxies:
     alterId: 0
     cipher: "auto"
     udp: true
-  - name: "@DeltaKroneckerGithub_435"
-    type: vmess
-    server: "45.128.72.44"
-    port: 80
-    uuid: "a2170d39-140a-47f9-85b8-084078856c36"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/api/v1"
-  - name: "@DeltaKroneckerGithub_437"
-    type: vmess
-    server: "77.90.60.29"
-    port: 38927
-    uuid: "6d600864-32da-49fd-baf4-7df051762454"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_439"
-    type: vmess
-    server: "172.233.17.76"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 1
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_441"
-    type: vmess
-    server: "185.248.33.173"
-    port: 51064
-    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_443"
-    type: vmess
-    server: "82.198.246.9"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_445"
-    type: vmess
-    server: "165.154.195.38"
-    port: 35034
-    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_447"
-    type: vmess
-    server: "azmononline.konkuriran.sbs"
-    port: 2080
-    uuid: "cd682302-c9d7-4c0d-bada-52e7d652c22c"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_449"
-    type: vmess
-    server: "169.197.142.22"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_451"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_453"
-    type: vmess
-    server: "185.248.33.173"
-    port: 58200
-    uuid: "3786e67a-41eb-4b92-b31e-417e89493b93"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_455"
-    type: vmess
-    server: "109.61.109.204"
-    port: 16291
-    uuid: "3786e67a-41eb-4b92-b31e-417e89493b93"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_457"
-    type: vmess
-    server: "usaapp1.jisuyun.top"
-    port: 2053
-    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usaapp1.jisuyun.top"
-    network: ws
-    ws-opts:
-      path: "/usavm"
-      headers:
-        Host: "usaapp1.jisuyun.top"
-  - name: "@DeltaKroneckerGithub_459"
-    type: vmess
-    server: "v4.hdacd.com"
-    port: 30804
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_461"
-    type: vmess
-    server: "185.248.33.173"
-    port: 26536
-    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_463"
-    type: vmess
-    server: "67.220.95.3"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-  - name: "@DeltaKroneckerGithub_465"
+  - name: "@DeltaKroneckerGithub_Clash_417"
     type: vmess
     server: "185.248.33.173"
     port: 33648
@@ -350,281 +145,7 @@ proxies:
       path: "/speedtest"
       headers:
         Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_467"
-    type: vmess
-    server: "134.195.196.211"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_469"
-    type: vmess
-    server: "ro.connfull.org"
-    port: 2053
-    uuid: "9a6be41d-511a-4800-b828-368ca32dd56d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ro.connfull.org"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_471"
-    type: vmess
-    server: "47.239.172.165"
-    port: 666
-    uuid: "fuking-rootface"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "//@BullShit_iu telegramNadia"
-  - name: "@DeltaKroneckerGithub_473"
-    type: vmess
-    server: "109.61.109.204"
-    port: 56313
-    uuid: "6d600864-32da-49fd-baf4-7df051762454"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_475"
-    type: vmess
-    server: "v24.hdacd.com"
-    port: 30824
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_477"
-    type: vmess
-    server: "172.232.103.186"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_479"
-    type: vmess
-    server: "185.248.33.173"
-    port: 24241
-    uuid: "b2da9920-b0a7-4354-9e26-3833ab8d00d0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_481"
-    type: vmess
-    server: "109.61.109.204"
-    port: 22163
-    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_483"
-    type: vmess
-    server: "77.90.60.29"
-    port: 19657
-    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_485"
-    type: vmess
-    server: "77.90.60.29"
-    port: 23431
-    uuid: "3786e67a-41eb-4b92-b31e-417e89493b93"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_487"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_489"
-    type: vmess
-    server: "109.61.109.204"
-    port: 14487
-    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_491"
-    type: vmess
-    server: "82.198.246.233"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_493"
-    type: vmess
-    server: "82.198.246.250"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_495"
-    type: vmess
-    server: "77.90.60.29"
-    port: 45249
-    uuid: "b2da9920-b0a7-4354-9e26-3833ab8d00d0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_497"
-    type: vmess
-    server: "38.91.107.49"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_499"
-    type: vmess
-    server: "77.90.60.29"
-    port: 49032
-    uuid: "35f332d0-0b05-4cc6-91cb-ec0d4465055f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_501"
-    type: vmess
-    server: "v35.hdacd.com"
-    port: 30835
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_503"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "152.67.218.38"
-  - name: "@DeltaKroneckerGithub_505"
-    type: vmess
-    server: "165.140.216.141"
-    port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_507"
-    type: vmess
-    server: "38.114.123.42"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_510"
-    type: vmess
-    server: "82.198.246.37"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub_512"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "23.162.200.227"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-  - name: "@DeltaKroneckerGithub_514"
+  - name: "@DeltaKroneckerGithub_Clash_419"
     type: vmess
     server: "gtm-sg-cc54q7d1q01.365cloud0285.com"
     port: 6004
@@ -632,70 +153,15 @@ proxies:
     alterId: 0
     cipher: "auto"
     udp: true
-  - name: "@DeltaKroneckerGithub_516"
+  - name: "@DeltaKroneckerGithub_Clash_421"
     type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 0
     cipher: "auto"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "inna.cfd"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub_518"
-    type: vmess
-    server: "77.90.60.29"
-    port: 52463
-    uuid: "12929592-a7bd-41eb-ab4d-d804f76c4ff9"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_520"
-    type: vmess
-    server: "109.61.109.204"
-    port: 23941
-    uuid: "b2da9920-b0a7-4354-9e26-3833ab8d00d0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "imafake.locker"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/speedtest"
-      headers:
-        Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_522"
-    type: vmess
-    server: "45.15.170.237"
-    port: 80
-    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "pelang.org"
-  - name: "@DeltaKroneckerGithub_524"
+  - name: "@DeltaKroneckerGithub_Clash_423"
     type: vmess
     server: "109.61.109.204"
     port: 50222
@@ -712,7 +178,256 @@ proxies:
       path: "/speedtest"
       headers:
         Host: "imafake.locker"
-  - name: "@DeltaKroneckerGithub_526"
+  - name: "@DeltaKroneckerGithub_Clash_425"
+    type: vmess
+    server: "v4.hdacd.com"
+    port: 30804
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_427"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "23.162.200.227"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+  - name: "@DeltaKroneckerGithub_Clash_429"
+    type: vmess
+    server: "172.233.17.76"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 1
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_431"
+    type: vmess
+    server: "77.90.60.29"
+    port: 19657
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub_Clash_433"
+    type: vmess
+    server: "82.198.246.37"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_435"
+    type: vmess
+    server: "45.128.72.44"
+    port: 80
+    uuid: "a2170d39-140a-47f9-85b8-084078856c36"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api/v1"
+  - name: "@DeltaKroneckerGithub_Clash_437"
+    type: vmess
+    server: "82.198.246.9"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_439"
+    type: vmess
+    server: "v9.hdacd.com"
+    port: 30809
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_441"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub_Clash_443"
+    type: vmess
+    server: "azmononline.konkuriran.sbs"
+    port: 2080
+    uuid: "cd682302-c9d7-4c0d-bada-52e7d652c22c"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_445"
+    type: vmess
+    server: "185.248.33.173"
+    port: 26536
+    uuid: "54a0bf6d-f2b5-4b2a-942c-798fb129527e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub_Clash_447"
+    type: vmess
+    server: "109.61.109.204"
+    port: 56313
+    uuid: "6d600864-32da-49fd-baf4-7df051762454"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub_Clash_449"
+    type: vmess
+    server: "usaapp1.jisuyun.top"
+    port: 2053
+    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usaapp1.jisuyun.top"
+    network: ws
+    ws-opts:
+      path: "/usavm"
+      headers:
+        Host: "usaapp1.jisuyun.top"
+  - name: "@DeltaKroneckerGithub_Clash_451"
+    type: vmess
+    server: "67.220.95.3"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_453"
+    type: vmess
+    server: "uk.connfull.org"
+    port: 2053
+    uuid: "d64d52b1-144f-4bce-a6d7-1324de187b1b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "uk.connfull.org"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_455"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "152.67.218.38"
+  - name: "@DeltaKroneckerGithub_Clash_458"
+    type: vmess
+    server: "47.239.172.165"
+    port: 666
+    uuid: "fuking-rootface"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "//@BullShit_iu telegramNadia"
+  - name: "@DeltaKroneckerGithub_Clash_460"
+    type: vmess
+    server: "ro.connfull.org"
+    port: 2053
+    uuid: "9a6be41d-511a-4800-b828-368ca32dd56d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ro.connfull.org"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_462"
+    type: vmess
+    server: "45.15.170.237"
+    port: 80
+    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "pelang.org"
+  - name: "@DeltaKroneckerGithub_Clash_464"
+    type: vmess
+    server: "169.197.142.22"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_466"
+    type: vmess
+    server: "38.91.107.49"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_468"
+    type: vmess
+    server: "172.232.103.186"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_470"
     type: vmess
     server: "47.250.149.51"
     port: 50018
@@ -723,7 +438,64 @@ proxies:
     network: ws
     ws-opts:
       path: "/9665280c"
-  - name: "@DeltaKroneckerGithub_528"
+  - name: "@DeltaKroneckerGithub_Clash_472"
+    type: vmess
+    server: "134.195.196.211"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_474"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_476"
+    type: vmess
+    server: "82.198.246.233"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_478"
+    type: vmess
+    server: "v36.hdacd.com"
+    port: 30836
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_480"
+    type: vmess
+    server: "77.90.60.29"
+    port: 38927
+    uuid: "6d600864-32da-49fd-baf4-7df051762454"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "imafake.locker"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/speedtest"
+      headers:
+        Host: "imafake.locker"
+  - name: "@DeltaKroneckerGithub_Clash_484"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_486"
     type: vmess
     server: "pl.connfull.org"
     port: 2053
@@ -735,6 +507,30 @@ proxies:
     skip-cert-verify: true
     servername: "pl.connfull.org"
     client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_488"
+    type: vmess
+    server: "38.114.123.42"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_490"
+    type: vmess
+    server: "v35.hdacd.com"
+    port: 30835
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_492"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -753,56 +549,44 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_427"
-      - "@DeltaKroneckerGithub_429"
-      - "@DeltaKroneckerGithub_431"
-      - "@DeltaKroneckerGithub_435"
-      - "@DeltaKroneckerGithub_437"
-      - "@DeltaKroneckerGithub_439"
-      - "@DeltaKroneckerGithub_441"
-      - "@DeltaKroneckerGithub_443"
-      - "@DeltaKroneckerGithub_445"
-      - "@DeltaKroneckerGithub_447"
-      - "@DeltaKroneckerGithub_449"
-      - "@DeltaKroneckerGithub_451"
-      - "@DeltaKroneckerGithub_453"
-      - "@DeltaKroneckerGithub_455"
-      - "@DeltaKroneckerGithub_457"
-      - "@DeltaKroneckerGithub_459"
-      - "@DeltaKroneckerGithub_461"
-      - "@DeltaKroneckerGithub_463"
-      - "@DeltaKroneckerGithub_465"
-      - "@DeltaKroneckerGithub_467"
-      - "@DeltaKroneckerGithub_469"
-      - "@DeltaKroneckerGithub_471"
-      - "@DeltaKroneckerGithub_473"
-      - "@DeltaKroneckerGithub_475"
-      - "@DeltaKroneckerGithub_477"
-      - "@DeltaKroneckerGithub_479"
-      - "@DeltaKroneckerGithub_481"
-      - "@DeltaKroneckerGithub_483"
-      - "@DeltaKroneckerGithub_485"
-      - "@DeltaKroneckerGithub_487"
-      - "@DeltaKroneckerGithub_489"
-      - "@DeltaKroneckerGithub_491"
-      - "@DeltaKroneckerGithub_493"
-      - "@DeltaKroneckerGithub_495"
-      - "@DeltaKroneckerGithub_497"
-      - "@DeltaKroneckerGithub_499"
-      - "@DeltaKroneckerGithub_501"
-      - "@DeltaKroneckerGithub_503"
-      - "@DeltaKroneckerGithub_505"
-      - "@DeltaKroneckerGithub_507"
-      - "@DeltaKroneckerGithub_510"
-      - "@DeltaKroneckerGithub_512"
-      - "@DeltaKroneckerGithub_514"
-      - "@DeltaKroneckerGithub_516"
-      - "@DeltaKroneckerGithub_518"
-      - "@DeltaKroneckerGithub_520"
-      - "@DeltaKroneckerGithub_522"
-      - "@DeltaKroneckerGithub_524"
-      - "@DeltaKroneckerGithub_526"
-      - "@DeltaKroneckerGithub_528"
+      - "@DeltaKroneckerGithub_Clash_415"
+      - "@DeltaKroneckerGithub_Clash_417"
+      - "@DeltaKroneckerGithub_Clash_419"
+      - "@DeltaKroneckerGithub_Clash_421"
+      - "@DeltaKroneckerGithub_Clash_423"
+      - "@DeltaKroneckerGithub_Clash_425"
+      - "@DeltaKroneckerGithub_Clash_427"
+      - "@DeltaKroneckerGithub_Clash_429"
+      - "@DeltaKroneckerGithub_Clash_431"
+      - "@DeltaKroneckerGithub_Clash_433"
+      - "@DeltaKroneckerGithub_Clash_435"
+      - "@DeltaKroneckerGithub_Clash_437"
+      - "@DeltaKroneckerGithub_Clash_439"
+      - "@DeltaKroneckerGithub_Clash_441"
+      - "@DeltaKroneckerGithub_Clash_443"
+      - "@DeltaKroneckerGithub_Clash_445"
+      - "@DeltaKroneckerGithub_Clash_447"
+      - "@DeltaKroneckerGithub_Clash_449"
+      - "@DeltaKroneckerGithub_Clash_451"
+      - "@DeltaKroneckerGithub_Clash_453"
+      - "@DeltaKroneckerGithub_Clash_455"
+      - "@DeltaKroneckerGithub_Clash_458"
+      - "@DeltaKroneckerGithub_Clash_460"
+      - "@DeltaKroneckerGithub_Clash_462"
+      - "@DeltaKroneckerGithub_Clash_464"
+      - "@DeltaKroneckerGithub_Clash_466"
+      - "@DeltaKroneckerGithub_Clash_468"
+      - "@DeltaKroneckerGithub_Clash_470"
+      - "@DeltaKroneckerGithub_Clash_472"
+      - "@DeltaKroneckerGithub_Clash_474"
+      - "@DeltaKroneckerGithub_Clash_476"
+      - "@DeltaKroneckerGithub_Clash_478"
+      - "@DeltaKroneckerGithub_Clash_480"
+      - "@DeltaKroneckerGithub_Clash_484"
+      - "@DeltaKroneckerGithub_Clash_486"
+      - "@DeltaKroneckerGithub_Clash_488"
+      - "@DeltaKroneckerGithub_Clash_490"
+      - "@DeltaKroneckerGithub_Clash_492"
 
   - name: "Auto"
     type: url-test
@@ -811,56 +595,44 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_427"
-      - "@DeltaKroneckerGithub_429"
-      - "@DeltaKroneckerGithub_431"
-      - "@DeltaKroneckerGithub_435"
-      - "@DeltaKroneckerGithub_437"
-      - "@DeltaKroneckerGithub_439"
-      - "@DeltaKroneckerGithub_441"
-      - "@DeltaKroneckerGithub_443"
-      - "@DeltaKroneckerGithub_445"
-      - "@DeltaKroneckerGithub_447"
-      - "@DeltaKroneckerGithub_449"
-      - "@DeltaKroneckerGithub_451"
-      - "@DeltaKroneckerGithub_453"
-      - "@DeltaKroneckerGithub_455"
-      - "@DeltaKroneckerGithub_457"
-      - "@DeltaKroneckerGithub_459"
-      - "@DeltaKroneckerGithub_461"
-      - "@DeltaKroneckerGithub_463"
-      - "@DeltaKroneckerGithub_465"
-      - "@DeltaKroneckerGithub_467"
-      - "@DeltaKroneckerGithub_469"
-      - "@DeltaKroneckerGithub_471"
-      - "@DeltaKroneckerGithub_473"
-      - "@DeltaKroneckerGithub_475"
-      - "@DeltaKroneckerGithub_477"
-      - "@DeltaKroneckerGithub_479"
-      - "@DeltaKroneckerGithub_481"
-      - "@DeltaKroneckerGithub_483"
-      - "@DeltaKroneckerGithub_485"
-      - "@DeltaKroneckerGithub_487"
-      - "@DeltaKroneckerGithub_489"
-      - "@DeltaKroneckerGithub_491"
-      - "@DeltaKroneckerGithub_493"
-      - "@DeltaKroneckerGithub_495"
-      - "@DeltaKroneckerGithub_497"
-      - "@DeltaKroneckerGithub_499"
-      - "@DeltaKroneckerGithub_501"
-      - "@DeltaKroneckerGithub_503"
-      - "@DeltaKroneckerGithub_505"
-      - "@DeltaKroneckerGithub_507"
-      - "@DeltaKroneckerGithub_510"
-      - "@DeltaKroneckerGithub_512"
-      - "@DeltaKroneckerGithub_514"
-      - "@DeltaKroneckerGithub_516"
-      - "@DeltaKroneckerGithub_518"
-      - "@DeltaKroneckerGithub_520"
-      - "@DeltaKroneckerGithub_522"
-      - "@DeltaKroneckerGithub_524"
-      - "@DeltaKroneckerGithub_526"
-      - "@DeltaKroneckerGithub_528"
+      - "@DeltaKroneckerGithub_Clash_415"
+      - "@DeltaKroneckerGithub_Clash_417"
+      - "@DeltaKroneckerGithub_Clash_419"
+      - "@DeltaKroneckerGithub_Clash_421"
+      - "@DeltaKroneckerGithub_Clash_423"
+      - "@DeltaKroneckerGithub_Clash_425"
+      - "@DeltaKroneckerGithub_Clash_427"
+      - "@DeltaKroneckerGithub_Clash_429"
+      - "@DeltaKroneckerGithub_Clash_431"
+      - "@DeltaKroneckerGithub_Clash_433"
+      - "@DeltaKroneckerGithub_Clash_435"
+      - "@DeltaKroneckerGithub_Clash_437"
+      - "@DeltaKroneckerGithub_Clash_439"
+      - "@DeltaKroneckerGithub_Clash_441"
+      - "@DeltaKroneckerGithub_Clash_443"
+      - "@DeltaKroneckerGithub_Clash_445"
+      - "@DeltaKroneckerGithub_Clash_447"
+      - "@DeltaKroneckerGithub_Clash_449"
+      - "@DeltaKroneckerGithub_Clash_451"
+      - "@DeltaKroneckerGithub_Clash_453"
+      - "@DeltaKroneckerGithub_Clash_455"
+      - "@DeltaKroneckerGithub_Clash_458"
+      - "@DeltaKroneckerGithub_Clash_460"
+      - "@DeltaKroneckerGithub_Clash_462"
+      - "@DeltaKroneckerGithub_Clash_464"
+      - "@DeltaKroneckerGithub_Clash_466"
+      - "@DeltaKroneckerGithub_Clash_468"
+      - "@DeltaKroneckerGithub_Clash_470"
+      - "@DeltaKroneckerGithub_Clash_472"
+      - "@DeltaKroneckerGithub_Clash_474"
+      - "@DeltaKroneckerGithub_Clash_476"
+      - "@DeltaKroneckerGithub_Clash_478"
+      - "@DeltaKroneckerGithub_Clash_480"
+      - "@DeltaKroneckerGithub_Clash_484"
+      - "@DeltaKroneckerGithub_Clash_486"
+      - "@DeltaKroneckerGithub_Clash_488"
+      - "@DeltaKroneckerGithub_Clash_490"
+      - "@DeltaKroneckerGithub_Clash_492"
 
   - name: "Fallback"
     type: fallback
@@ -868,56 +640,44 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_427"
-      - "@DeltaKroneckerGithub_429"
-      - "@DeltaKroneckerGithub_431"
-      - "@DeltaKroneckerGithub_435"
-      - "@DeltaKroneckerGithub_437"
-      - "@DeltaKroneckerGithub_439"
-      - "@DeltaKroneckerGithub_441"
-      - "@DeltaKroneckerGithub_443"
-      - "@DeltaKroneckerGithub_445"
-      - "@DeltaKroneckerGithub_447"
-      - "@DeltaKroneckerGithub_449"
-      - "@DeltaKroneckerGithub_451"
-      - "@DeltaKroneckerGithub_453"
-      - "@DeltaKroneckerGithub_455"
-      - "@DeltaKroneckerGithub_457"
-      - "@DeltaKroneckerGithub_459"
-      - "@DeltaKroneckerGithub_461"
-      - "@DeltaKroneckerGithub_463"
-      - "@DeltaKroneckerGithub_465"
-      - "@DeltaKroneckerGithub_467"
-      - "@DeltaKroneckerGithub_469"
-      - "@DeltaKroneckerGithub_471"
-      - "@DeltaKroneckerGithub_473"
-      - "@DeltaKroneckerGithub_475"
-      - "@DeltaKroneckerGithub_477"
-      - "@DeltaKroneckerGithub_479"
-      - "@DeltaKroneckerGithub_481"
-      - "@DeltaKroneckerGithub_483"
-      - "@DeltaKroneckerGithub_485"
-      - "@DeltaKroneckerGithub_487"
-      - "@DeltaKroneckerGithub_489"
-      - "@DeltaKroneckerGithub_491"
-      - "@DeltaKroneckerGithub_493"
-      - "@DeltaKroneckerGithub_495"
-      - "@DeltaKroneckerGithub_497"
-      - "@DeltaKroneckerGithub_499"
-      - "@DeltaKroneckerGithub_501"
-      - "@DeltaKroneckerGithub_503"
-      - "@DeltaKroneckerGithub_505"
-      - "@DeltaKroneckerGithub_507"
-      - "@DeltaKroneckerGithub_510"
-      - "@DeltaKroneckerGithub_512"
-      - "@DeltaKroneckerGithub_514"
-      - "@DeltaKroneckerGithub_516"
-      - "@DeltaKroneckerGithub_518"
-      - "@DeltaKroneckerGithub_520"
-      - "@DeltaKroneckerGithub_522"
-      - "@DeltaKroneckerGithub_524"
-      - "@DeltaKroneckerGithub_526"
-      - "@DeltaKroneckerGithub_528"
+      - "@DeltaKroneckerGithub_Clash_415"
+      - "@DeltaKroneckerGithub_Clash_417"
+      - "@DeltaKroneckerGithub_Clash_419"
+      - "@DeltaKroneckerGithub_Clash_421"
+      - "@DeltaKroneckerGithub_Clash_423"
+      - "@DeltaKroneckerGithub_Clash_425"
+      - "@DeltaKroneckerGithub_Clash_427"
+      - "@DeltaKroneckerGithub_Clash_429"
+      - "@DeltaKroneckerGithub_Clash_431"
+      - "@DeltaKroneckerGithub_Clash_433"
+      - "@DeltaKroneckerGithub_Clash_435"
+      - "@DeltaKroneckerGithub_Clash_437"
+      - "@DeltaKroneckerGithub_Clash_439"
+      - "@DeltaKroneckerGithub_Clash_441"
+      - "@DeltaKroneckerGithub_Clash_443"
+      - "@DeltaKroneckerGithub_Clash_445"
+      - "@DeltaKroneckerGithub_Clash_447"
+      - "@DeltaKroneckerGithub_Clash_449"
+      - "@DeltaKroneckerGithub_Clash_451"
+      - "@DeltaKroneckerGithub_Clash_453"
+      - "@DeltaKroneckerGithub_Clash_455"
+      - "@DeltaKroneckerGithub_Clash_458"
+      - "@DeltaKroneckerGithub_Clash_460"
+      - "@DeltaKroneckerGithub_Clash_462"
+      - "@DeltaKroneckerGithub_Clash_464"
+      - "@DeltaKroneckerGithub_Clash_466"
+      - "@DeltaKroneckerGithub_Clash_468"
+      - "@DeltaKroneckerGithub_Clash_470"
+      - "@DeltaKroneckerGithub_Clash_472"
+      - "@DeltaKroneckerGithub_Clash_474"
+      - "@DeltaKroneckerGithub_Clash_476"
+      - "@DeltaKroneckerGithub_Clash_478"
+      - "@DeltaKroneckerGithub_Clash_480"
+      - "@DeltaKroneckerGithub_Clash_484"
+      - "@DeltaKroneckerGithub_Clash_486"
+      - "@DeltaKroneckerGithub_Clash_488"
+      - "@DeltaKroneckerGithub_Clash_490"
+      - "@DeltaKroneckerGithub_Clash_492"
 
 rules:
   - MATCH,PROXY
