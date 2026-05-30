@@ -59,68 +59,26 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - name: "@DeltaKroneckerGithub_Clash_162"
-=======
-  - name: "@DeltaKroneckerGithub_Clash_492"
+  - name: "@DeltaKroneckerGithub_Clash_708"
     type: trojan
-    server: "217.69.2.107"
-    port: 443
-    password: "YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh"
-    sni: "www.weavenet.click"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_494"
-    type: trojan
-    server: "172.64.152.23"
+    server: "www.ignitelimit.com"
     port: 443
     password: "humanity"
-    sni: "www.calmlunch.com"
+    sni: "www.ignitelimit.com"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_496"
+  - name: "@DeltaKroneckerGithub_Clash_710"
     type: trojan
-    server: "15.236.200.24"
+    server: "63.185.71.248"
     port: 22222
     password: "telegram-id-privatevpns"
     sni: "trojan.burgerip.co.uk"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_498"
-    type: trojan
-    server: "104.18.13.149"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_500"
-    type: trojan
-    server: "188.114.98.0"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_502"
+  - name: "@DeltaKroneckerGithub_Clash_712"
     type: trojan
     server: "104.17.150.76"
     port: 443
@@ -133,77 +91,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_504"
-    type: trojan
-    server: "8.6.112.6"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_506"
-    type: trojan
-    server: "185.137.157.254"
-    port: 443
-    password: "hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd"
-    sni: "www.directorypipeline.click"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_508"
-    type: trojan
-    server: "63.185.71.248"
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: "trojan.burgerip.co.uk"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_510"
-    type: trojan
-    server: "172.64.147.24"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub_Clash_512"
-    type: trojan
-    server: "162.159.17.189"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub_Clash_514"
-    type: trojan
-    server: "chatgpt.com"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub_Clash_516"
+  - name: "@DeltaKroneckerGithub_Clash_714"
     type: trojan
     server: "45.130.125.76"
     port: 443
@@ -217,97 +105,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_518"
-    type: trojan
-    server: "v3.dabache.top"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub_Clash_520"
-    type: trojan
-    server: "104.18.32.47"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub_Clash_522"
-    type: trojan
-    server: "185.18.250.245"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_524"
->>>>>>> Stashed changes
-=======
-  - name: "@DeltaKroneckerGithub_Clash_344"
->>>>>>> Stashed changes
-    type: trojan
-    server: "23.227.193.173"
-    port: 443
-    password: "AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ"
-    sni: "www.dataset-logger.click"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  - name: "@DeltaKroneckerGithub_Clash_164"
-=======
-  - name: "@DeltaKroneckerGithub_Clash_526"
-    type: trojan
-    server: "104.18.8.83"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_528"
-    type: trojan
-    server: "63.185.3.163"
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: "trojan.burgerip.co.uk"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_530"
-    type: trojan
-    server: "104.18.12.149"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub_Clash_532"
+  - name: "@DeltaKroneckerGithub_Clash_716"
     type: trojan
     server: "172.66.47.69"
     port: 443
@@ -320,154 +118,15 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub_Clash_534"
+  - name: "@DeltaKroneckerGithub_Clash_718"
     type: trojan
-    server: "www.calmlunch.com"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_536"
-    type: trojan
-    server: "www.ignitelimit.com"
-    port: 443
-    password: "humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "@DeltaKroneckerGithub_Clash_538"
->>>>>>> Stashed changes
-=======
-  - name: "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
-    type: trojan
-    server: "172.237.145.189"
-    port: 443
-    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
-    sni: "172.237.145.189"
-    skip-cert-verify: true
-    udp: true
-<<<<<<< Updated upstream
-=======
-  - name: "@DeltaKroneckerGithub_Clash_540"
-    type: trojan
-    server: "185.18.250.252"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_542"
-    type: trojan
-    server: "45.130.125.69"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_544"
-    type: trojan
-    server: "104.18.11.110"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub_Clash_546"
-    type: trojan
-    server: "15.237.10.72"
+    server: "63.185.3.163"
     port: 22222
     password: "telegram-id-privatevpns"
     sni: "trojan.burgerip.co.uk"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_548"
-    type: trojan
-    server: "sourceforge.net"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_550"
-    type: trojan
-    server: "104.20.42.250"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "ios"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_552"
-    type: trojan
-    server: "172.232.194.147"
-    port: 443
-    password: "G2qM_GHnAEpbuIp1mcZh3mGvVn3+rHrwNe"
-    sni: "172.232.194.147"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_554"
-    type: trojan
-    server: "www.multiplydose.com"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "@DeltaKroneckerGithub_Clash_556"
-    type: trojan
-    server: "104.16.7.70"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub_Clash_558"
+  - name: "@DeltaKroneckerGithub_Clash_720"
     type: trojan
     server: "104.20.6.134"
     port: 443
@@ -481,7 +140,20 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub_Clash_560"
+  - name: "@DeltaKroneckerGithub_Clash_722"
+    type: trojan
+    server: "104.18.32.47"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub_Clash_724"
     type: trojan
     server: "104.17.121.71"
     port: 443
@@ -494,33 +166,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_562"
-    type: trojan
-    server: "45.130.125.160"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub_Clash_564"
-    type: trojan
-    server: "216.24.57.7"
-    port: 443
-    password: "humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.ignitelimit.com"
-  - name: "@DeltaKroneckerGithub_Clash_566"
+  - name: "@DeltaKroneckerGithub_Clash_726"
     type: trojan
     server: "188.114.96.3"
     port: 443
@@ -533,7 +179,426 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.calmlunch.com"
->>>>>>> Stashed changes
+  - name: "@DeltaKroneckerGithub_Clash_728"
+    type: trojan
+    server: "v1.dabache.top"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub_Clash_730"
+    type: trojan
+    server: "172.237.145.189"
+    port: 443
+    password: "A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM"
+    sni: "172.237.145.189"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_732"
+    type: trojan
+    server: "8.6.112.6"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub_Clash_734"
+    type: trojan
+    server: "45.130.125.69"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub_Clash_736"
+    type: trojan
+    server: "15.236.200.24"
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_738"
+    type: trojan
+    server: "208.103.161.101"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub_Clash_740"
+    type: trojan
+    server: "185.18.250.245"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_742"
+    type: trojan
+    server: "162.159.17.189"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub_Clash_744"
+    type: trojan
+    server: "104.18.13.149"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub_Clash_746"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_748"
+    type: trojan
+    server: "www.calmlunch.com"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_750"
+    type: trojan
+    server: "104.18.139.67"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub_Clash_752"
+    type: trojan
+    server: "104.16.147.104"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub_Clash_754"
+    type: trojan
+    server: "216.24.57.7"
+    port: 443
+    password: "humanity"
+    sni: "www.ignitelimit.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
+  - name: "@DeltaKroneckerGithub_Clash_756"
+    type: trojan
+    server: "sourceforge.net"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub_Clash_758"
+    type: trojan
+    server: "172.64.147.24"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub_Clash_760"
+    type: trojan
+    server: "172.64.152.23"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_762"
+    type: trojan
+    server: "23.227.193.173"
+    port: 443
+    password: "AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ"
+    sni: "www.dataset-logger.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_764"
+    type: trojan
+    server: "104.16.7.70"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub_Clash_766"
+    type: trojan
+    server: "v3.dabache.top"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub_Clash_768"
+    type: trojan
+    server: "chatgpt.com"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub_Clash_770"
+    type: trojan
+    server: "45.130.125.160"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_772"
+    type: trojan
+    server: "217.69.2.107"
+    port: 443
+    password: "YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh"
+    sni: "www.weavenet.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_774"
+    type: trojan
+    server: "104.18.12.149"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub_Clash_776"
+    type: trojan
+    server: "104.18.8.83"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_778"
+    type: trojan
+    server: "www.multiplydose.com"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub_Clash_780"
+    type: trojan
+    server: "188.114.98.0"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub_Clash_782"
+    type: trojan
+    server: "104.18.11.110"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub_Clash_784"
+    type: trojan
+    server: "212.193.18.121"
+    port: 21936
+    password: "fHngvzC1ut#YqsV4X"
+    sni: "singingrobot.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_786"
+    type: trojan
+    server: "185.137.157.254"
+    port: 443
+    password: "hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd"
+    sni: "www.directorypipeline.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_788"
+    type: trojan
+    server: "65.20.90.225"
+    port: 443
+    password: "Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg"
+    sni: "www.sandbox-cloud.click"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_790"
+    type: trojan
+    server: "208.103.161.110"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub_Clash_792"
+    type: trojan
+    server: "172.232.194.147"
+    port: 443
+    password: "G2qM_GHnAEpbuIp1mcZh3mGvVn3+rHrwNe"
+    sni: "172.232.194.147"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_794"
+    type: trojan
+    server: "15.237.10.72"
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_796"
+    type: trojan
+    server: "104.20.42.250"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "ios"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -576,54 +641,51 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
   - name: "LB-CDN"
     type: load-balance
@@ -633,54 +695,51 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -690,54 +749,51 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
   - name: "FAST-CDN"
     type: url-test
@@ -746,54 +802,51 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -803,107 +856,101 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_162"
-      - "@DeltaKroneckerGithub_Clash_164"
-=======
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
->>>>>>> Stashed changes
-=======
-      - "@DeltaKroneckerGithub_Clash_344"
-      - "@DeltaKroneckerGithub_Clash_346"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_708"
+      - "@DeltaKroneckerGithub_Clash_710"
+      - "@DeltaKroneckerGithub_Clash_712"
+      - "@DeltaKroneckerGithub_Clash_714"
+      - "@DeltaKroneckerGithub_Clash_716"
+      - "@DeltaKroneckerGithub_Clash_718"
+      - "@DeltaKroneckerGithub_Clash_720"
+      - "@DeltaKroneckerGithub_Clash_722"
+      - "@DeltaKroneckerGithub_Clash_724"
+      - "@DeltaKroneckerGithub_Clash_726"
+      - "@DeltaKroneckerGithub_Clash_728"
+      - "@DeltaKroneckerGithub_Clash_730"
+      - "@DeltaKroneckerGithub_Clash_732"
+      - "@DeltaKroneckerGithub_Clash_734"
+      - "@DeltaKroneckerGithub_Clash_736"
+      - "@DeltaKroneckerGithub_Clash_738"
+      - "@DeltaKroneckerGithub_Clash_740"
+      - "@DeltaKroneckerGithub_Clash_742"
+      - "@DeltaKroneckerGithub_Clash_744"
+      - "@DeltaKroneckerGithub_Clash_746"
+      - "@DeltaKroneckerGithub_Clash_748"
+      - "@DeltaKroneckerGithub_Clash_750"
+      - "@DeltaKroneckerGithub_Clash_752"
+      - "@DeltaKroneckerGithub_Clash_754"
+      - "@DeltaKroneckerGithub_Clash_756"
+      - "@DeltaKroneckerGithub_Clash_758"
+      - "@DeltaKroneckerGithub_Clash_760"
+      - "@DeltaKroneckerGithub_Clash_762"
+      - "@DeltaKroneckerGithub_Clash_764"
+      - "@DeltaKroneckerGithub_Clash_766"
+      - "@DeltaKroneckerGithub_Clash_768"
+      - "@DeltaKroneckerGithub_Clash_770"
+      - "@DeltaKroneckerGithub_Clash_772"
+      - "@DeltaKroneckerGithub_Clash_774"
+      - "@DeltaKroneckerGithub_Clash_776"
+      - "@DeltaKroneckerGithub_Clash_778"
+      - "@DeltaKroneckerGithub_Clash_780"
+      - "@DeltaKroneckerGithub_Clash_782"
+      - "@DeltaKroneckerGithub_Clash_784"
+      - "@DeltaKroneckerGithub_Clash_786"
+      - "@DeltaKroneckerGithub_Clash_788"
+      - "@DeltaKroneckerGithub_Clash_790"
+      - "@DeltaKroneckerGithub_Clash_792"
+      - "@DeltaKroneckerGithub_Clash_794"
+      - "@DeltaKroneckerGithub_Clash_796"
 
 rules:
   - MATCH,PROXY-BEST
