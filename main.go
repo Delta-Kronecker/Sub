@@ -3182,7 +3182,6 @@ func writeOutputFiles(results []configResult) {
 	var allClash []string
 	var allClashNames []string
 
-	// SNI variants
 	bySNIProto := make(map[string][]string)
 	bySNIProtoClash := make(map[string][]string)
 	bySNIProtoClashNames := make(map[string][]string)
@@ -3190,14 +3189,16 @@ func writeOutputFiles(results []configResult) {
 	var allSNIClash []string
 	var allSNIClashNames []string
 
-	const ownerName = "@DeltaKroneckerGithub"
+	const v2rayBase = "@DeltaKroneckerGithub_V2ray"
+	const clashBase = "@DeltaKroneckerGithub_Clash"
 
 	for i, r := range results {
-		named := renameTo(r.line, r.proto, ownerName)
+		uniqueName := generateUniqueName(v2rayBase)
+		named := renameTo(r.line, r.proto, uniqueName)
 		all = append(all, named)
 		byProto[r.proto] = append(byProto[r.proto], named)
 
-		cname := generateUniqueName(ownerName)
+		cname := generateUniqueName(clashBase)
 		if entry, ok := configToClashYAML(r.line, r.proto, cname); ok {
 			allClash = append(allClash, entry)
 			allClashNames = append(allClashNames, cname)
@@ -3207,11 +3208,12 @@ func writeOutputFiles(results []configResult) {
 
 		sniLine := toSNIConfig(r.line, r.proto)
 		if sniLine != "" {
-			sniNamed := renameTo(sniLine, r.proto, ownerName)
+			sniUniqueName := generateUniqueName(v2rayBase)
+			sniNamed := renameTo(sniLine, r.proto, sniUniqueName)
 			allSNI = append(allSNI, sniNamed)
 			bySNIProto[r.proto] = append(bySNIProto[r.proto], sniNamed)
 
-			sniCname := generateUniqueName(ownerName)
+			sniCname := generateUniqueName(clashBase)
 			if sniEntry, ok := configToClashYAML(sniLine, r.proto, sniCname); ok {
 				allSNIClash = append(allSNIClash, sniEntry)
 				allSNIClashNames = append(allSNIClashNames, sniCname)
@@ -3974,6 +3976,13 @@ func min500(batchIdx, total int) int {
 
 
 
+
+
+
+
+
+
+
 // autoGenMarker is appended to README.md as a separator between the
 // user-written content and the auto-generated statistics/links section.
 // Everything from this marker onward is replaced on every run.
@@ -4145,6 +4154,11 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	w.WriteString(gen.String())
 }
+
+
+
+
+
 
 
 
@@ -4420,8 +4434,5 @@ func generateUniqueName(base string) string {
 	gNameCount[base]++
 	count := gNameCount[base]
 
-	if count == 1 {
-		return base
-	}
 	return base + "_" + strconv.Itoa(count)
 }
