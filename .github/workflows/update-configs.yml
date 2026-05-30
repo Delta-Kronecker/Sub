@@ -91,9 +91,6 @@ jobs:
             git config user.name "GitHub Actions"
             git config user.email "actions@github.com"
             
-            # Remove generated files before pull to avoid merge conflicts
-            rm -rf config/
-            rm -f README.md
             
             # Pull latest changes cleanly
             git pull origin main --rebase --autostash
