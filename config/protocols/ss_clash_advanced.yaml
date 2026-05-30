@@ -60,24 +60,50 @@ dns:
 
 proxies:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_114"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_156"
+>>>>>>> Stashed changes
     type: ss
-    server: "100.27.193.207"
-    port: 443
-    cipher: "aes-256-cfb"
-    password: "amazonskr05"
+    server: "r3mrcg00129437x.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_116"
+  - name: "@DeltaKroneckerGithub_Clash_158"
     type: ss
-    server: "108.181.0.177"
+    server: "108.181.126.122"
     port: 8388
     cipher: "chacha20-ietf-poly1305"
-    password: "G5p6ww4o67HB"
+    password: "CJmTCCx7Ltud"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_118"
+  - name: "@DeltaKroneckerGithub_Clash_160"
     type: ss
-    server: "71.19.148.74"
+    server: "82.38.31.199"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_162"
+    type: ss
+    server: "82.38.31.191"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_164"
+    type: ss
+    server: "112.213.102.188"
+    port: 41632
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_166"
+    type: ss
+    server: "141.98.101.182"
     port: 443
+<<<<<<< Updated upstream
 =======
   - name: "@DeltaKroneckerGithub_Clash_306"
     type: ss
@@ -96,61 +122,68 @@ proxies:
     udp: true
 <<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_120"
-    type: ss
-    server: "142.93.183.235"
-    port: 20683
-    cipher: "chacha20-ietf-poly1305"
-    password: "5vldsNMbQ8B4cKDK0sROwj"
+=======
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_122"
+  - name: "@DeltaKroneckerGithub_Clash_168"
+>>>>>>> Stashed changes
+    type: ss
+    server: "149.22.87.204"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_170"
     type: ss
     server: "149.22.95.183"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_124"
+  - name: "@DeltaKroneckerGithub_Clash_172"
     type: ss
-    server: "15.222.60.36"
-    port: 443
-    cipher: "aes-256-cfb"
-    password: "amazonskr05"
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_126"
-    type: ss
-    server: "173.244.56.9"
-    port: 443
-    cipher: "aes-128-gcm"
-    password: "shadowsocks"
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_128"
-    type: ss
-    server: "107.172.250.161"
-    port: 59556
+    server: "193.29.139.235"
+    port: 8080
     cipher: "chacha20-ietf-poly1305"
-    password: "QTmLViU4VEmuwbOxUw4IXd"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_130"
+  - name: "@DeltaKroneckerGithub_Clash_174"
+    type: ss
+    server: "71.19.148.74"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "gqkUCvmeOTghYJXF1YIuk5"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_176"
+    type: ss
+    server: "193.47.60.186"
+    port: 28687
+    cipher: "chacha20-ietf-poly1305"
+    password: "yKVMoB3AwiTEznpnoq2FYR"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_178"
+    type: ss
+    server: "193.29.139.157"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "4a2rfixophdjffa8KVA4Aa"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_180"
     type: ss
     server: "173.244.56.6"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_132"
+  - name: "@DeltaKroneckerGithub_Clash_182"
     type: ss
-    server: "149.28.255.6"
-    port: 816
-    cipher: "chacha20-ietf-poly1305"
-    password: "GyZ5Xo0ht41vYmW3H4"
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_134"
-    type: ss
-    server: "156.146.38.167"
+    server: "141.98.101.182"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_136"
     type: ss
     server: "156.146.38.170"
@@ -283,6 +316,9 @@ proxies:
     password: "amazonskr05"
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_156"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_184"
+>>>>>>> Stashed changes
     type: ss
     server: "tinkered-pennies-puppies.freesocks.work"
     port: 443
@@ -294,6 +330,7 @@ proxies:
     cipher: "2022-blake3-aes-256-gcm"
     password: "NWRbLv+NIz5+zssu7nxk+fCw7wDHYLFbWy4m3Ey7Oo0=:MIedpwLQ84+CGETW0tfC0TR8HVAsw5A1sI+Lj+0iEyk="
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_332"
     type: ss
     server: "108.181.0.177"
@@ -309,12 +346,65 @@ proxies:
     password: "gqkUCvmeOTghYJXF1YIuk5"
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_336"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_186"
+    type: ss
+    server: "r3mrcg001269pz2.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_188"
+    type: ss
+    server: "35.183.96.211"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_190"
+    type: ss
+    server: "149.22.87.240"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_192"
+    type: ss
+    server: "82.38.31.184"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_194"
+    type: ss
+    server: "216.250.97.82"
+    port: 38388
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_196"
+    type: ss
+    server: "hackney-latest-strike.freesocks.work"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "XUMTygEM1jVYIvysXKqA5T"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_198"
+    type: ss
+    server: "82.38.31.194"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_200"
+>>>>>>> Stashed changes
     type: ss
     server: "82.38.31.155"
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_338"
     type: ss
     server: "57.129.121.230"
@@ -325,6 +415,338 @@ proxies:
     udp: true
 <<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_158"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_202"
+    type: ss
+    server: "141.98.101.182"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_204"
+    type: ss
+    server: "63.180.239.185"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_206"
+    type: ss
+    server: "r3mrcg001287h3p.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_208"
+    type: ss
+    server: "109.201.152.181"
+    port: 443
+    cipher: "aes-128-cfb"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_210"
+    type: ss
+    server: "82.38.31.176"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_212"
+    type: ss
+    server: "82.38.31.205"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_214"
+    type: ss
+    server: "13.218.172.80"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_216"
+    type: ss
+    server: "82.38.31.35"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_218"
+    type: ss
+    server: "series-a1.samanehha.co"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_220"
+    type: ss
+    server: "82.38.31.190"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_222"
+    type: ss
+    server: "82.38.31.186"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_224"
+    type: ss
+    server: "193.29.139.235"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_226"
+    type: ss
+    server: "156.146.38.170"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_228"
+    type: ss
+    server: "15.157.68.13"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_230"
+    type: ss
+    server: "82.38.31.218"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_232"
+    type: ss
+    server: "147.90.234.133"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "hbGrpfvNrJsUmKmPbR3iY2"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_234"
+    type: ss
+    server: "r3mrcg001269pz2.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_236"
+    type: ss
+    server: "91.107.247.25"
+    port: 8083
+    cipher: "2022-blake3-aes-256-gcm"
+    password: "NWRbLv+NIz5+zssu7nxk+fCw7wDHYLFbWy4m3Ey7Oo0=:MIedpwLQ84+CGETW0tfC0TR8HVAsw5A1sI+Lj+0iEyk="
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_238"
+    type: ss
+    server: "193.29.139.151"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_240"
+    type: ss
+    server: "37.19.198.243"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_242"
+    type: ss
+    server: "193.29.139.157"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "4a2rfixophdjffa8KVA4Aa"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_244"
+    type: ss
+    server: "107.172.250.161"
+    port: 59556
+    cipher: "chacha20-ietf-poly1305"
+    password: "QTmLViU4VEmuwbOxUw4IXd"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_246"
+    type: ss
+    server: "173.244.56.6"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_248"
+    type: ss
+    server: "149.22.87.241"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_250"
+    type: ss
+    server: "193.29.139.179"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "cvII85TrW6n0OGyfpHVS1u"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_252"
+    type: ss
+    server: "94.156.250.148"
+    port: 7001
+    cipher: "aes-256-gcm"
+    password: "RexnBgU7EV5ADxG"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_254"
+    type: ss
+    server: "156.146.38.169"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_256"
+    type: ss
+    server: "16.52.154.170"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_258"
+    type: ss
+    server: "193.29.139.199"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "QCXDxuDlTTMD7jtgHUjIoj"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_260"
+    type: ss
+    server: "37.19.198.244"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_262"
+    type: ss
+    server: "108.181.0.177"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "G5p6ww4o67HB"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_264"
+    type: ss
+    server: "193.29.139.151"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_266"
+    type: ss
+    server: "193.29.139.217"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "cvII85TrW6n0OGyfpHVS1u"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_268"
+    type: ss
+    server: "103.106.228.175"
+    port: 8009
+    cipher: "aes-256-gcm"
+    password: "XKFKl2rULjIp74"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_270"
+    type: ss
+    server: "141.98.101.178"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_272"
+    type: ss
+    server: "193.29.139.204"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_274"
+    type: ss
+    server: "62.146.231.112"
+    port: 12012
+    cipher: "chacha20-ietf-poly1305"
+    password: "4e287631dc4fc8fc"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_276"
+    type: ss
+    server: "149.28.255.6"
+    port: 816
+    cipher: "chacha20-ietf-poly1305"
+    password: "GyZ5Xo0ht41vYmW3H4"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_278"
+    type: ss
+    server: "82.38.31.179"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_280"
+    type: ss
+    server: "193.29.139.217"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "QCXDxuDlTTMD7jtgHUjIoj"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_282"
+    type: ss
+    server: "82.38.31.149"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_284"
+    type: ss
+    server: "218.237.185.230"
+    port: 4652
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_286"
+    type: ss
+    server: "193.29.139.206"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "4a2rfixophdjffa8KVA4Aa"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_288"
+    type: ss
+    server: "195.93.253.240"
+    port: 14130
+    cipher: "chacha20-ietf-poly1305"
+    password: "5DJXRpmi3iyqxQ79PfKv3B"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_290"
+    type: ss
+    server: "82.38.31.217"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_292"
+    type: ss
+    server: "156.146.38.167"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_294"
+    type: ss
+    server: "r3mrcg001286ek2.cybervena.com"
+    port: 50099
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_296"
+>>>>>>> Stashed changes
     type: ss
     server: "35.183.129.131"
 =======
@@ -357,6 +779,7 @@ proxies:
     cipher: "aes-256-cfb"
     password: "amazonskr05"
     udp: true
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_160"
 =======
@@ -537,12 +960,30 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_398"
 >>>>>>> Stashed changes
+=======
+  - name: "@DeltaKroneckerGithub_Clash_298"
+>>>>>>> Stashed changes
     type: ss
-    server: "156.146.38.169"
+    server: "15.222.60.36"
+    port: 443
+    cipher: "aes-256-cfb"
+    password: "amazonskr05"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_300"
+    type: ss
+    server: "admin.c1.webramz.co"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_302"
+    type: ss
+    server: "173.244.56.9"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
   - name: "@DeltaKroneckerGithub_Clash_400"
@@ -560,12 +1001,37 @@ proxies:
     password: "1RWwXhwfAB5gAEozU4G2Pg"
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_404"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_304"
+    type: ss
+    server: "193.29.139.157"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "cvII85TrW6n0OGyfpHVS1u"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_306"
+    type: ss
+    server: "71.19.148.74"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "XUMTygEM1jVYIvysXKqA5T"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_308"
+    type: ss
+    server: "193.29.139.217"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "4a2rfixophdjffa8KVA4Aa"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_310"
+>>>>>>> Stashed changes
     type: ss
     server: "100.27.193.207"
     port: 443
     cipher: "aes-256-cfb"
     password: "amazonskr05"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_406"
     type: ss
     server: "154.46.31.106"
@@ -590,10 +1056,16 @@ proxies:
   - name: "@DeltaKroneckerGithub_Clash_412"
     type: ss
     server: "82.38.31.187"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_312"
+    type: ss
+    server: "82.38.31.208"
+>>>>>>> Stashed changes
     port: 8080
     cipher: "chacha20-ietf-poly1305"
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_414"
     type: ss
     server: "156.146.38.167"
@@ -735,12 +1207,16 @@ proxies:
     password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_454"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_314"
+>>>>>>> Stashed changes
     type: ss
     server: "149.22.87.240"
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_456"
     type: ss
     server: "51.15.23.63"
@@ -758,24 +1234,115 @@ proxies:
   - name: "@DeltaKroneckerGithub_Clash_460"
     type: ss
     server: "173.244.56.6"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_316"
+    type: ss
+    server: "37.19.198.236"
+>>>>>>> Stashed changes
     port: 443
     cipher: "aes-128-gcm"
     password: "shadowsocks"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_462"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_318"
+    type: ss
+    server: "156.146.38.167"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_320"
+>>>>>>> Stashed changes
     type: ss
     server: "142.93.183.235"
     port: 20683
     cipher: "chacha20-ietf-poly1305"
     password: "5vldsNMbQ8B4cKDK0sROwj"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_464"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_322"
+    type: ss
+    server: "51.75.168.50"
+    port: 26179
+    cipher: "chacha20-ietf-poly1305"
+    password: "78b6e93e54225803"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_324"
+    type: ss
+    server: "71.19.148.74"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "gqkUCvmeOTghYJXF1YIuk5"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_326"
+    type: ss
+    server: "37.19.198.160"
+    port: 443
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_328"
+    type: ss
+    server: "108.181.58.239"
+    port: 8388
+    cipher: "chacha20-ietf-poly1305"
+    password: "CJmTCCx7Ltud"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_330"
+    type: ss
+    server: "82.38.31.187"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_332"
+    type: ss
+    server: "p141.panda001.net"
+    port: 4652
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_334"
+    type: ss
+    server: "admin.c1.havij.co"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "1kVr0KATIJI7mwOF"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_336"
+    type: ss
+    server: "221.139.79.57"
+    port: 13979
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_338"
+    type: ss
+    server: "series-a1.samanehha.co"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_340"
+    type: ss
+    server: "8.209.74.72"
+    port: 20001
+    cipher: "chacha20-ietf-poly1305"
+    password: "PWpjPo3tqhPN4yRZ"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_342"
+>>>>>>> Stashed changes
     type: ss
     server: "series-a2.samanehha.co"
     port: 443
     cipher: "chacha20-ietf-poly1305"
     password: "W74XFALLLuw6m5IA"
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_466"
     type: ss
     server: "38.180.216.114"
@@ -868,6 +1435,8 @@ proxies:
     password: "oZIoA69Q8yhcQV8ka3Pa3A"
     udp: true
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -911,6 +1480,7 @@ proxy-groups:
     lazy: true
     proxies:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
@@ -936,6 +1506,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -955,6 +1602,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1029,6 +1677,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_486"
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   - name: "LB-CDN"
@@ -1040,6 +1690,7 @@ proxy-groups:
     lazy: true
     proxies:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
@@ -1065,6 +1716,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -1084,6 +1812,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1158,6 +1887,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_486"
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
@@ -1169,6 +1900,7 @@ proxy-groups:
     lazy: true
     proxies:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
@@ -1194,6 +1926,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -1213,6 +2022,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1288,6 +2098,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
   - name: "FAST-CDN"
     type: url-test
@@ -1296,6 +2108,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
@@ -1322,6 +2135,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -1341,6 +2231,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1415,6 +2306,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_486"
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   # ── UDP group ─────────────────────────────────────────────────────────────
@@ -1426,6 +2319,7 @@ proxy-groups:
     lazy: true
     proxies:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
@@ -1451,6 +2345,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -1470,6 +2441,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1545,11 +2517,14 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
@@ -1576,6 +2551,83 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_158"
       - "@DeltaKroneckerGithub_Clash_160"
 =======
+=======
+      - "@DeltaKroneckerGithub_Clash_156"
+      - "@DeltaKroneckerGithub_Clash_158"
+      - "@DeltaKroneckerGithub_Clash_160"
+      - "@DeltaKroneckerGithub_Clash_162"
+      - "@DeltaKroneckerGithub_Clash_164"
+      - "@DeltaKroneckerGithub_Clash_166"
+      - "@DeltaKroneckerGithub_Clash_168"
+      - "@DeltaKroneckerGithub_Clash_170"
+      - "@DeltaKroneckerGithub_Clash_172"
+      - "@DeltaKroneckerGithub_Clash_174"
+      - "@DeltaKroneckerGithub_Clash_176"
+      - "@DeltaKroneckerGithub_Clash_178"
+      - "@DeltaKroneckerGithub_Clash_180"
+      - "@DeltaKroneckerGithub_Clash_182"
+      - "@DeltaKroneckerGithub_Clash_184"
+      - "@DeltaKroneckerGithub_Clash_186"
+      - "@DeltaKroneckerGithub_Clash_188"
+      - "@DeltaKroneckerGithub_Clash_190"
+      - "@DeltaKroneckerGithub_Clash_192"
+      - "@DeltaKroneckerGithub_Clash_194"
+      - "@DeltaKroneckerGithub_Clash_196"
+      - "@DeltaKroneckerGithub_Clash_198"
+      - "@DeltaKroneckerGithub_Clash_200"
+      - "@DeltaKroneckerGithub_Clash_202"
+      - "@DeltaKroneckerGithub_Clash_204"
+      - "@DeltaKroneckerGithub_Clash_206"
+      - "@DeltaKroneckerGithub_Clash_208"
+      - "@DeltaKroneckerGithub_Clash_210"
+      - "@DeltaKroneckerGithub_Clash_212"
+      - "@DeltaKroneckerGithub_Clash_214"
+      - "@DeltaKroneckerGithub_Clash_216"
+      - "@DeltaKroneckerGithub_Clash_218"
+      - "@DeltaKroneckerGithub_Clash_220"
+      - "@DeltaKroneckerGithub_Clash_222"
+      - "@DeltaKroneckerGithub_Clash_224"
+      - "@DeltaKroneckerGithub_Clash_226"
+      - "@DeltaKroneckerGithub_Clash_228"
+      - "@DeltaKroneckerGithub_Clash_230"
+      - "@DeltaKroneckerGithub_Clash_232"
+      - "@DeltaKroneckerGithub_Clash_234"
+      - "@DeltaKroneckerGithub_Clash_236"
+      - "@DeltaKroneckerGithub_Clash_238"
+      - "@DeltaKroneckerGithub_Clash_240"
+      - "@DeltaKroneckerGithub_Clash_242"
+      - "@DeltaKroneckerGithub_Clash_244"
+      - "@DeltaKroneckerGithub_Clash_246"
+      - "@DeltaKroneckerGithub_Clash_248"
+      - "@DeltaKroneckerGithub_Clash_250"
+      - "@DeltaKroneckerGithub_Clash_252"
+      - "@DeltaKroneckerGithub_Clash_254"
+      - "@DeltaKroneckerGithub_Clash_256"
+      - "@DeltaKroneckerGithub_Clash_258"
+      - "@DeltaKroneckerGithub_Clash_260"
+      - "@DeltaKroneckerGithub_Clash_262"
+      - "@DeltaKroneckerGithub_Clash_264"
+      - "@DeltaKroneckerGithub_Clash_266"
+      - "@DeltaKroneckerGithub_Clash_268"
+      - "@DeltaKroneckerGithub_Clash_270"
+      - "@DeltaKroneckerGithub_Clash_272"
+      - "@DeltaKroneckerGithub_Clash_274"
+      - "@DeltaKroneckerGithub_Clash_276"
+      - "@DeltaKroneckerGithub_Clash_278"
+      - "@DeltaKroneckerGithub_Clash_280"
+      - "@DeltaKroneckerGithub_Clash_282"
+      - "@DeltaKroneckerGithub_Clash_284"
+      - "@DeltaKroneckerGithub_Clash_286"
+      - "@DeltaKroneckerGithub_Clash_288"
+      - "@DeltaKroneckerGithub_Clash_290"
+      - "@DeltaKroneckerGithub_Clash_292"
+      - "@DeltaKroneckerGithub_Clash_294"
+      - "@DeltaKroneckerGithub_Clash_296"
+      - "@DeltaKroneckerGithub_Clash_298"
+      - "@DeltaKroneckerGithub_Clash_300"
+      - "@DeltaKroneckerGithub_Clash_302"
+      - "@DeltaKroneckerGithub_Clash_304"
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_306"
       - "@DeltaKroneckerGithub_Clash_308"
       - "@DeltaKroneckerGithub_Clash_310"
@@ -1595,6 +2647,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_338"
       - "@DeltaKroneckerGithub_Clash_340"
       - "@DeltaKroneckerGithub_Clash_342"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_344"
       - "@DeltaKroneckerGithub_Clash_346"
       - "@DeltaKroneckerGithub_Clash_348"
@@ -1669,6 +2722,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_486"
       - "@DeltaKroneckerGithub_Clash_488"
       - "@DeltaKroneckerGithub_Clash_490"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 rules:

@@ -125,9 +125,15 @@ proxies:
     server: "127.0.0.1"
     port: 40443
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+=======
+    uuid: "48437590-600b-4563-86fe-994d13eb3592"
+>>>>>>> Stashed changes
     udp: true
+    flow: "xtls-rprx-vision"
     tls: true
+<<<<<<< Updated upstream
     skip-cert-verify: true
     servername: "juzi.qea.ccwu.cc"
     network: ws
@@ -139,10 +145,19 @@ proxies:
     uuid: "16c6faa4-1162-49ca-acf7-059afdf1ecd3"
     udp: true
 >>>>>>> Stashed changes
+=======
+    skip-cert-verify: false
+    servername: "www.microsoft.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI"
+      short-id: "be0ce047"
+>>>>>>> Stashed changes
   - name: "@DeltaKroneckerGithub_Clash_4"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
     udp: true
@@ -161,10 +176,18 @@ proxies:
     skip-cert-verify: true
     servername: "uk1.fromblancwithlove.com"
 >>>>>>> Stashed changes
+=======
+    uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+>>>>>>> Stashed changes
   - name: "@DeltaKroneckerGithub_Clash_6"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     uuid: "1b536681-edf6-4d30-a908-d081ab83ec0e"
     udp: true
@@ -432,10 +455,15 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "juzi.qea.ccwu.cc"
+=======
+    uuid: "98f7d01d-e770-471f-80ff-8f480ad84f7c"
+    udp: true
+>>>>>>> Stashed changes
     network: ws
     ws-opts:
       path: "/"
       headers:
+<<<<<<< Updated upstream
         Host: "juzi.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub_Clash_10"
     type: vless
@@ -646,6 +674,10 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_76"
 >>>>>>> Stashed changes
+=======
+        Host: "divine-mode-ac41.amirss.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_8"
+>>>>>>> Stashed changes
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -660,6 +692,7 @@ proxies:
       path: "/"
       headers:
         Host: "freepol2.3r8sv.workers.dev"
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_16"
     type: vless
     server: "127.0.0.1"
@@ -726,6 +759,9 @@ proxies:
     reality-opts:
       public-key: "Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY"
   - name: "@DeltaKroneckerGithub_Clash_20"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_10"
+>>>>>>> Stashed changes
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -739,6 +775,75 @@ proxies:
       path: "/"
       headers:
         Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_12"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "cc752a3e-1537-4e86-bb50-1b897bf7b33c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cyylr.eu.cc"
+    client-fingerprint: "chrome"
+    alpn: ["http/1.1"]
+    network: ws
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "cyylr.eu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_14"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "d98e6ac5-e873-402a-bcce-78e2887c936b"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI"
+      short-id: "014c3d76dee82247"
+  - name: "@DeltaKroneckerGithub_Clash_16"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.sony.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU"
+      short-id: "0675732ab101"
+  - name: "@DeltaKroneckerGithub_Clash_18"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "2ac6e527-6410-48ce-b9ba-cc8135ee2a3b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fragrant-recipe-09f4.wopecuyubak61.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_20"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "4e93e8e6-8cc1-4a5b-b577-3d5bcae6ada0"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "FAiNT-beliEFst4dReAkTi.WINdler.Co.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "irdiplomacy.ir.rajanews.com.parstoday.com.donya-e-eqtesad.com.alalamtv.net.yjc.ir.tehrantimes.com"
   - name: "@DeltaKroneckerGithub_Clash_22"
 =======
     skip-cert-verify: true
@@ -768,6 +873,7 @@ proxies:
     server: "127.0.0.1"
     port: 40443
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     uuid: "44036b76-ecd4-488b-83ce-108d94583cf3"
 =======
     uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
@@ -791,15 +897,25 @@ proxies:
 <<<<<<< Updated upstream
     skip-cert-verify: true
     servername: "FAt-CORNEr1twsv3GlGF.WIndleR.Co.UK"
+=======
+    uuid: "1b536681-edf6-4d30-a908-d081ab83ec0e"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "xp.apple.com"
+>>>>>>> Stashed changes
     client-fingerprint: "chrome"
-    alpn: ["h2", "http/1.1"]
+    reality-opts:
+      public-key: "mAp9MUXYFKezyoMbySDsN73_k5VHcI9McPHh0Xdmojo"
+      short-id: "f5"
     network: grpc
     grpc-opts:
-      grpc-service-name: "farsnews.ir.mizanonline.com.eghtesadonline.com.tasnimnews.com.irdiplomacy.ir.sharghdaily.com.donya-e-eqtesad.com"
+      grpc-service-name: "grpc"
   - name: "@DeltaKroneckerGithub_Clash_26"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
 =======
     skip-cert-verify: false
     servername: "fuck.rkn"
@@ -1325,20 +1441,25 @@ proxies:
     port: 40443
 >>>>>>> Stashed changes
     uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+=======
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+>>>>>>> Stashed changes
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "juzi.qea.ccwu.cc"
     network: ws
     ws-opts:
       path: "/"
       headers:
+<<<<<<< Updated upstream
         Host: "juzi.qea.ccwu.cc"
 <<<<<<< Updated upstream
+=======
+        Host: "vms.lifetime02.workers.dev"
+>>>>>>> Stashed changes
   - name: "@DeltaKroneckerGithub_Clash_28"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
     uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
     udp: true
     network: grpc
@@ -1424,6 +1545,8 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
+=======
+>>>>>>> Stashed changes
     uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
     udp: true
     tls: true
@@ -1435,10 +1558,56 @@ proxies:
       headers:
 <<<<<<< Updated upstream
         Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_30"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "e221880c-0ada-4e89-a336-62c3b909f787"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "Old-CaREg74s0ugV9a.CaRboNblAcKBMw.ir"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "iranprimer.usip.org.entekhab.ir.presstv.ir.alef.ir.yjc.ir.presstv.ir.en.mehrnews.com"
+  - name: "@DeltaKroneckerGithub_Clash_32"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a5240468-dffe-4581-8ce7-6e6604d299d6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "verus-1uy.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "verus-1uy.pages.dev"
+  - name: "@DeltaKroneckerGithub_Clash_34"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "85a226ce-f082-4886-9173-a1ee7ec3d165"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "web.max.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "0paB9-U-QzEBoSQiOP161BPvc2PhWrfQ_5nbfk2AezM"
+      short-id: "a9766c"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
   - name: "@DeltaKroneckerGithub_Clash_36"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
     uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
     udp: true
     network: grpc
@@ -1457,16 +1626,37 @@ proxies:
     port: 40443
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
 >>>>>>> Stashed changes
+=======
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+>>>>>>> Stashed changes
     udp: true
     flow: "xtls-rprx-vision"
     tls: true
     skip-cert-verify: false
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     servername: "www.sony.com"
+=======
+    servername: "fuck.rkn"
+>>>>>>> Stashed changes
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU"
-      short-id: "0675732ab101"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_38"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "042c1f4d-1599-4816-b925-760cdabd5e9a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "magICAl-oRder668mk9ktrM.WindLEr.Co.Uk"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "snn.ir.kayhan.ir.entekhab.ir.yjc.ir.alalamtv.net.irandaily.ir.presstv.ir"
   - name: "@DeltaKroneckerGithub_Clash_40"
     type: vless
     server: "127.0.0.1"
@@ -1496,36 +1686,6 @@ proxies:
 <<<<<<< Updated upstream
         Host: "juzi.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub_Clash_42"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hhlfy.twiladaphne.ndjp.net"
-    network: ws
-    ws-opts:
-      path: "/fp=random"
-      headers:
-        Host: "hhlfy.twiladaphne.ndjp.net"
-  - name: "@DeltaKroneckerGithub_Clash_44"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "85a226ce-f082-4886-9173-a1ee7ec3d165"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "web.max.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "0paB9-U-QzEBoSQiOP161BPvc2PhWrfQ_5nbfk2AezM"
-      short-id: "a9766c"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "@DeltaKroneckerGithub_Clash_46"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1561,10 +1721,36 @@ proxies:
       headers:
 <<<<<<< Updated upstream
         Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_44"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7131f38f-9a4a-4e38-ae1d-aa9e132265ea"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "proxy.wastech.org"
+  - name: "@DeltaKroneckerGithub_Clash_46"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb4db50-2bf3-404a-b35c-dfab76be6c73"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "vk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "VL0iGpMFbUNIZsqUIwjDCorX5HzhVihlQUR8T3QSens"
+      short-id: "fd"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "@DeltaKroneckerGithub_Clash_48"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
     uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
 =======
         Host: "itcd.konkuriran.sbs"
@@ -1574,15 +1760,28 @@ proxies:
     port: 40443
     uuid: "f7047044-9b40-4380-bbb1-4b8b01d8bb59"
 >>>>>>> Stashed changes
+=======
+    uuid: "0905460d-6edc-4a82-8ec8-6b76090b41c8"
+>>>>>>> Stashed changes
     udp: true
-    flow: "xtls-rprx-vision"
     tls: true
+<<<<<<< Updated upstream
     skip-cert-verify: false
 <<<<<<< Updated upstream
     servername: "aws.amazon.com"
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
+=======
+    skip-cert-verify: true
+    servername: "nginx-f.pages.dev"
+    alpn: ["http/1.1"]
+    network: ws
+    ws-opts:
+      path: "/?ed=2560fp=randomized"
+      headers:
+        Host: "nginx-f.pages.dev"
+>>>>>>> Stashed changes
   - name: "@DeltaKroneckerGithub_Clash_50"
 =======
     servername: "deepl.com"
@@ -1595,10 +1794,11 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "aebe5a70-0ca3-46ce-8208-8b5bab1346ce"
+    uuid: "1867f627-be53-4367-be49-bf15534906ff"
     udp: true
     tls: true
     skip-cert-verify: true
+<<<<<<< Updated upstream
     servername: "rAyAn-007.nAsTaRaN.DpDnS.OrG"
     client-fingerprint: "chrome"
     network: ws
@@ -1631,23 +1831,15 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "Old-CaREg74s0ugV9a.CaRboNblAcKBMw.ir"
+=======
+    servername: "DiVERsE-assUmPtIONdhxVbDnH80.wINdLER.Co.uK"
+>>>>>>> Stashed changes
     client-fingerprint: "chrome"
     alpn: ["h2", "http/1.1"]
     network: grpc
     grpc-opts:
-      grpc-service-name: "iranprimer.usip.org.entekhab.ir.presstv.ir.alef.ir.yjc.ir.presstv.ir.en.mehrnews.com"
-  - name: "@DeltaKroneckerGithub_Clash_56"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "78c5b6bd-1cb6-463c-bcba-9f17ef70c85b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "square-frost-8d11.9660004.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_58"
+      grpc-service-name: "parstoday.com.entekhab.ir.mizanonline.com.hamshahrionline.ir.irannewsdaily.com.financialtribune.com.parstoday.com"
+  - name: "@DeltaKroneckerGithub_Clash_52"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1662,20 +1854,55 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "paRMis-1Tk63J.PArMiS.WoRkeRs.DeV"
-  - name: "@DeltaKroneckerGithub_Clash_60"
+  - name: "@DeltaKroneckerGithub_Clash_54"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "d98e6ac5-e873-402a-bcce-78e2887c936b"
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     flow: "xtls-rprx-vision"
     tls: true
     skip-cert-verify: false
-    servername: "www.yahoo.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI"
-      short-id: "014c3d76dee82247"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_56"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "16c6faa4-1162-49ca-acf7-059afdf1ecd3"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_58"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a5240468-dffe-4581-8ce7-6e6604d299d6"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "verus-1uy.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "verus-1uy.pages.dev"
+  - name: "@DeltaKroneckerGithub_Clash_60"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub_Clash_62"
 =======
   - name: "@DeltaKroneckerGithub_Clash_192"
@@ -1867,6 +2094,34 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_64"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_66"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
     uuid: "31969cf4-c1bb-4a3e-b42b-574dfb271c73"
     udp: true
     flow: "xtls-rprx-vision"
@@ -1878,7 +2133,45 @@ proxies:
       public-key: "FhYXVO-0BlCdga4MFczEVVC_clTA2UaIhWUiaWvYlR0"
       short-id: "fb2a682d44bdc70c"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_64"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_68"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "04b82b7c-77ab-41e9-89a2-5e605453ce5b"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "gprc"
+  - name: "@DeltaKroneckerGithub_Clash_70"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "78c5b6bd-1cb6-463c-bcba-9f17ef70c85b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "square-frost-8d11.9660004.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_72"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "44036b76-ecd4-488b-83ce-108d94583cf3"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "FAt-CORNEr1twsv3GlGF.WIndleR.Co.UK"
+    client-fingerprint: "chrome"
+    alpn: ["h2", "http/1.1"]
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "farsnews.ir.mizanonline.com.eghtesadonline.com.tasnimnews.com.irdiplomacy.ir.sharghdaily.com.donya-e-eqtesad.com"
+  - name: "@DeltaKroneckerGithub_Clash_74"
+>>>>>>> Stashed changes
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1892,10 +2185,11 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "donya-e-eqtesad.com.fararu.com.alef.ir.hamshahrionline.ir.khabaronline.ir.asriran.com.alalamtv.net"
-  - name: "@DeltaKroneckerGithub_Clash_66"
+  - name: "@DeltaKroneckerGithub_Clash_76"
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
     uuid: "c9fd0fb1-8251-4106-b09a-f4b426736f67"
 =======
   - name: "@DeltaKroneckerGithub_Clash_224"
@@ -1915,16 +2209,69 @@ proxies:
     port: 40443
     uuid: "ea484535-0170-4ec8-bb3c-a9dbaa7412d7"
 >>>>>>> Stashed changes
+=======
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+>>>>>>> Stashed changes
     udp: true
-    flow: "xtls-rprx-vision"
     tls: true
+<<<<<<< Updated upstream
     skip-cert-verify: false
 <<<<<<< Updated upstream
     servername: "www.cloudflare.com"
+=======
+    skip-cert-verify: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    network: ws
+    ws-opts:
+      path: "/fp=random"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "@DeltaKroneckerGithub_Clash_78"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_80"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "@free_conf_iran"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_82"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@DeltaKroneckerGithub_Clash_84"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "1679af35-6dd6-4c09-ae3b-18f239217f3e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "rAyAn-007.pArViN.DpDnS.OrG"
+>>>>>>> Stashed changes
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
-  - name: "@DeltaKroneckerGithub_Clash_68"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "rayan-007.parvin.dpdns.org"
+  - name: "@DeltaKroneckerGithub_Clash_86"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1940,6 +2287,7 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: "grpc"
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_70"
     type: vless
     server: "127.0.0.1"
@@ -2149,6 +2497,8 @@ proxies:
       path: "ws"
       headers:
         Host: "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev"
+=======
+>>>>>>> Stashed changes
   - name: "@DeltaKroneckerGithub_Clash_88"
     type: vless
     server: "127.0.0.1"
@@ -2168,6 +2518,7 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
+<<<<<<< Updated upstream
     uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
 =======
         Host: "freepol2.3r8sv.workers.dev"
@@ -2176,10 +2527,14 @@ proxies:
     server: "127.0.0.1"
     port: 40443
     uuid: "696915f2-5ad4-452b-987c-d83d29d0503a"
+=======
+    uuid: "c9fd0fb1-8251-4106-b09a-f4b426736f67"
+>>>>>>> Stashed changes
     udp: true
     flow: "xtls-rprx-vision"
     tls: true
     skip-cert-verify: false
+<<<<<<< Updated upstream
     servername: "de.moktana.app"
     client-fingerprint: "chrome"
     reality-opts:
@@ -2196,10 +2551,92 @@ proxies:
     skip-cert-verify: true
     servername: "verus-1uy.pages.dev"
     client-fingerprint: "chrome"
+=======
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
+  - name: "@DeltaKroneckerGithub_Clash_92"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a12b0d31-f599-498e-b76e-8558a14b766b"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/a12b0d31"
+  - name: "@DeltaKroneckerGithub_Clash_94"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "ce69190e-935a-4394-9e5e-2ab2872ba242"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "up2-df6.pages.dev"
+    network: ws
+    ws-opts:
+      path: "/uTZSXPBI2IfoxF86"
+      headers:
+        Host: "up2-df6.pages.dev"
+  - name: "@DeltaKroneckerGithub_Clash_96"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "@DeltaKroneckerGithub_Clash_98"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_100"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_102"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "dd721878-c30f-4d28-ab23-151b29e3526b"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_104"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+>>>>>>> Stashed changes
     network: ws
     ws-opts:
       path: "/"
       headers:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         Host: "vms.lifetime02.workers.dev"
 =======
@@ -2213,21 +2650,54 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "rAyAn-007.pArViN.DpDnS.OrG"
+=======
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub_Clash_106"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "aebe5a70-0ca3-46ce-8208-8b5bab1346ce"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "rAyAn-007.nAsTaRaN.DpDnS.OrG"
+>>>>>>> Stashed changes
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/?ed=2560"
       headers:
+<<<<<<< Updated upstream
         Host: "rayan-007.parvin.dpdns.org"
   - name: "@DeltaKroneckerGithub_Clash_248"
     type: vless
     server: "127.0.0.1"
     port: 40443
     uuid: "b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81"
+=======
+        Host: "rayan-007.nastaran.dpdns.org"
+  - name: "@DeltaKroneckerGithub_Clash_108"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "0a5ab719-2407-4398-b507-8437ef365023"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY"
+      headers:
+        Host: "underthegun.cfd"
+  - name: "@DeltaKroneckerGithub_Clash_110"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7b188eea-b08f-42c2-bac7-d3b0e74218b8"
+>>>>>>> Stashed changes
     udp: true
     flow: "xtls-rprx-vision"
     tls: true
     skip-cert-verify: false
+<<<<<<< Updated upstream
     servername: "www.sony.com"
     client-fingerprint: "chrome"
     reality-opts:
@@ -2248,6 +2718,55 @@ proxies:
       headers:
         Host: "juzi.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub_Clash_252"
+=======
+    servername: "www.paypal.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY"
+  - name: "@DeltaKroneckerGithub_Clash_112"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_114"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_116"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub_Clash_118"
+>>>>>>> Stashed changes
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2262,6 +2781,7 @@ proxies:
       path: "ws"
       headers:
         Host: "v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev"
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_254"
     type: vless
     server: "127.0.0.1"
@@ -2340,6 +2860,8 @@ proxies:
       public-key: "tMEkGmuOsuS_cgZYpj2UYBKnni559FZd-poGnH82ck8"
       short-id: "bfb7cb31"
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 proxy-groups:
   - name: "PROXY"
@@ -2404,7 +2926,10 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_88"
       - "@DeltaKroneckerGithub_Clash_90"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_92"
       - "@DeltaKroneckerGithub_Clash_94"
       - "@DeltaKroneckerGithub_Clash_96"
@@ -2419,6 +2944,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_120"
       - "@DeltaKroneckerGithub_Clash_122"
       - "@DeltaKroneckerGithub_Clash_124"
@@ -2492,6 +3018,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_260"
       - "@DeltaKroneckerGithub_Clash_262"
       - "@DeltaKroneckerGithub_Clash_264"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   - name: "Auto"
@@ -2547,7 +3075,10 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_88"
       - "@DeltaKroneckerGithub_Clash_90"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_92"
       - "@DeltaKroneckerGithub_Clash_94"
       - "@DeltaKroneckerGithub_Clash_96"
@@ -2562,6 +3093,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_120"
       - "@DeltaKroneckerGithub_Clash_122"
       - "@DeltaKroneckerGithub_Clash_124"
@@ -2636,6 +3168,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_262"
       - "@DeltaKroneckerGithub_Clash_264"
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
   - name: "Fallback"
     type: fallback
@@ -2689,7 +3223,10 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_88"
       - "@DeltaKroneckerGithub_Clash_90"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       - "@DeltaKroneckerGithub_Clash_92"
       - "@DeltaKroneckerGithub_Clash_94"
       - "@DeltaKroneckerGithub_Clash_96"
@@ -2704,6 +3241,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_114"
       - "@DeltaKroneckerGithub_Clash_116"
       - "@DeltaKroneckerGithub_Clash_118"
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_120"
       - "@DeltaKroneckerGithub_Clash_122"
       - "@DeltaKroneckerGithub_Clash_124"
@@ -2777,6 +3315,8 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_260"
       - "@DeltaKroneckerGithub_Clash_262"
       - "@DeltaKroneckerGithub_Clash_264"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 rules:
