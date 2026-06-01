@@ -100,8 +100,8 @@ func prepareOutputDirs() error {
 		"config/batches/sni_v2ray",
 		"config/batches/sni_clash",
 		"config/batches/sni_clash_advanced",
-		"config/only-tcp-pass",
-		"config/only-tcp-pass-sni",
+		"config/tcp-pass",
+		"config/tcp-pass-sni",
 	}
 	for _, dir := range dirs {
 		if err := os.MkdirAll(dir, 0755); err != nil {
@@ -207,7 +207,7 @@ func writeOutputFiles(results []configResult, tcpFailedLines []string) {
 	}
 
 	writeBatchFiles(all, allClash, allClashNames, allSNI, allSNIClash, allSNIClashNames)
-	writeOnlyTCPPassFiles(tcpFailedLines)
+	writeTCPPassFiles(tcpFailedLines)
 }
 
 // ── writeBatchFiles ───────────────────────────────────────────────────────────
@@ -1407,9 +1407,9 @@ func detectProto(line string) string {
 
 // ── writeOnlyTCPPassFiles ────────────────────────────────────────────────────
 // Writes configs that passed TCP ping but failed sing-box validation
-// into 10000-line batches under config/only-tcp-pass/ and config/only-tcp-pass-sni/
+// into 10000-line batches under config/tcp-pass/ and config/tcp-pass-sni/
 
-func writeOnlyTCPPassFiles(lines []string) {
+func writeTCPPassFiles(lines []string) {
 	if len(lines) == 0 {
 		return
 	}
@@ -1440,9 +1440,9 @@ func writeOnlyTCPPassFiles(lines []string) {
 		if end > total {
 			end = total
 		}
-		writeFile(fmt.Sprintf("config/only-tcp-pass/batch_%03d.txt", i+1), named[start:end])
+		writeFile(fmt.Sprintf("config/tcp-pass/batch_%03d.txt", i+1), named[start:end])
 	}
-	fmt.Printf("📁 Only-TCP-Pass: wrote %d configs into %d files\n", total, numBatches)
+	fmt.Printf("📁 TCP-Pass: wrote %d configs into %d files\n", total, numBatches)
 
 	// write SNI batches
 	if len(sniNamed) > 0 {
@@ -1454,9 +1454,9 @@ func writeOnlyTCPPassFiles(lines []string) {
 			if end > sniTotal {
 				end = sniTotal
 			}
-			writeFile(fmt.Sprintf("config/only-tcp-pass-sni/batch_%03d.txt", i+1), sniNamed[start:end])
+			writeFile(fmt.Sprintf("config/tcp-pass-sni/batch_%03d.txt", i+1), sniNamed[start:end])
 		}
-		fmt.Printf("📁 Only-TCP-Pass-SNI: wrote %d configs into %d files\n", sniTotal, sniNumBatches)
+		fmt.Printf("📁 TCP-Pass-SNI: wrote %d configs into %d files\n", sniTotal, sniNumBatches)
 	}
 }
 
@@ -1589,32 +1589,32 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	fmt.Fprintf(&gen, "| Metric | Value |\n|---|---|\n")
 	fmt.Fprintf(&gen, "| Fetched | %d |\n", originalTotal)
 	fmt.Fprintf(&gen, "| Unique | %d |\n", totalIn)
-	fmt.Fprintf(&gen, "| Only-TCP-Pass | %d |\n", onlyTCPPassCount)
+	fmt.Fprintf(&gen, "| TCP Pass | %d |\n", onlyTCPPassCount)
 	fmt.Fprintf(&gen, "| Valid | %d |\n", len(results))
 	fmt.Fprintf(&gen, "| Time | %.2fs |\n\n", duration)
 	gen.WriteString("---\n\n")
 
 	// Only-TCP-Pass batches section
-	onlyTCPBatches := countBatchFiles("config/only-tcp-pass")
+	onlyTCPBatches := countBatchFiles("config/tcp-pass")
 	if onlyTCPBatches > 0 {
-		gen.WriteString("## Only TCP Pass (for advanced users)\n\n")
-		fmt.Fprintf(&gen, "> Passed TCP ping, failed sing-box. Total: **%d**\n\n", onlyTCPPassCount)
+		gen.WriteString("## TCP Pass (for advanced users)\n\n")
+		fmt.Fprintf(&gen, "> All configs that passed TCP ping. Total: **%d**\n\n", onlyTCPPassCount)
 		fmt.Fprintf(&gen, "| Batch | Link |\n|---|---|\n")
 		for i := 1; i <= onlyTCPBatches; i++ {
-			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/only-tcp-pass/batch_%03d.txt) |\n",
+			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/tcp-pass/batch_%03d.txt) |\n",
 				i, i, repoBase, i)
 		}
 		gen.WriteString("\n---\n\n")
 	}
 
 	// Only-TCP-Pass SNI batches section
-	onlyTCPSNIBatches := countBatchFiles("config/only-tcp-pass-sni")
+	onlyTCPSNIBatches := countBatchFiles("config/tcp-pass-sni")
 	if onlyTCPSNIBatches > 0 {
-		gen.WriteString("## Only TCP Pass SNI (for advanced users)\n\n")
-		fmt.Fprintf(&gen, "> SNI version of Only TCP Pass configs. Total: **%d**\n\n", onlyTCPPassCount)
+		gen.WriteString("## TCP Pass SNI (for advanced users)\n\n")
+		fmt.Fprintf(&gen, "> SNI version of TCP Pass configs. Total: **%d**\n\n", onlyTCPPassCount)
 		fmt.Fprintf(&gen, "| Batch | Link |\n|---|---|\n")
 		for i := 1; i <= onlyTCPSNIBatches; i++ {
-			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/only-tcp-pass-sni/batch_%03d.txt) |\n",
+			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/tcp-pass-sni/batch_%03d.txt) |\n",
 				i, i, repoBase, i)
 		}
 		gen.WriteString("\n---\n\n")
