@@ -496,18 +496,8 @@ func validateAll(lines []string) ([]configResult, []string) {
 		return m
 	}())
 
-	// onlyTCPPass = passed TCP ping BUT failed sing-box validation
-	singBoxPassedSet := make(map[string]bool, len(out))
-	for _, r := range out {
-		singBoxPassedSet[r.line] = true
-	}
-	var onlyTCPPass []string
-	for _, l := range tcpPingPassedAll {
-		if !singBoxPassedSet[l] {
-			onlyTCPPass = append(onlyTCPPass, l)
-		}
-	}
-	return out, onlyTCPPass
+	// tcpPass = ALL configs that passed TCP ping (regardless of sing-box result)
+	return out, tcpPingPassedAll
 }
 
 // ── validateWithTracker ───────────────────────────────────────────────────────
