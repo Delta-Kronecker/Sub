@@ -113,22 +113,22 @@
 
 | Protocol | Tested | Valid | Pass% |
 |---|---|---|---|
-| VLESS | 434 | 411 | 94.7% |
-| **Total** | **434** | **411** | **94.7%** |
+| VLESS | 411 | 411 | 100.0% |
+| **Total** | **411** | **411** | **100.0%** |
 
 | Metric | Value |
 |---|---|
-| Fetched | 434 |
-| Unique | 434 |
-| TCP Pass | 434 |
+| Fetched | 411 |
+| Unique | 411 |
+| TCP Pass | 411 |
 | Valid | 411 |
-| Time | 12.38s |
+| Time | 6.55s |
 
 ---
 
 ## TCP Pass (for advanced users)
 
-> All configs that passed TCP ping. Total: **434**
+> All configs that passed TCP ping. Total: **411**
 
 | Batch | Link |
 |---|---|
@@ -138,7 +138,7 @@
 
 ## TCP Pass SNI (for advanced users)
 
-> SNI version of TCP Pass configs. Total: **434**
+> SNI version of TCP Pass configs. Total: **411**
 
 | Batch | Link |
 |---|---|
