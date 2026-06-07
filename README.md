@@ -49,11 +49,11 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 1303 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
-| VLESS | 259 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
+| All | 1265 | [all_configs.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/all_configs.txt) |
+| VLESS | 240 | [vless.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt) |
 | VMESS | 129 | [vmess.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vmess.txt) |
 | SS | 276 | [ss.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/ss.txt) |
-| TROJAN | 639 | [trojan.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/trojan.txt) |
+| TROJAN | 620 | [trojan.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/trojan.txt) |
 
 ---
 
@@ -61,11 +61,11 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 1303 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
-| VLESS | 259 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
+| All | 1265 | [all_configs_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/all_configs_sni.txt) |
+| VLESS | 240 | [vless_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_sni.txt) |
 | VMESS | 129 | [vmess_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vmess_sni.txt) |
 | SS | 276 | [ss_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/ss_sni.txt) |
-| TROJAN | 639 | [trojan_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/trojan_sni.txt) |
+| TROJAN | 620 | [trojan_sni.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/trojan_sni.txt) |
 
 ---
 
@@ -75,7 +75,7 @@
 |---|---|---|
 | 001 | 500 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_001.txt) |
 | 002 | 500 | [batch_002.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_002.txt) |
-| 003 | 303 | [batch_003.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_003.txt) |
+| 003 | 265 | [batch_003.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/v2ray/batch_003.txt) |
 
 ## SNI Batches
 
@@ -83,17 +83,17 @@
 |---|---|---|
 | 001 | 500 | [batch_001.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_001.txt) |
 | 002 | 500 | [batch_002.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_002.txt) |
-| 003 | 303 | [batch_003.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_003.txt) |
+| 003 | 265 | [batch_003.txt](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_v2ray/batch_003.txt) |
 
 ## Clash
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 1303 | [clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/clash.yaml) |
-| VLESS | 259 | [vless_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless_clash.yaml) |
+| All | 1265 | [clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/clash.yaml) |
+| VLESS | 240 | [vless_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless_clash.yaml) |
 | VMESS | 129 | [vmess_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vmess_clash.yaml) |
 | SS | 276 | [ss_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/ss_clash.yaml) |
-| TROJAN | 639 | [trojan_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/trojan_clash.yaml) |
+| TROJAN | 620 | [trojan_clash.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/trojan_clash.yaml) |
 
 ---
 
@@ -101,11 +101,11 @@
 
 | Protocol | Count | Link |
 |---|---|---|
-| All | 1303 | [clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/clash_sni.yaml) |
-| VLESS | 259 | [vless_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_clash_sni.yaml) |
+| All | 1265 | [clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/clash_sni.yaml) |
+| VLESS | 240 | [vless_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vless_clash_sni.yaml) |
 | VMESS | 129 | [vmess_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/vmess_clash_sni.yaml) |
 | SS | 276 | [ss_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/ss_clash_sni.yaml) |
-| TROJAN | 639 | [trojan_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/trojan_clash_sni.yaml) |
+| TROJAN | 620 | [trojan_clash_sni.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/sni/protocols/trojan_clash_sni.yaml) |
 
 ---
 
@@ -115,7 +115,7 @@
 |---|---|---|
 | 001 | 500 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml) |
 | 002 | 500 | [batch_002.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_002.yaml) |
-| 003 | 303 | [batch_003.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_003.yaml) |
+| 003 | 265 | [batch_003.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_003.yaml) |
 
 ---
 
@@ -125,7 +125,7 @@
 |---|---|---|
 | 001 | 500 | [batch_001.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_001.yaml) |
 | 002 | 500 | [batch_002.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_002.yaml) |
-| 003 | 303 | [batch_003.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_003.yaml) |
+| 003 | 265 | [batch_003.yaml](https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/sni_clash/batch_003.yaml) |
 
 ---
 
@@ -133,25 +133,25 @@
 
 | Protocol | Tested | Valid | Pass% |
 |---|---|---|---|
-| VLESS | 260 | 259 | 99.6% |
+| VLESS | 259 | 240 | 92.7% |
 | VMESS | 129 | 129 | 100.0% |
-| SS | 278 | 276 | 99.3% |
-| TROJAN | 657 | 639 | 97.3% |
-| **Total** | **1324** | **1303** | **98.4%** |
+| SS | 276 | 276 | 100.0% |
+| TROJAN | 639 | 620 | 97.0% |
+| **Total** | **1303** | **1265** | **97.1%** |
 
 | Metric | Value |
 |---|---|
-| Fetched | 1324 |
-| Unique | 1324 |
-| TCP Pass | 1323 |
-| Valid | 1303 |
-| Time | 75.83s |
+| Fetched | 1303 |
+| Unique | 1303 |
+| TCP Pass | 1285 |
+| Valid | 1265 |
+| Time | 80.31s |
 
 ---
 
 ## TCP Pass (for advanced users)
 
-> All configs that passed TCP ping. Total: **1323**
+> All configs that passed TCP ping. Total: **1285**
 
 | Batch | Link |
 |---|---|
@@ -161,7 +161,7 @@
 
 ## TCP Pass SNI (for advanced users)
 
-> SNI version of TCP Pass configs. Total: **1323**
+> SNI version of TCP Pass configs. Total: **1285**
 
 | Batch | Link |
 |---|---|
