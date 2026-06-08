@@ -122,7 +122,7 @@
 | Unique | 411 |
 | TCP Pass | 411 |
 | Valid | 411 |
-| Time | 6.55s |
+| Time | 6.98s |
 
 ---
 
