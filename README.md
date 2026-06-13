@@ -93,7 +93,7 @@
 | Unique | 0 |
 | TCP Pass | 0 |
 | Valid | 0 |
-| Time | 0.26s |
+| Time | 0.40s |
 
 ---
 
