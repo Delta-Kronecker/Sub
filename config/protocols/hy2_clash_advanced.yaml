@@ -59,11 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-<<<<<<< Updated upstream
-  - name: "@DeltaKroneckerGithub_Clash_8517"
-=======
-  - name: "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+  - name: "@DeltaKroneckerGithub_Clash_9956"
     type: hysteria2
     server: "161.104.88.46"
     port: 443
@@ -113,11 +109,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
   - name: "LB-CDN"
     type: load-balance
@@ -127,11 +119,7 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -141,11 +129,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
   - name: "FAST-CDN"
     type: url-test
@@ -154,11 +138,7 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -168,21 +148,13 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_8517"
-=======
-      - "@DeltaKroneckerGithub_Clash_8938"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_9956"
 
 rules:
   - MATCH,PROXY-BEST
