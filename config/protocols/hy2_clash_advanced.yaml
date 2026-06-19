@@ -59,15 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "@DeltaKroneckerGithub_Clash_7051"
-    type: hysteria2
-    server: "161.104.88.46"
-    port: 443
-    password: "2d83ea00-2813-448d-bee6-14eaf7f52e13"
-    sni: "161.104.88.46"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_7053"
+  - name: "@DeltaKroneckerGithub_Clash_7397"
     type: hysteria2
     server: "s482.ccgfw.top"
     port: 443
@@ -75,7 +67,15 @@ proxies:
     sni: "s482.ccgfw.top"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_7055"
+  - name: "@DeltaKroneckerGithub_Clash_7399"
+    type: hysteria2
+    server: "s491.ccgfw.online"
+    port: 443
+    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
+    sni: "s491.ccgfw.online"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_7401"
     type: hysteria2
     server: "s554.okgfw.top"
     port: 443
@@ -83,12 +83,12 @@ proxies:
     sni: "s554.okgfw.top"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_7057"
+  - name: "@DeltaKroneckerGithub_Clash_7403"
     type: hysteria2
-    server: "s491.ccgfw.online"
+    server: "161.104.88.46"
     port: 443
-    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
-    sni: "s491.ccgfw.online"
+    password: "2d83ea00-2813-448d-bee6-14eaf7f52e13"
+    sni: "161.104.88.46"
     skip-cert-verify: true
     udp: true
 
@@ -133,10 +133,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
   - name: "LB-CDN"
     type: load-balance
@@ -146,10 +146,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -159,10 +159,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
   - name: "FAST-CDN"
     type: url-test
@@ -171,10 +171,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -184,19 +184,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "@DeltaKroneckerGithub_Clash_7051"
-      - "@DeltaKroneckerGithub_Clash_7053"
-      - "@DeltaKroneckerGithub_Clash_7055"
-      - "@DeltaKroneckerGithub_Clash_7057"
+      - "@DeltaKroneckerGithub_Clash_7397"
+      - "@DeltaKroneckerGithub_Clash_7399"
+      - "@DeltaKroneckerGithub_Clash_7401"
+      - "@DeltaKroneckerGithub_Clash_7403"
 
 rules:
   - MATCH,PROXY-BEST
