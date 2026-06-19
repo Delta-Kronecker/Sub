@@ -120,6 +120,7 @@ dns:
     - 194.187.251.67
 
 proxies:
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_7397"
     type: hysteria2
     server: "s482.ccgfw.top"
@@ -129,6 +130,9 @@ proxies:
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub_Clash_7399"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_7425"
+>>>>>>> Stashed changes
     type: hysteria2
     server: "s491.ccgfw.online"
     port: 443
@@ -136,7 +140,19 @@ proxies:
     sni: "s491.ccgfw.online"
     skip-cert-verify: true
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_7401"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_7427"
+    type: hysteria2
+    server: "161.104.88.46"
+    port: 443
+    password: "2d83ea00-2813-448d-bee6-14eaf7f52e13"
+    sni: "161.104.88.46"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_7429"
+>>>>>>> Stashed changes
     type: hysteria2
     server: "s554.okgfw.top"
     port: 443
@@ -144,6 +160,7 @@ proxies:
     sni: "s554.okgfw.top"
     skip-cert-verify: true
     udp: true
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_7403"
     type: hysteria2
     server: "161.104.88.46"
@@ -152,6 +169,8 @@ proxies:
     sni: "161.104.88.46"
     skip-cert-verify: true
     udp: true
+=======
+>>>>>>> Stashed changes
 
 proxy-groups:
   - name: "PROXY"
@@ -170,10 +189,16 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7397"
       - "@DeltaKroneckerGithub_Clash_7399"
       - "@DeltaKroneckerGithub_Clash_7401"
       - "@DeltaKroneckerGithub_Clash_7403"
+=======
+      - "@DeltaKroneckerGithub_Clash_7425"
+      - "@DeltaKroneckerGithub_Clash_7427"
+      - "@DeltaKroneckerGithub_Clash_7429"
+>>>>>>> Stashed changes
 
   - name: "Auto"
     type: url-test
@@ -182,10 +207,16 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7397"
       - "@DeltaKroneckerGithub_Clash_7399"
       - "@DeltaKroneckerGithub_Clash_7401"
       - "@DeltaKroneckerGithub_Clash_7403"
+=======
+      - "@DeltaKroneckerGithub_Clash_7425"
+      - "@DeltaKroneckerGithub_Clash_7427"
+      - "@DeltaKroneckerGithub_Clash_7429"
+>>>>>>> Stashed changes
 
   - name: "Fallback"
     type: fallback
@@ -193,10 +224,16 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7397"
       - "@DeltaKroneckerGithub_Clash_7399"
       - "@DeltaKroneckerGithub_Clash_7401"
       - "@DeltaKroneckerGithub_Clash_7403"
+=======
+      - "@DeltaKroneckerGithub_Clash_7425"
+      - "@DeltaKroneckerGithub_Clash_7427"
+      - "@DeltaKroneckerGithub_Clash_7429"
+>>>>>>> Stashed changes
 
 rules:
   - MATCH,PROXY
