@@ -59,7 +59,7 @@ dns:
     - tls://94.140.14.14:853
 
 proxies:
-  - name: "@DeltaKroneckerGithub_Clash_8230"
+  - name: "@DeltaKroneckerGithub_Clash_8632"
     type: hysteria2
     server: "127.0.0.1"
     port: 40443
@@ -67,19 +67,27 @@ proxies:
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub_Clash_8232"
+  - name: "@DeltaKroneckerGithub_Clash_8634"
+    type: hysteria2
+    server: "127.0.0.1"
+    port: 40443
+    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_8636"
+    type: hysteria2
+    server: "127.0.0.1"
+    port: 40443
+    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_8638"
     type: hysteria2
     server: "127.0.0.1"
     port: 40443
     password: "2d83ea00-2813-448d-bee6-14eaf7f52e13"
-    sni: "127.0.0.1"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_8234"
-    type: hysteria2
-    server: "127.0.0.1"
-    port: 40443
-    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
@@ -125,9 +133,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
   - name: "LB-CDN"
     type: load-balance
@@ -137,9 +146,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -149,9 +159,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
   - name: "FAST-CDN"
     type: url-test
@@ -160,9 +171,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -172,17 +184,19 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "@DeltaKroneckerGithub_Clash_8230"
-      - "@DeltaKroneckerGithub_Clash_8232"
-      - "@DeltaKroneckerGithub_Clash_8234"
+      - "@DeltaKroneckerGithub_Clash_8632"
+      - "@DeltaKroneckerGithub_Clash_8634"
+      - "@DeltaKroneckerGithub_Clash_8636"
+      - "@DeltaKroneckerGithub_Clash_8638"
 
 rules:
   - MATCH,PROXY-BEST
