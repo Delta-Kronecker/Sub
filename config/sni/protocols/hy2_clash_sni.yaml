@@ -120,11 +120,7 @@ dns:
     - 194.187.251.67
 
 proxies:
-<<<<<<< Updated upstream
-  - name: "@DeltaKroneckerGithub_Clash_7398"
-=======
-  - name: "@DeltaKroneckerGithub_Clash_7426"
->>>>>>> Stashed changes
+  - name: "@DeltaKroneckerGithub_Clash_8230"
     type: hysteria2
     server: "127.0.0.1"
     port: 40443
@@ -132,27 +128,7 @@ proxies:
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
-<<<<<<< Updated upstream
-  - name: "@DeltaKroneckerGithub_Clash_7400"
-    type: hysteria2
-    server: "127.0.0.1"
-    port: 40443
-    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
-    sni: "127.0.0.1"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_7402"
-    type: hysteria2
-    server: "127.0.0.1"
-    port: 40443
-    password: "43bcba7d-cd22-379c-a7da-2e8eafecbc78"
-    sni: "127.0.0.1"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_7404"
-=======
-  - name: "@DeltaKroneckerGithub_Clash_7428"
->>>>>>> Stashed changes
+  - name: "@DeltaKroneckerGithub_Clash_8232"
     type: hysteria2
     server: "127.0.0.1"
     port: 40443
@@ -160,9 +136,7 @@ proxies:
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
-<<<<<<< Updated upstream
-=======
-  - name: "@DeltaKroneckerGithub_Clash_7430"
+  - name: "@DeltaKroneckerGithub_Clash_8234"
     type: hysteria2
     server: "127.0.0.1"
     port: 40443
@@ -170,7 +144,6 @@ proxies:
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
->>>>>>> Stashed changes
 
 proxy-groups:
   - name: "PROXY"
@@ -189,16 +162,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_7398"
-      - "@DeltaKroneckerGithub_Clash_7400"
-      - "@DeltaKroneckerGithub_Clash_7402"
-      - "@DeltaKroneckerGithub_Clash_7404"
-=======
-      - "@DeltaKroneckerGithub_Clash_7426"
-      - "@DeltaKroneckerGithub_Clash_7428"
-      - "@DeltaKroneckerGithub_Clash_7430"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_8230"
+      - "@DeltaKroneckerGithub_Clash_8232"
+      - "@DeltaKroneckerGithub_Clash_8234"
 
   - name: "Auto"
     type: url-test
@@ -207,16 +173,9 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_7398"
-      - "@DeltaKroneckerGithub_Clash_7400"
-      - "@DeltaKroneckerGithub_Clash_7402"
-      - "@DeltaKroneckerGithub_Clash_7404"
-=======
-      - "@DeltaKroneckerGithub_Clash_7426"
-      - "@DeltaKroneckerGithub_Clash_7428"
-      - "@DeltaKroneckerGithub_Clash_7430"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_8230"
+      - "@DeltaKroneckerGithub_Clash_8232"
+      - "@DeltaKroneckerGithub_Clash_8234"
 
   - name: "Fallback"
     type: fallback
@@ -224,16 +183,9 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-<<<<<<< Updated upstream
-      - "@DeltaKroneckerGithub_Clash_7398"
-      - "@DeltaKroneckerGithub_Clash_7400"
-      - "@DeltaKroneckerGithub_Clash_7402"
-      - "@DeltaKroneckerGithub_Clash_7404"
-=======
-      - "@DeltaKroneckerGithub_Clash_7426"
-      - "@DeltaKroneckerGithub_Clash_7428"
-      - "@DeltaKroneckerGithub_Clash_7430"
->>>>>>> Stashed changes
+      - "@DeltaKroneckerGithub_Clash_8230"
+      - "@DeltaKroneckerGithub_Clash_8232"
+      - "@DeltaKroneckerGithub_Clash_8234"
 
 rules:
   - MATCH,PROXY
