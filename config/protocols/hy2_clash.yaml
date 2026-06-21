@@ -120,7 +120,11 @@ dns:
     - 194.187.251.67
 
 proxies:
+<<<<<<< Updated upstream
   - name: "@DeltaKroneckerGithub_Clash_7619"
+=======
+  - name: "@DeltaKroneckerGithub_Clash_8959"
+>>>>>>> Stashed changes
     type: hysteria2
     server: "161.104.88.46"
     port: 443
@@ -146,7 +150,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7619"
+=======
+      - "@DeltaKroneckerGithub_Clash_8959"
+>>>>>>> Stashed changes
 
   - name: "Auto"
     type: url-test
@@ -155,7 +163,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7619"
+=======
+      - "@DeltaKroneckerGithub_Clash_8959"
+>>>>>>> Stashed changes
 
   - name: "Fallback"
     type: fallback
@@ -163,7 +175,11 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+<<<<<<< Updated upstream
       - "@DeltaKroneckerGithub_Clash_7619"
+=======
+      - "@DeltaKroneckerGithub_Clash_8959"
+>>>>>>> Stashed changes
 
 rules:
   - MATCH,PROXY
