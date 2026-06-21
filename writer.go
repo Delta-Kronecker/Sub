@@ -1462,56 +1462,9 @@ func writeTCPPassFiles(lines []string) {
 
 // ── writeSummary (README) ─────────────────────────────────────────────────────
 
-const autoGenMarker = "<!-- AUTO-GENERATED: DO NOT EDIT BELOW THIS LINE -->\n"
-
 func writeSummary(results []configResult, failedLinks []string, duration float64, originalTotal int, onlyTCPPassCount int) {
-	byProtoOut := make(map[string]int)
-	for _, r := range results {
-		byProtoOut[r.proto]++
-	}
-
-	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
-
-	var gen strings.Builder
-	gen.WriteString(autoGenMarker)
-	gen.WriteString("\n")
-
-			strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-
-
-
-
-
-	existingContent := ""
-	if raw, err := os.ReadFile("read.md"); err == nil {
-		existing := string(raw)
-		if idx := strings.Index(existing, autoGenMarker); idx != -1 {
-			existingContent = strings.TrimRight(existing[:idx], "\n\r ")
-		} else {
-			existingContent = strings.TrimRight(existing, "\n\r ")
-		}
-	}
-
-	f, err := os.Create("README.md")
-	if err != nil {
-		fmt.Printf("❌ Cannot write README.md: %v\n", err)
-		return
-	}
-	defer f.Close()
-	w := bufio.NewWriter(f)
-	defer w.Flush()
-
-	if existingContent != "" {
-		w.WriteString(existingContent)
-		w.WriteString("\n\n")
-	}
-	w.WriteString(gen.String())
+    return
 }
-
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 func yamlQuote(s string) string {
