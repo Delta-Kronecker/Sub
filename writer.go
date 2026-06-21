@@ -1476,149 +1476,15 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	gen.WriteString(autoGenMarker)
 	gen.WriteString("\n")
 
-	gen.WriteString("## V2ray\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [all_configs.txt](%s/config/all_configs.txt) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s.txt](%s/config/protocols/%s.txt) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
+			strings.ToUpper(p), n, p, repoBase, p)
 		}
 	}
 	gen.WriteString("\n---\n\n")
 
-	gen.WriteString("## SNI\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
 
-	v2rayBatches := countBatchFiles("config/batches/v2ray")
-	if v2rayBatches > 0 {
-		gen.WriteString("## V2ray Batches\n\n")
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= v2rayBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/v2ray/batch_%03d.txt) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n")
-	}
 
-	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
-	if sniV2rayBatches > 0 {
-		gen.WriteString("## SNI Batches\n\n")
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= sniV2rayBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n")
-	}
 
-	gen.WriteString("## Clash\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [clash.yaml](%s/config/clash.yaml) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_clash.yaml](%s/config/protocols/%s_clash.yaml) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
 
-	gen.WriteString("## Clash SNI\n\n")
-	fmt.Fprintf(&gen, "| Protocol | Count | Link |\n|---|---|---|\n")
-	fmt.Fprintf(&gen, "| All | %d | [clash_sni.yaml](%s/config/sni/clash_sni.yaml) |\n", len(results), repoBase)
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(&gen, "| %s | %d | [%s_clash_sni.yaml](%s/config/sni/protocols/%s_clash_sni.yaml) |\n",
-				strings.ToUpper(p), n, p, repoBase, p)
-		}
-	}
-	gen.WriteString("\n---\n\n")
-
-	gen.WriteString("## Clash Batches\n\n")
-	clashBatches := countBatchFiles("config/batches/clash")
-	if clashBatches > 0 {
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= clashBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.yaml](%s/config/batches/clash/batch_%03d.yaml) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
-
-	gen.WriteString("## Clash SNI Batches\n\n")
-	clashSNIBatches := countBatchFiles("config/batches/sni_clash")
-	if clashSNIBatches > 0 {
-		fmt.Fprintf(&gen, "| Batch | Count | Link |\n|---|---|---|\n")
-		for i := 1; i <= clashSNIBatches; i++ {
-			cnt := min500(i, len(results))
-			fmt.Fprintf(&gen, "| %03d | %d | [batch_%03d.yaml](%s/config/batches/sni_clash/batch_%03d.yaml) |\n",
-				i, cnt, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
-
-	gen.WriteString("## Statistics\n\n")
-	totalIn, totalOut := 0, 0
-	fmt.Fprintf(&gen, "| Protocol | Tested | Valid | Pass%% |\n|---|---|---|---|\n")
-	for _, p := range cfg.ProtocolOrder {
-		in, out := gInputByProto[p], byProtoOut[p]
-		totalIn += in
-		totalOut += out
-		if in == 0 {
-			continue
-		}
-		rate := float64(out) / float64(in) * 100
-		fmt.Fprintf(&gen, "| %s | %d | %d | %.1f%% |\n", strings.ToUpper(p), in, out, rate)
-	}
-	overallRate := 0.0
-	if totalIn > 0 {
-		overallRate = float64(totalOut) / float64(totalIn) * 100
-	}
-	fmt.Fprintf(&gen, "| **Total** | **%d** | **%d** | **%.1f%%** |\n\n", totalIn, totalOut, overallRate)
-	fmt.Fprintf(&gen, "| Metric | Value |\n|---|---|\n")
-	fmt.Fprintf(&gen, "| Fetched | %d |\n", originalTotal)
-	fmt.Fprintf(&gen, "| Unique | %d |\n", totalIn)
-	fmt.Fprintf(&gen, "| TCP Pass | %d |\n", onlyTCPPassCount)
-	fmt.Fprintf(&gen, "| Valid | %d |\n", len(results))
-	fmt.Fprintf(&gen, "| Time | %.2fs |\n\n", duration)
-	gen.WriteString("---\n\n")
-
-	// Only-TCP-Pass batches section
-	onlyTCPBatches := countBatchFiles("config/tcp-pass")
-	if onlyTCPBatches > 0 {
-		gen.WriteString("## TCP Pass (for advanced users)\n\n")
-		fmt.Fprintf(&gen, "> All configs that passed TCP ping. Total: **%d**\n\n", onlyTCPPassCount)
-		fmt.Fprintf(&gen, "| Batch | Link |\n|---|---|\n")
-		for i := 1; i <= onlyTCPBatches; i++ {
-			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/tcp-pass/batch_%03d.txt) |\n",
-				i, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
-
-	// Only-TCP-Pass SNI batches section
-	onlyTCPSNIBatches := countBatchFiles("config/tcp-pass-sni")
-	if onlyTCPSNIBatches > 0 {
-		gen.WriteString("## TCP Pass SNI (for advanced users)\n\n")
-		fmt.Fprintf(&gen, "> SNI version of TCP Pass configs. Total: **%d**\n\n", onlyTCPPassCount)
-		fmt.Fprintf(&gen, "| Batch | Link |\n|---|---|\n")
-		for i := 1; i <= onlyTCPSNIBatches; i++ {
-			fmt.Fprintf(&gen, "| %03d | [batch_%03d.txt](%s/config/tcp-pass-sni/batch_%03d.txt) |\n",
-				i, i, repoBase, i)
-		}
-		gen.WriteString("\n---\n\n")
-	}
 
 	existingContent := ""
 	if raw, err := os.ReadFile("read.md"); err == nil {
