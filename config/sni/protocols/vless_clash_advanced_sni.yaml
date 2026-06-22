@@ -68,34 +68,73 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_4"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "83bbdb45-4824-4870-b191-427b1e3d7a29"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.amd.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "UvZM3FjG0QECXEojqtYLxfUYqw96Q5J56ylZOWp4FBM"
-      short-id: "3818373396cb"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_6"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
+    servername: "enterprisekitten.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_8"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_10"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_12"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_14"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_16"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -104,75 +143,58 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
       short-id: "ea10cd5686751ec5"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_10"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_12"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "aa73f723-81a2-4b7a-b110-81c5d753e75b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ru-1.videoproeditor.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk"
-      short-id: "6d6f13013d3e1d0c"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_14"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "c29d39bd-92a4-45db-bb61-56013998617c"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/Telegram-XV2ry2"
-      headers:
-        Host: "www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com"
-  - name: "@DeltaKroneckerGithub_Clash_16"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "7bd180e8-1142-4387-93f5-03e8d750a896"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "python-graysongon.wasmer.app"
-    network: ws
-    ws-opts:
-      path: "/7bd180e8"
-      headers:
-        Host: "python-graysongon.wasmer.app"
   - name: "@DeltaKroneckerGithub_Clash_18"
     type: vless
     server: "127.0.0.1"
     port: 40443
+    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "5.oncloudnineservicestreang.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM"
+      short-id: "273940fba6ad8250"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_20"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
     uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_20"
+  - name: "@DeltaKroneckerGithub_Clash_22"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "2715592069f36fe7"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_24"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_26"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -187,61 +209,32 @@ proxies:
       path: "/"
       headers:
         Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_22"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_24"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_26"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_28"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_30"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tr-cd.sublink-vip2.com"
   - name: "@DeltaKroneckerGithub_Clash_32"
     type: vless
     server: "127.0.0.1"
@@ -250,9 +243,68 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
+    servername: "cdn7-09.vk-cdnvideo.com"
     client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_34"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "c61a813a-3429-4a20-8b7f-f7a3cd795b24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/ranking/photos/pic"
+      headers:
+        Host: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_36"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_38"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_40"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn7-39.vk-cdnvideo.com"
+    client-fingerprint: "safari"
+  - name: "@DeltaKroneckerGithub_Clash_42"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_44"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -266,49 +318,30 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_36"
+  - name: "@DeltaKroneckerGithub_Clash_46"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+    uuid: "e6082798-61ab-4167-9653-67883f5f0166"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "5.oncloudnineservicestreang.com"
-    reality-opts:
-      public-key: "RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM"
-      short-id: "273940fba6ad8250"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_38"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "aws.amazon.com"
+    servername: "www.amd.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
-      short-id: ""
+      public-key: "cJ0oDse0aPBi7c4UCxQgMP1UNoBPZ2NDB8aL_17G0HQ"
+      short-id: "d18340"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_40"
+  - name: "@DeltaKroneckerGithub_Clash_48"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_42"
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_50"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -323,35 +356,21 @@ proxies:
       path: "/proxy"
       headers:
         Host: "166.88.186.161"
-  - name: "@DeltaKroneckerGithub_Clash_44"
+  - name: "@DeltaKroneckerGithub_Clash_52"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "191ee2c8-e3e3-09a1-a4a5-c9e8323c6f3d"
+    uuid: "b8794f67-80d9-4124-8fc5-2d2ce5516573"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "stackoverflow.com"
-    client-fingerprint: "firefox"
+    servername: "deepl.com"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic"
-      short-id: "c410508e9721512b"
+      public-key: "AYL1z7PNyo6LqYLeZpXa50FnK9eEu7o18KHRhOlST1w"
+      short-id: "bd72"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_46"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "54bb59cf-96fc-4a66-8488-fa2391f2e650"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "XxCsLlJ3kJJa2MiPHS3FlF0DyAS9TkQkn8lfCVZgDQw"
-      short-id: "cd2d4a8f08aa985d"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_48"
+  - name: "@DeltaKroneckerGithub_Clash_54"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -359,149 +378,111 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_50"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_52"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_54"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_56"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "82d47c52-9738-4d40-93a4-220bab575c60"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "treng.loralden.com"
-    reality-opts:
-      public-key: "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k"
-      short-id: "ed72a429f0135a3f"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "@DeltaKroneckerGithub_Clash_58"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
+    servername: "t1s1.rittbo.kdns.fr"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "auv.vavava.kdns.fr"
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_58"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_60"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
+    uuid: "fd47216b-4217-4ec1-85b9-98304634a391"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
+    servername: "amd.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
+      public-key: "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE"
+      short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_62"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_64"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "580d81f8-4f30-49d6-ad90-59fb4a850313"
+    uuid: "e7961655-9674-4cbd-a36f-ec0d5d7d660c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dlcdnets.asus.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM"
-      short-id: "473277e2"
-    flow: "xtls-rprx-vision"
+    servername: "po.fastbrokencompony.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "po.fastbrokencompony.com"
   - name: "@DeltaKroneckerGithub_Clash_66"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "max-gb1.global.ssl.fastly.net"
   - name: "@DeltaKroneckerGithub_Clash_68"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "enterprisekitten.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_70"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "ads.x5.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
+      short-id: "2f49bccf11150ef2"
   - name: "@DeltaKroneckerGithub_Clash_72"
     type: vless
     server: "127.0.0.1"
@@ -521,16 +502,11 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "ff2611ba-7c71-4aa2-af58-6194bc8b15aa"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.amazon.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "5KGHDHpMiq0DD9THS78a2jvIlT5H-N1sOTJ-cK3RuS4"
-      short-id: "456f"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_76"
     type: vless
     server: "127.0.0.1"
@@ -550,43 +526,6 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_80"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_82"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_84"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
     uuid: "52faee73-e0fe-4661-992d-67259257170f"
     udp: true
     tls: true
@@ -597,7 +536,7 @@ proxies:
       public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
       short-id: "ea10cd5686751ec5"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_86"
+  - name: "@DeltaKroneckerGithub_Clash_80"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -605,32 +544,23 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
+    servername: "cdn3-87.vk-cdnvideo.com"
     client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_88"
+  - name: "@DeltaKroneckerGithub_Clash_82"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "039a1658-e86e-475f-a3a4-67cc249acada"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_90"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "9fb2d0b1-171b-45c0-aae3-3313a73cba29"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.googletagmanager.com"
-    client-fingerprint: "chrome"
+    servername: "us1.panel11.ru"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "MbaP34cAgypweQZ7L2hx1wihw_K5c3g4SBlOpgD7wRo"
-      short-id: "e0274f4ac227090f"
+      public-key: "MFuAxjdSnjCk_8Vi_-KGyWryFfSmm902nVhACDSIzBw"
+      short-id: "d9d688fc488ae13b"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_92"
+  - name: "@DeltaKroneckerGithub_Clash_84"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -645,75 +575,85 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_86"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_88"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "auv.vavava.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_90"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_92"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_94"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "e6082798-61ab-4167-9653-67883f5f0166"
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "www.amd.com"
+    servername: "www.coolblue.nl"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "cJ0oDse0aPBi7c4UCxQgMP1UNoBPZ2NDB8aL_17G0HQ"
-      short-id: "d18340"
+      public-key: "jAdL6F6VaKzvTMpPQ53X58sC_i2QY6Wx2rdjq4Eo3yo"
+      short-id: "a1b2c3d4e5f67890"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_96"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_98"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "d8d05386-e381-40a4-bb63-715c208b3ed3"
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_100"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_102"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_104"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_106"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -722,67 +662,63 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn7-09.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_100"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+      short-id: "2cfb5a0ae8ab0cb0"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_102"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_104"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "3e7cede4-721a-4807-b0a2-5fe6586af907"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+      short-id: "2cfb5a0ae8ab0cb0"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_106"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jp.s3-cloud.org"
     client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_108"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "12cb0a24-0438-4980-8617-9c93205895fa"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "kakoolnews.7kakoolnews.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "kakoolnews.7kakoolnews.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_110"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_112"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_114"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_116"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -791,7 +727,48 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_110"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_112"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_114"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn3-87.vk-cdnvideo.com"
     client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_116"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7c0f30a2-a7c1-43b1-bc51-20f07036a76e"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ams-01.gni-daed.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "L78hKnIWL5jdxw3R2NcY725t8QMqAfX8rGdYI46cFgs"
+      short-id: "a8399289e18af5f4"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_118"
     type: vless
     server: "127.0.0.1"
@@ -805,44 +782,34 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "c35050ce-01ab-45a9-91b8-54cec637d0a8"
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "octopusss5.info"
-    network: ws
-    ws-opts:
-      path: "/udfyfws"
-      headers:
-        Host: "octopusss5.info"
+    servername: "enterprisekitten.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_122"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "3559f1f7-7d70-46c9-82db-d2b46269300b"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "dipvpn.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_124"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_126"
     type: vless
     server: "127.0.0.1"
@@ -851,22 +818,17 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "cdn3-87.vk-cdnvideo.com"
     client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_128"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "191ee2c8-e3e3-09a1-a4a5-c9e8323c6f3d"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "stackoverflow.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic"
-      short-id: "c410508e9721512b"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_130"
     type: vless
     server: "127.0.0.1"
@@ -875,60 +837,8 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn8-90.yahoo.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw"
-      short-id: "8015c191d21aa452"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_132"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "4.oncloudnineservicestreang.com"
-    reality-opts:
-      public-key: "P5ceHLOW8Gmz45z-ozbm9T6xsdSsIGLB71-jMfSjCBQ"
-      short-id: "04bc695105689674"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_134"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "74efe911-4e11-44ac-b9a8-c8b4caf42ea7"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.sony.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "LL5elMmIL4PZMio6uuBGuZoToOURQdGqnaL8-aIyFAw"
-      short-id: "26adc84e61c1"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_136"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_138"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_140"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -937,6 +847,63 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_134"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_136"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_138"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "2715592069f36fe7"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_140"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_142"
     type: vless
     server: "127.0.0.1"
@@ -955,17 +922,20 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "127.0.0.1"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_146"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "afcac633-0e1a-46c3-bef2-cc01cc0097c8"
+    uuid: "6ae44ad9-c2cb-4bdf-8e48-6c01fa646372"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "r1.mizulina.top"
-    client-fingerprint: "chrome"
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "f6MOnGRTqdns7Lut75DSrnFZeiiZ4N04gnj5m-l7KnM"
+      short-id: "54ce"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_148"
     type: vless
@@ -984,31 +954,32 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_152"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "9770fce0-0b88-590f-992d-7dac8625d360"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "winq35461s-19523160106-direct.irgame.co"
+    client-fingerprint: "chrome"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_154"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
-    client-fingerprint: "edge"
-    reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_156"
     type: vless
     server: "127.0.0.1"
@@ -1027,85 +998,31 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "c61a813a-3429-4a20-8b7f-f7a3cd795b24"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
-    client-fingerprint: "chrome"
+    servername: "t1s1.rittbo.kdns.fr"
     network: ws
     ws-opts:
-      path: "/data/list/out.php"
+      path: "/"
       headers:
-        Host: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_160"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "4f013568-a58b-4b04-b5dd-4d52bf1c33a4"
+    uuid: "a7e9b227-57bb-44b3-ac47-58367a40adf8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "amoosamiii.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/poiuyws"
-      headers:
-        Host: "amoosamiii.net"
-  - name: "@DeltaKroneckerGithub_Clash_162"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "3.oncloudnineservicestreang.com"
+    servername: "www.amd.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "dp-ncBuRHgZl5O80eHBYhSKo1i9qbt-J7MJ1alyWXmM"
-      short-id: "1991780b928b292d"
+      public-key: "Uky5TgbjFFB6vRNwV2h0MtFnXAeNuF2PnnjNwm0V3mc"
+      short-id: "01e2f1822d288f0a"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_164"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "5a7243e3-bbaa-49ff-be1a-fd63a7e1fa35"
-    udp: true
-  - name: "@DeltaKroneckerGithub_Clash_166"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_168"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "7bd180e8-1142-4387-93f5-03e8d750a896"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "python-graysongon.wasmer.app"
-    network: ws
-    ws-opts:
-      path: "/7bd180e8"
-      headers:
-        Host: "python-graysongon.wasmer.app"
-  - name: "@DeltaKroneckerGithub_Clash_170"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_172"
+  - name: "@DeltaKroneckerGithub_Clash_162"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1119,46 +1036,7 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_174"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-39.vk-cdnvideo.com"
-    client-fingerprint: "safari"
-  - name: "@DeltaKroneckerGithub_Clash_176"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_178"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_180"
+  - name: "@DeltaKroneckerGithub_Clash_164"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1167,70 +1045,143 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_166"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "52faee73-e0fe-4661-992d-67259257170f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    reality-opts:
+      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
+      short-id: "ea10cd5686751ec5"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_168"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_170"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "9c79aceb-4649-44ea-9698-b5e9ecf6d6da"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.icloud.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34"
+      short-id: "2afe4310"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_172"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn3-87.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_174"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_176"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_178"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_180"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_182"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_184"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_186"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_188"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "ae852d97-85f5-45cf-82a4-254eba345480"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
+    servername: "cdn.cdnjst.org"
     client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc"
+      short-id: "a120"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_190"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tr-cd.sublink-vip2.com"
   - name: "@DeltaKroneckerGithub_Clash_192"
     type: vless
     server: "127.0.0.1"
@@ -1244,42 +1195,40 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    uuid: "52faee73-e0fe-4661-992d-67259257170f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "enterprisekitten.com"
+    servername: "storage.yandex.net"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
+      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
+      short-id: "ea10cd5686751ec5"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_196"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "9770fce0-0b88-590f-992d-7dac8625d360"
+    uuid: "82d47c52-9738-4d40-93a4-220bab575c60"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "winq35461s-19523160106-direct.irgame.co"
-    client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
+    servername: "treng.loralden.com"
+    reality-opts:
+      public-key: "EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k"
+      short-id: "ed72a429f0135a3f"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "grpc"
   - name: "@DeltaKroneckerGithub_Clash_198"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_200"
     type: vless
     server: "127.0.0.1"
@@ -1288,30 +1237,35 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "cdn7-39.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_202"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    uuid: "039a1658-e86e-475f-a3a4-67cc249acada"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
+    servername: "gr1.panel11.ru"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
+      public-key: "rYwYudDb69CwjAJNw5KTFqJnRwwADgDMDpjv9KESjEY"
+      short-id: "f5c14a97040a38bf"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_204"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "356ccb34-22cc-4446-a137-072bc60d65ca"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "storage.yandex.net"
+    reality-opts:
+      public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
+      short-id: "f34818a561dfd1fe"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_206"
     type: vless
     server: "127.0.0.1"
@@ -1320,8 +1274,7 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_208"
     type: vless
     server: "127.0.0.1"
@@ -1330,38 +1283,8 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_210"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "damp-dawn-3a96.alvlirm123.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "damp-dawn-3a96.alvlirm123.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_212"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "ebcb836a-ab7a-424f-a07c-aba25c70da69"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "germnode.dostupnet.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "ydtP6Nv3EqKvbnCYoozfIk5q7ihoNWQsdd8UPqGFu2M"
-      short-id: "ffaa1a2421f17932"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_214"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1370,12 +1293,98 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_212"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "7e544a9d-7667-413b-bbb0-b3bb1aac6d77"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "shegeftihaaa.net"
+    network: ws
+    ws-opts:
+      path: "/rsedgws"
+      headers:
+        Host: "shegeftihaaa.net"
+  - name: "@DeltaKroneckerGithub_Clash_214"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_216"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_218"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "35939cbe-5d57-4413-f4d0-cc115db0e000"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.speedtest.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_220"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "3.oncloudnineservicestreang.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dp-ncBuRHgZl5O80eHBYhSKo1i9qbt-J7MJ1alyWXmM"
+      short-id: "1991780b928b292d"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_222"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "max-gb1.global.ssl.fastly.net"
+  - name: "@DeltaKroneckerGithub_Clash_224"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "74efe911-4e11-44ac-b9a8-c8b4caf42ea7"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.sony.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "LL5elMmIL4PZMio6uuBGuZoToOURQdGqnaL8-aIyFAw"
+      short-id: "26adc84e61c1"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_226"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1388,20 +1397,16 @@ proxies:
       public-key: "Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8"
       short-id: ""
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_218"
+  - name: "@DeltaKroneckerGithub_Clash_228"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ads.x5.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
-      short-id: "2f49bccf11150ef2"
-  - name: "@DeltaKroneckerGithub_Clash_220"
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_230"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1416,91 +1421,20 @@ proxies:
       path: "/"
       headers:
         Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_222"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "3dc30f8b-e411-4f68-9fda-73b63d920e1a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "S2Fe4Ft_uGGNGVShoyrKHED3VaoRfjLQxDBD3LaNbgc"
-      short-id: "9350a4f6c01e987a"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_224"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "850371e8-bce4-4500-abd7-2a76df3b78da"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "EveNt-bUS-c22219-edG.STaGIng-Api-5De174.woRKers.dEV"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "eVENT-bus-C22219-edG.StAGING-Api-5De174.woRKERS.deV"
-  - name: "@DeltaKroneckerGithub_Clash_226"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "e52fedb7-befe-4615-a53e-89d446f74bf4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tradingview.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM"
-      short-id: "8a2b3c4d5e6f7012"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_228"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "c61a813a-3429-4a20-8b7f-f7a3cd795b24"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/show/series"
-      headers:
-        Host: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_230"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_232"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "14b59caf-a196-4ec2-8c70-c7b388062f5b"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
+    servername: "vangoghhh.info"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/rdfgtws"
       headers:
-        Host: "t1s1.rittbo.kdns.fr"
+        Host: "vangoghhh.info"
   - name: "@DeltaKroneckerGithub_Clash_234"
     type: vless
     server: "127.0.0.1"
@@ -1510,6 +1444,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_236"
     type: vless
     server: "127.0.0.1"
@@ -1518,23 +1453,99 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_238"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "t1s1.rittbo.kdns.fr"
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_240"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_242"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "4.oncloudnineservicestreang.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "P5ceHLOW8Gmz45z-ozbm9T6xsdSsIGLB71-jMfSjCBQ"
+      short-id: "04bc695105689674"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_244"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "auv.vavava.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_246"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "821100fa-b819-4614-83ee-996c4cb142cb"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "_fG0m51dASh_sWJMJYtX4tqhaG-h-J8H-r-q2iyOwBg"
+      short-id: "3597"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_248"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "d26598cf-2cdf-4219-80d0-94646dff160d"
+    udp: true
+  - name: "@DeltaKroneckerGithub_Clash_250"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_252"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_254"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1543,112 +1554,40 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "enterprisekitten.com"
-    client-fingerprint: "chrome"
+    client-fingerprint: "qq"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
       short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_242"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_244"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_246"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.luluhypermarket.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "lNmfBMA3R97nKT0zZEH-oYpLzO41y1xu7Tf_p0-oGF8"
-      short-id: "0c1553316a645758"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_248"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_250"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "4f013568-a58b-4b04-b5dd-4d52bf1c33a4"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amoosamiii.net"
-    network: ws
-    ws-opts:
-      path: "/poiuyws"
-      headers:
-        Host: "amoosamiii.net"
-  - name: "@DeltaKroneckerGithub_Clash_252"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_254"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_256"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "6d788c81-bc95-4bb7-a276-277ff7ef8365"
+    uuid: "850371e8-bce4-4500-abd7-2a76df3b78da"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "evENt-buS-c22219-edG.stAGing-APi-5De174.woRkeRS.DEV"
+    network: ws
+    ws-opts:
+      path: "/?proxyip=109.122.197.5"
+      headers:
+        Host: "event-buS-C22219-EDG.sTAgING-API-5de174.woRKeRS.deV"
+  - name: "@DeltaKroneckerGithub_Clash_258"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "52faee73-e0fe-4661-992d-67259257170f"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "storage.yandex.net"
-    client-fingerprint: "chrome"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
       short-id: "ea10cd5686751ec5"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_258"
+  - name: "@DeltaKroneckerGithub_Clash_260"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1657,33 +1596,15 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_260"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_262"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_264"
     type: vless
     server: "127.0.0.1"
@@ -1692,9 +1613,23 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
+    servername: "cdn9-33.vk-cdnvideo.com"
     client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_266"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "2.oncloudnineservicestreang.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc"
+      short-id: "d8d3dc6c3ca45dd4"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_268"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1702,51 +1637,30 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_268"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_270"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_272"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "073d1d50-8478-47bf-a828-7a1b381931d5"
+    uuid: "5005e971-b6a7-4d68-9100-616358f3cdab"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "octopusss.net"
-    network: ws
-    ws-opts:
-      path: "/odiyfws"
-      headers:
-        Host: "octopusss.net"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "RlXCeIykJsVU_xhJMu9zohMUQiTfi52kibVvY5Zz9k4"
+      short-id: "943e6ba0e346b3a8"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_274"
     type: vless
     server: "127.0.0.1"
@@ -1766,43 +1680,13 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_278"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_280"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
     uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "cdn3-87.vk-cdnvideo.com"
     client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_282"
+  - name: "@DeltaKroneckerGithub_Clash_278"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1812,22 +1696,21 @@ proxies:
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
     client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_284"
+  - name: "@DeltaKroneckerGithub_Clash_280"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_286"
+    servername: "jp.s3-cloud.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_282"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1835,9 +1718,68 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_284"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "3dc30f8b-e411-4f68-9fda-73b63d920e1a"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "S2Fe4Ft_uGGNGVShoyrKHED3VaoRfjLQxDBD3LaNbgc"
+      short-id: "9350a4f6c01e987a"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_286"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jp.s3-cloud.org"
     client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_288"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_290"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_292"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "enterprisekitten.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_294"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1851,62 +1793,21 @@ proxies:
       path: "/rdfgtws"
       headers:
         Host: "vangoghhh.info"
-  - name: "@DeltaKroneckerGithub_Clash_290"
+  - name: "@DeltaKroneckerGithub_Clash_296"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "cb7b5122-7030-4d3d-9590-da00fafe1c05"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "viturey.ir"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "bazaryabab.global.ssl.fastly.net"
-  - name: "@DeltaKroneckerGithub_Clash_292"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "calm-smoke-1a21.alvlirm6262.workers.dev"
+    servername: "auv.vavava.kdns.fr"
     client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "calm-smoke-1a21.alvlirm6262.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_294"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "fd47216b-4217-4ec1-85b9-98304634a391"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "amd.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_296"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ads.x5.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho"
-      short-id: "2f49bccf11150ef2"
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_298"
     type: vless
     server: "127.0.0.1"
@@ -1925,72 +1826,17 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "43488128-319e-f480-64ea-0acdc712e2a8"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_302"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_304"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "9770fce0-0b88-590f-992d-7dac8625d360"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "winq35461s-19523160106-direct.irgame.co"
+    servername: "www.luluhypermarket.com"
     client-fingerprint: "chrome"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_306"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_308"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
+      public-key: "lNmfBMA3R97nKT0zZEH-oYpLzO41y1xu7Tf_p0-oGF8"
+      short-id: "0c1553316a645758"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_310"
+  - name: "@DeltaKroneckerGithub_Clash_302"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -1999,6 +1845,53 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_304"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_306"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6d788c81-bc95-4bb7-a276-277ff7ef8365"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "storage.yandex.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
+      short-id: "ea10cd5686751ec5"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_308"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_310"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "36562b99-aadd-4e38-b566-24e0d219b1d6"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
   - name: "@DeltaKroneckerGithub_Clash_312"
     type: vless
     server: "127.0.0.1"
@@ -2012,26 +1905,27 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+    uuid: "ba302f7c-8ded-4ea6-99be-5abfd3ab6b3e"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "maps.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY"
+      short-id: "2da4299da566b7"
     network: grpc
     grpc-opts:
-      grpc-service-name: ""
+      grpc-service-name: "your-custom-path"
   - name: "@DeltaKroneckerGithub_Clash_316"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_318"
     type: vless
     server: "127.0.0.1"
@@ -2040,7 +1934,7 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "cdn3-87.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_320"
     type: vless
     server: "127.0.0.1"
@@ -2049,8 +1943,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn8-90.yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw"
+      short-id: "8015c191d21aa452"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_322"
     type: vless
     server: "127.0.0.1"
@@ -2059,89 +1957,96 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_324"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_326"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_328"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_330"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "7e544a9d-7667-413b-bbb0-b3bb1aac6d77"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shegeftihaaa.net"
-    network: ws
-    ws-opts:
-      path: "/rsedgws"
-      headers:
-        Host: "shegeftihaaa.net"
-  - name: "@DeltaKroneckerGithub_Clash_332"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "f6f44df3-d229-4dd8-a944-e7bc3a4c6b94"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.google.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "zSOPQOHAiacl2VMETsLXTE_Gln5ECllb6YKy1oyv1V0"
-      short-id: "c3"
-  - name: "@DeltaKroneckerGithub_Clash_334"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
+    servername: "calm-smoke-1a21.alvlirm6262.workers.dev"
     client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "auv.vavava.kdns.fr"
+        Host: "calm-smoke-1a21.alvlirm6262.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_326"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "403c1990-0922-43e9-9027-03ef38c92c87"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "deepl.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "Y15uAAl8fpWhma1FIWyZujgRKdwxYaaF4zIyWyu9vSo"
+      short-id: "5cc0"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_328"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "enterprisekitten.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_330"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "enterprisekitten.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_332"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_334"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_336"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_338"
     type: vless
     server: "127.0.0.1"
@@ -2155,15 +2060,14 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "039a1658-e86e-475f-a3a4-67cc249acada"
+    uuid: "ebcb836a-ab7a-424f-a07c-aba25c70da69"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "gr1.panel11.ru"
-    client-fingerprint: "firefox"
+    servername: "estonianode.dostupnet.ru"
     reality-opts:
-      public-key: "rYwYudDb69CwjAJNw5KTFqJnRwwADgDMDpjv9KESjEY"
-      short-id: "f5c14a97040a38bf"
+      public-key: "2MnLp2jBmP-bPYRHf3VY3wyGMwIYIAizXCB7UxgYVGc"
+      short-id: "7c16c340cde3ed39"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_342"
     type: vless
@@ -2173,33 +2077,33 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "cdn7-09.vk-cdnvideo.com"
     client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_344"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "e52fedb7-befe-4615-a53e-89d446f74bf4"
+    uuid: "f77bcbf0-76ac-462f-b789-22f99838bcd9"
     udp: true
-    network: ws
-    ws-opts:
-      path: "/rutube"
-      headers:
-        Host: "rutube.globaledgenet.com"
+    tls: true
+    skip-cert-verify: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "rvASQZqW6BWYuVuV_wfzoaTz3kPXRB1i6VJlUYUwZB4"
+      short-id: "3e64c3"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: ""
   - name: "@DeltaKroneckerGithub_Clash_346"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "bcc094e4-1a85-8a25-f8e1-5b08b9af841c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "stackoverflow.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic"
-      short-id: "c410508e9721512b"
-    flow: "xtls-rprx-vision"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_348"
     type: vless
     server: "127.0.0.1"
@@ -2213,16 +2117,12 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "356ccb34-22cc-4446-a137-072bc60d65ca"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "storage.yandex.net"
+    servername: "cdn3-87.vk-cdnvideo.com"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
-      short-id: "f34818a561dfd1fe"
-    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_352"
     type: vless
     server: "127.0.0.1"
@@ -2232,6 +2132,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
@@ -2241,19 +2142,146 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "f77bcbf0-76ac-462f-b789-22f99838bcd9"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "play.google.com"
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_356"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_358"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "jp.s3-cloud.org"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
+      short-id: "7a3f9e2b1c8d4f6a"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_360"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tr-cd.sublink-vip2.com"
+  - name: "@DeltaKroneckerGithub_Clash_362"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "ea0a2f27-7e22-4337-820b-6703eca2d7b4"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "google.com"
+    reality-opts:
+      public-key: "Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8"
+      short-id: ""
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_364"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdnjs.com"
+    reality-opts:
+      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
+      short-id: "88ce6b586fcaf681"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_366"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "191ee2c8-e3e3-09a1-a4a5-c9e8323c6f3d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "stackoverflow.com"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "rvASQZqW6BWYuVuV_wfzoaTz3kPXRB1i6VJlUYUwZB4"
-      short-id: "3e64c3"
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "@DeltaKroneckerGithub_Clash_356"
+      public-key: "LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic"
+      short-id: "c410508e9721512b"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_368"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "t1s1.rittbo.kdns.fr"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_370"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn3-87.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_372"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_374"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "0058c215-ab1e-400c-a403-b5b2fda7e846"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tr-cd.sublink-vip2.com"
+  - name: "@DeltaKroneckerGithub_Clash_376"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "d205ae68-0819-473c-b425-6c5947ac2f8d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cars.morro-settings.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI"
+      short-id: "dd"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_378"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2268,48 +2296,78 @@ proxies:
       path: "/"
       headers:
         Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_358"
+  - name: "@DeltaKroneckerGithub_Clash_380"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_360"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdnjs.com"
-    reality-opts:
-      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
-      short-id: "88ce6b586fcaf681"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_362"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_364"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
+    servername: "storage.yandex.net"
     client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_366"
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "2715592069f36fe7"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_382"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "enterprisekitten.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_384"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "auv.vavava.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_386"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "54bb59cf-96fc-4a66-8488-fa2391f2e650"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "XxCsLlJ3kJJa2MiPHS3FlF0DyAS9TkQkn8lfCVZgDQw"
+      short-id: "cd2d4a8f08aa985d"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_388"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "b66d5953-8fed-4374-bf27-26dc07382b08"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "a6ngMY9lSih2eDM81a6I0wXWxXYJly_gxQ1hpFhZOT8"
+      short-id: "001dc5d28eae7554"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_390"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2323,139 +2381,6 @@ proxies:
       public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
       short-id: "ea10cd5686751ec5"
     flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_368"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "3559f1f7-7d70-46c9-82db-d2b46269300b"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "dipvpn.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_370"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_372"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_374"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_376"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_378"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_380"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "terazhediii.info"
-    network: ws
-    ws-opts:
-      path: "/hdgrbws"
-      headers:
-        Host: "terazhediii.info"
-  - name: "@DeltaKroneckerGithub_Clash_382"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_384"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6fdfdb73-51b0-4a14-89a5-c9355a0e0397"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0"
-      short-id: "b318242471ba4f5b"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_386"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_388"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "127.0.0.1"
-  - name: "@DeltaKroneckerGithub_Clash_390"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_392"
     type: vless
     server: "127.0.0.1"
@@ -2465,21 +2390,16 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_394"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "df724c8a-5c5a-4859-974e-6e911b14955c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "-sirwzF9HjIp1PVRK-z-2Ux39ufs6_W1cBw1cFoHXHc"
-      short-id: "a852"
-    flow: "xtls-rprx-vision"
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_396"
     type: vless
     server: "127.0.0.1"
@@ -2488,31 +2408,9 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_398"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_400"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_402"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2526,35 +2424,21 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_404"
+  - name: "@DeltaKroneckerGithub_Clash_400"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_406"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "7e544a9d-7667-413b-bbb0-b3bb1aac6d77"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "shegeftihaaa.net"
+    servername: "t1s1.rittbo.kdns.fr"
     network: ws
     ws-opts:
-      path: "/rsedgws"
+      path: "/"
       headers:
-        Host: "shegeftihaaa.net"
-  - name: "@DeltaKroneckerGithub_Clash_408"
+        Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_402"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2562,8 +2446,47 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_404"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "c61a813a-3429-4a20-8b7f-f7a3cd795b24"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
     client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/data/list/out.php"
+      headers:
+        Host: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
+  - name: "@DeltaKroneckerGithub_Clash_406"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub_Clash_408"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_410"
     type: vless
     server: "127.0.0.1"
@@ -2582,11 +2505,16 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_414"
     type: vless
     server: "127.0.0.1"
@@ -2596,6 +2524,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "cdn9-33.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_416"
     type: vless
     server: "127.0.0.1"
@@ -2604,70 +2533,67 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_418"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    uuid: "6fdfdb73-51b0-4a14-89a5-c9355a0e0397"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
+    servername: "google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0"
+      short-id: "b318242471ba4f5b"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_420"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "t1s1.rittbo.kdns.fr"
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_422"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "t1s1.rittbo.kdns.fr"
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_424"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
+    servername: "auv.vavava.kdns.fr"
+    client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "t1s1.rittbo.kdns.fr"
+        Host: "auv.vavava.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_426"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_428"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -2682,6 +2608,20 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_428"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_430"
     type: vless
     server: "127.0.0.1"
@@ -2695,72 +2635,6 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "4f51ca84-43ea-4087-b8a2-938e0ccbe27a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "google.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4"
-      short-id: ""
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_434"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "0afe8434-7b68-48a3-a96f-509f7af15e5e"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "ru-streaming.barryvpn.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "u1QltI2SnUX48F-cqulaVojcSLadC9I1Vt8gOqnFTB4"
-      short-id: "0123456789abcdef"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_436"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_438"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_440"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_442"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
     uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
     udp: true
     tls: true
@@ -2772,46 +2646,94 @@ proxies:
       path: "/"
       headers:
         Host: "auv.vavava.kdns.fr"
+  - name: "@DeltaKroneckerGithub_Clash_434"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "9e13f74e-3ad7-437d-aba6-5def3c42b046"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.intel.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "rdfVgNqwK528X1X4ZdKe9abvTm7yMICZ5FRUmdYLF14"
+      short-id: "bedc231e12dd39"
+    flow: "xtls-rprx-vision"
+  - name: "@DeltaKroneckerGithub_Clash_436"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_438"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
+  - name: "@DeltaKroneckerGithub_Clash_440"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "e52fedb7-befe-4615-a53e-89d446f74bf4"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/rutube"
+      headers:
+        Host: "rutube.globaledgenet.com"
+  - name: "@DeltaKroneckerGithub_Clash_442"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_444"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "dfc0cb9d-f005-41b0-848c-7703bd39d0de"
+    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "jp.s3-cloud.org"
+    servername: "enterprisekitten.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs"
-      short-id: "7a3f9e2b1c8d4f6a"
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_446"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_448"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
+    uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
     udp: true
     tls: true
     skip-cert-verify: true
     servername: "storage.yandex.net"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "2715592069f36fe7"
     flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_450"
     type: vless
@@ -2821,51 +2743,49 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
+    servername: "cdn9-33.vk-cdnvideo.com"
   - name: "@DeltaKroneckerGithub_Clash_452"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "c61a813a-3429-4a20-8b7f-f7a3cd795b24"
+    uuid: "7e544a9d-7667-413b-bbb0-b3bb1aac6d77"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
-    client-fingerprint: "chrome"
+    servername: "shegeftihaaa.net"
     network: ws
     ws-opts:
-      path: "/ranking/photos/pic"
+      path: "/rsedgws"
       headers:
-        Host: "ft76mv43.b1gqbrn7f2j6degb6bgs.workers.dev"
+        Host: "shegeftihaaa.net"
   - name: "@DeltaKroneckerGithub_Clash_454"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "f1e41ec3-f86d-4b1f-b135-74aeedda97df"
+    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "wow.morro-settings.ru"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI"
-      short-id: "dd"
-    flow: "xtls-rprx-vision"
+    servername: "t1s1.rittbo.kdns.fr"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "t1s1.rittbo.kdns.fr"
   - name: "@DeltaKroneckerGithub_Clash_456"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "14b59caf-a196-4ec2-8c70-c7b388062f5b"
+    uuid: "073d1d50-8478-47bf-a828-7a1b381931d5"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vangoghhh.info"
+    servername: "octopusss.net"
     network: ws
     ws-opts:
-      path: "/rdfgtws"
+      path: "/odiyfws"
       headers:
-        Host: "vangoghhh.info"
+        Host: "octopusss.net"
   - name: "@DeltaKroneckerGithub_Clash_458"
     type: vless
     server: "127.0.0.1"
@@ -2879,202 +2799,30 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
+    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
+    servername: "cdn7-09.vk-cdnvideo.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub_Clash_462"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
+    uuid: "7896c501-248f-4068-bc2f-363c91ba5122"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
+    servername: "storage.yandex.net"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "2715592069f36fe7"
+    flow: "xtls-rprx-vision"
   - name: "@DeltaKroneckerGithub_Clash_464"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_466"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_468"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_470"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_472"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
-  - name: "@DeltaKroneckerGithub_Clash_474"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "e5c5c336-8ca7-44bc-82d6-0473a55ad1ae"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pingoneorg.hydrash.workers.dev"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/movies/http=45.15.167.19:8443"
-      headers:
-        Host: "pingoneorg.hydrash.workers.dev"
-  - name: "@DeltaKroneckerGithub_Clash_476"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "039a1658-e86e-475f-a3a4-67cc249acada"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "us1.panel11.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "MFuAxjdSnjCk_8Vi_-KGyWryFfSmm902nVhACDSIzBw"
-      short-id: "d9d688fc488ae13b"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_478"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "859a537b-09cf-4bce-8da4-ecbb72950e3a"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "1.oncloudnineservicestreang.com"
-    reality-opts:
-      public-key: "EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig"
-      short-id: "28415a7918168947"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_480"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "b8794f67-80d9-4124-8fc5-2d2ce5516573"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "AYL1z7PNyo6LqYLeZpXa50FnK9eEu7o18KHRhOlST1w"
-      short-id: "bd72"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_482"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_484"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_486"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "127.0.0.1"
-    client-fingerprint: "safari"
-  - name: "@DeltaKroneckerGithub_Clash_488"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_490"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "dd47f0f6-e503-44d5-8243-0f48c1c20c28"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "QGnGWzhnKWHNkpRXIm13T-2OFfZ8h7ch9pJhpqADzFU"
-      short-id: ""
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "vless-grpc"
-  - name: "@DeltaKroneckerGithub_Clash_492"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
     uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
     udp: true
     tls: true
@@ -3086,530 +2834,6 @@ proxies:
       path: "/"
       headers:
         Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_494"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_496"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_498"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_500"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_502"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_504"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_506"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_508"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_510"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_512"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-39.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_514"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6ae44ad9-c2cb-4bdf-8e48-6c01fa646372"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "deepl.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "f6MOnGRTqdns7Lut75DSrnFZeiiZ4N04gnj5m-l7KnM"
-      short-id: "54ce"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_516"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "52faee73-e0fe-4661-992d-67259257170f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8"
-      short-id: "ea10cd5686751ec5"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_518"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_520"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/fp"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_522"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "d205ae68-0819-473c-b425-6c5947ac2f8d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cars.morro-settings.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI"
-      short-id: "dd"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_524"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn3-87.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_526"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_528"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "9b02c0ee-3a79-4914-90a5-a0a05d805337"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "play.google.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw"
-      short-id: "b7b70c104ad267b8"
-  - name: "@DeltaKroneckerGithub_Clash_530"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "c35050ce-01ab-45a9-91b8-54cec637d0a8"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "octopusss5.info"
-    network: ws
-    ws-opts:
-      path: "/udfyfws"
-      headers:
-        Host: "octopusss5.info"
-  - name: "@DeltaKroneckerGithub_Clash_532"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_534"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_536"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_538"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "enterprisekitten.com"
-    client-fingerprint: "qq"
-    reality-opts:
-      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-      short-id: "6ba85179e30d4fc2"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_540"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_542"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_544"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_546"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_548"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "356ccb34-22cc-4446-a137-072bc60d65ca"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "storage.yandex.net"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA"
-      short-id: "f34818a561dfd1fe"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_550"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_552"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_554"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_556"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "t1s1.rittbo.kdns.fr"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_558"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_560"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_562"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_564"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_566"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "terazhediii.info"
-    network: ws
-    ws-opts:
-      path: "/hdgrbws"
-      headers:
-        Host: "terazhediii.info"
-  - name: "@DeltaKroneckerGithub_Clash_568"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_570"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "5005e971-b6a7-4d68-9100-616358f3cdab"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "RlXCeIykJsVU_xhJMu9zohMUQiTfi52kibVvY5Zz9k4"
-      short-id: "943e6ba0e346b3a8"
-    flow: "xtls-rprx-vision"
-  - name: "@DeltaKroneckerGithub_Clash_572"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn7-09.vk-cdnvideo.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub_Clash_574"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_576"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_578"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "890cb407-0d00-4337-9e5d-b4df06a1635c"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "auv.vavava.kdns.fr"
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "auv.vavava.kdns.fr"
-  - name: "@DeltaKroneckerGithub_Clash_580"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "931729a8-3c20-4841-89a1-f18dc9ce0a6f"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "cdn9-33.vk-cdnvideo.com"
-  - name: "@DeltaKroneckerGithub_Clash_582"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "626b07bd-81c4-4212-be7a-27442a579620"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.googletagmanager.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo"
-      short-id: "15052edc8120b63d"
-    flow: "xtls-rprx-vision"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -3884,65 +3108,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
   - name: "LB-CDN"
     type: load-balance
@@ -4184,65 +3349,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -4484,65 +3590,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
   - name: "FAST-CDN"
     type: url-test
@@ -4783,65 +3830,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
   # ── UDP group ─────────────────────────────────────────────────────────────
   - name: "UDP-BEST"
@@ -5083,65 +4071,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
@@ -5379,65 +4308,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub_Clash_460"
       - "@DeltaKroneckerGithub_Clash_462"
       - "@DeltaKroneckerGithub_Clash_464"
-      - "@DeltaKroneckerGithub_Clash_466"
-      - "@DeltaKroneckerGithub_Clash_468"
-      - "@DeltaKroneckerGithub_Clash_470"
-      - "@DeltaKroneckerGithub_Clash_472"
-      - "@DeltaKroneckerGithub_Clash_474"
-      - "@DeltaKroneckerGithub_Clash_476"
-      - "@DeltaKroneckerGithub_Clash_478"
-      - "@DeltaKroneckerGithub_Clash_480"
-      - "@DeltaKroneckerGithub_Clash_482"
-      - "@DeltaKroneckerGithub_Clash_484"
-      - "@DeltaKroneckerGithub_Clash_486"
-      - "@DeltaKroneckerGithub_Clash_488"
-      - "@DeltaKroneckerGithub_Clash_490"
-      - "@DeltaKroneckerGithub_Clash_492"
-      - "@DeltaKroneckerGithub_Clash_494"
-      - "@DeltaKroneckerGithub_Clash_496"
-      - "@DeltaKroneckerGithub_Clash_498"
-      - "@DeltaKroneckerGithub_Clash_500"
-      - "@DeltaKroneckerGithub_Clash_502"
-      - "@DeltaKroneckerGithub_Clash_504"
-      - "@DeltaKroneckerGithub_Clash_506"
-      - "@DeltaKroneckerGithub_Clash_508"
-      - "@DeltaKroneckerGithub_Clash_510"
-      - "@DeltaKroneckerGithub_Clash_512"
-      - "@DeltaKroneckerGithub_Clash_514"
-      - "@DeltaKroneckerGithub_Clash_516"
-      - "@DeltaKroneckerGithub_Clash_518"
-      - "@DeltaKroneckerGithub_Clash_520"
-      - "@DeltaKroneckerGithub_Clash_522"
-      - "@DeltaKroneckerGithub_Clash_524"
-      - "@DeltaKroneckerGithub_Clash_526"
-      - "@DeltaKroneckerGithub_Clash_528"
-      - "@DeltaKroneckerGithub_Clash_530"
-      - "@DeltaKroneckerGithub_Clash_532"
-      - "@DeltaKroneckerGithub_Clash_534"
-      - "@DeltaKroneckerGithub_Clash_536"
-      - "@DeltaKroneckerGithub_Clash_538"
-      - "@DeltaKroneckerGithub_Clash_540"
-      - "@DeltaKroneckerGithub_Clash_542"
-      - "@DeltaKroneckerGithub_Clash_544"
-      - "@DeltaKroneckerGithub_Clash_546"
-      - "@DeltaKroneckerGithub_Clash_548"
-      - "@DeltaKroneckerGithub_Clash_550"
-      - "@DeltaKroneckerGithub_Clash_552"
-      - "@DeltaKroneckerGithub_Clash_554"
-      - "@DeltaKroneckerGithub_Clash_556"
-      - "@DeltaKroneckerGithub_Clash_558"
-      - "@DeltaKroneckerGithub_Clash_560"
-      - "@DeltaKroneckerGithub_Clash_562"
-      - "@DeltaKroneckerGithub_Clash_564"
-      - "@DeltaKroneckerGithub_Clash_566"
-      - "@DeltaKroneckerGithub_Clash_568"
-      - "@DeltaKroneckerGithub_Clash_570"
-      - "@DeltaKroneckerGithub_Clash_572"
-      - "@DeltaKroneckerGithub_Clash_574"
-      - "@DeltaKroneckerGithub_Clash_576"
-      - "@DeltaKroneckerGithub_Clash_578"
-      - "@DeltaKroneckerGithub_Clash_580"
-      - "@DeltaKroneckerGithub_Clash_582"
 
 rules:
   - MATCH,PROXY-BEST
